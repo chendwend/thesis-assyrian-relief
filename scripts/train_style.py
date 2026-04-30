@@ -15,7 +15,11 @@ from thesis_assyrian_relief.utils.data import (
 from thesis_assyrian_relief.models.dinov2_probe import DinoStyleProbe
 from thesis_assyrian_relief.training.engine import fit
 from thesis_assyrian_relief.utils.config import load_yaml_config, ensure_parent_dir
+import warnings
 
+# Ignore specific warning containing the xFormers message
+warnings.filterwarnings("ignore", message=".*xFormers is not available.*")
+warnings.filterwarnings("ignore", message=".*xFormers is available.*")
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Train DINOv2 style probe for Neo-Assyrian reliefs.")
@@ -74,7 +78,7 @@ def resolve_config(args: argparse.Namespace) -> dict:
     resolved = {
         "csv_path": pick(args.csv_path, "data", "csv_path"),
         "image_root": pick(args.image_root, "data", "image_root"),
-        "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="_"),
+        "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
         "val_split": pick(args.val_split, "splits", "val", default="val"),

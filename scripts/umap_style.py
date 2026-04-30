@@ -76,7 +76,7 @@ def resolve_config(args: argparse.Namespace) -> dict:
     resolved = {
         "csv_path": pick(args.csv_path, "data", "csv_path"),
         "image_root": pick(args.image_root, "data", "image_root"),
-        "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="_"),
+        "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
         "eval_split": pick(args.eval_split, "splits", "test", default="test"),

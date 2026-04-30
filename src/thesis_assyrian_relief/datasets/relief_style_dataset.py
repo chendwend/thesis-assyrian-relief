@@ -31,7 +31,7 @@ class ReliefStyleDataset(Dataset):
         Relief_ID = "BM 124773"
         view_index = 2
         suffix = ".jpg"
-        filename_sep = "_"
+        filename_sep = "-"
 
         -> "BM 124773_2.jpg"
     """
