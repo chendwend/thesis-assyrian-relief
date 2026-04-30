@@ -1,0 +1,18 @@
+data:
+  local:
+    dataset_root: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset"
+    image_level_csv: "data/splits/image_level_dataset.csv"
+    output_html: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/outputs/umap_plot.html"
+
+  remote:
+    dataset_root: "/content/dataset"
+    image_level_csv: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/image_level_dataset.csv"
+
+  metadata_xlsx: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/main.xlsx"
+  image_root: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/images"
+  split_csv: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/relief_level_splits.csv"
+  image_level_csv: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/image_level_dataset.csv"
+
+outputs:
+  checkpoints_dir: "/content/drive/MyDrive/Graduate_Studies/Thesis/outputs/checkpoints"
+  figures_dir: "/content/drive/MyDrive/Graduate_Studies/Thesis/outputs/figures"

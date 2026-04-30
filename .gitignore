@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Data / outputs
+outputs/
+checkpoints/
+artifacts/
+logs/
+wandb/
+mlruns/
+
+# Large local data
+images/
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+
+# Colab / temporary
+content/

@@ -1,0 +1,700 @@
+﻿Relief_ID,Authority,split,image_path,view_index,suffix
+AO 1432,Sargon II,train,/content/dataset/AO 1432-1.JPG,1,.jpg
+AO 1432,Sargon II,train,/content/dataset/AO 1432-2.JPG,2,.jpg
+AO 19854,OTHER,test,/content/dataset/AO 19854-1.JPG,1,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-1.JPG,1,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-2.JPG,2,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-3.JPG,3,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-4.JPG,4,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-5.JPG,5,.jpg
+AO 19863,Sargon II,train,/content/dataset/AO 19863-6.JPG,6,.jpg
+AO 19864,Sargon II,train,/content/dataset/AO 19864-1.JPG,1,.jpg
+AO 19867,Sargon II,train,/content/dataset/AO 19867-1.JPG,1,.jpg
+AO 19869,Sargon II,val,/content/dataset/AO 19869-1.JPG,1,.jpg
+AO 19869,Sargon II,val,/content/dataset/AO 19869-2.JPG,2,.jpg
+AO 19869,Sargon II,val,/content/dataset/AO 19869-3.JPG,3,.jpg
+AO 19869,Sargon II,val,/content/dataset/AO 19869-4.JPG,4,.jpg
+AO 19871,Sargon II,train,/content/dataset/AO 19871-1.JPG,1,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-1.JPG,1,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-2.JPG,2,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-3.JPG,3,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-4.JPG,4,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-5.JPG,5,.jpg
+AO 19872,Sargon II,test,/content/dataset/AO 19872-6.JPG,6,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-1.JPG,1,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-2.JPG,2,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-3.JPG,3,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-4.JPG,4,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-5.JPG,5,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-6.JPG,6,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-7.JPG,7,.jpg
+AO 19873,Sargon II,train,/content/dataset/AO 19873-8.JPG,8,.jpg
+AO 19875,Sargon II,test,/content/dataset/AO 19875-1.JPG,1,.jpg
+AO 19875,Sargon II,test,/content/dataset/AO 19875-2.JPG,2,.jpg
+AO 19875,Sargon II,test,/content/dataset/AO 19875-3.JPG,3,.jpg
+AO 19875,Sargon II,test,/content/dataset/AO 19875-4.JPG,4,.jpg
+AO 19877,Sargon II,train,/content/dataset/AO 19877-1.JPG,1,.jpg
+AO 19877,Sargon II,train,/content/dataset/AO 19877-2.JPG,2,.jpg
+AO 19877,Sargon II,train,/content/dataset/AO 19877-3.JPG,3,.jpg
+AO 19877,Sargon II,train,/content/dataset/AO 19877-4.JPG,4,.jpg
+AO 19878,Sargon II,train,/content/dataset/AO 19878-1.JPG,1,.jpg
+AO 19878,Sargon II,train,/content/dataset/AO 19878-2.JPG,2,.jpg
+AO 19879,Sargon II,train,/content/dataset/AO 19879-1.JPG,1,.jpg
+AO 19880,Sargon II,test,/content/dataset/AO 19880-1.JPG,1,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-1.JPG,1,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-2.JPG,2,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-3.JPG,3,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-4.JPG,4,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-5.JPG,5,.jpg
+AO 19883,Sargon II,test,/content/dataset/AO 19883-6.JPG,6,.jpg
+AO 19887,Sargon II,train,/content/dataset/AO 19887-1.JPG,1,.jpg
+AO 19887,Sargon II,train,/content/dataset/AO 19887-2.JPG,2,.jpg
+AO 19887,Sargon II,train,/content/dataset/AO 19887-3.JPG,3,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-1.JPG,1,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-2.JPG,2,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-5.JPG,5,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-6.JPG,6,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-7.JPG,7,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-8.JPG,8,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-9.JPG,9,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-10.JPG,10,.jpg
+AO 19889,Sargon II,train,/content/dataset/AO 19889-11.JPG,11,.jpg
+AO 19893,Sargon II,train,/content/dataset/AO 19893-1.JPG,1,.jpg
+AO 19894,Sargon II,val,/content/dataset/AO 19894-1.JPG,1,.jpg
+AO 19896,Sargon II,train,/content/dataset/AO 19896-1.JPG,1,.jpg
+AO 19897,Sargon II,val,/content/dataset/AO 19897-1.JPG,1,.jpg
+AO 19897,Sargon II,val,/content/dataset/AO 19897-2.JPG,2,.jpg
+AO 19898,Sargon II,train,/content/dataset/AO 19898-1.JPG,1,.jpg
+AO 19902,Ashurbanipal,train,/content/dataset/AO 19902-1.JPG,1,.jpg
+AO 19904,Ashurbanipal,train,/content/dataset/AO 19904-1.JPG,1,.jpg
+AO 19904,Ashurbanipal,train,/content/dataset/AO 19904-2.JPG,2,.jpg
+AO 19909,Ashurbanipal,train,/content/dataset/AO 19909-1.JPG,1,.jpg
+AO 19917,Sargon II,train,/content/dataset/AO 19917-1.JPG,1,.jpg
+AO 19922,Sargon II,train,/content/dataset/AO 19922-1.JPG,1,.jpg
+AO 19922,Sargon II,train,/content/dataset/AO 19922-2.JPG,2,.jpg
+AO 22196,Sargon II,train,/content/dataset/AO 22196-1.JPG,1,.jpg
+AO 22196,Sargon II,train,/content/dataset/AO 22196-2.JPG,2,.jpg
+AO 22197,Sargon II,test,/content/dataset/AO 22197-1.JPG,1,.jpg
+BM 102401,Ashurnasirpal II,train,/content/dataset/BM 102401-1.jpg,1,.jpg
+BM 102401,Ashurnasirpal II,train,/content/dataset/BM 102401-2.jpg,2,.jpg
+BM 102401,Ashurnasirpal II,train,/content/dataset/BM 102401-3.png,3,.png
+BM 102401,Ashurnasirpal II,train,/content/dataset/BM 102401-4.png,4,.png
+BM 115634,OTHER,val,/content/dataset/BM 115634-1.jpg,1,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-2.jpg,2,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-3.jpg,3,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-4.jpg,4,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-5.jpg,5,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-6.jpg,6,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-7.jpg,7,.jpg
+BM 115634,OTHER,val,/content/dataset/BM 115634-8.jpg,8,.jpg
+BM 118803,Ashurnasirpal II,train,/content/dataset/BM 118803-1.jpg,1,.jpg
+BM 118810,Sargon II,val,/content/dataset/BM 118810-1.jpg,1,.jpg
+BM 118810,Sargon II,val,/content/dataset/BM 118810-2.jpg,2,.jpg
+BM 118811,Sargon II,val,/content/dataset/BM 118811-1.jpg,1,.jpg
+BM 118811,Sargon II,val,/content/dataset/BM 118811-2.jpg,2,.jpg
+BM 118812,Sargon II,train,/content/dataset/BM 118812-1.jpg,1,.jpg
+BM 118812,Sargon II,train,/content/dataset/BM 118812-2.jpg,2,.jpg
+BM 118812,Sargon II,train,/content/dataset/BM 118812-3.jpg,3,.jpg
+BM 118812,Sargon II,train,/content/dataset/BM 118812-4.jpg,4,.jpg
+BM 118816,Sargon II,train,/content/dataset/BM 118816-1.jpg,1,.jpg
+BM 118816,Sargon II,train,/content/dataset/BM 118816-2.jpg,2,.jpg
+BM 118816,Sargon II,train,/content/dataset/BM 118816-3.jpg,3,.jpg
+BM 118818,Sargon II,test,/content/dataset/BM 118818-1.jpg,1,.jpg
+BM 118818,Sargon II,test,/content/dataset/BM 118818-2.jpg,2,.jpg
+BM 118818,Sargon II,test,/content/dataset/BM 118818-3.jpg,3,.jpg
+BM 118820,Sargon II,train,/content/dataset/BM 118820-1.jpg,1,.jpg
+BM 118822,Sargon II,train,/content/dataset/BM 118822-1.jpg,1,.jpg
+BM 118822,Sargon II,train,/content/dataset/BM 118822-2.jpg,2,.jpg
+BM 118826,Sargon II,train,/content/dataset/BM 118826-1.jpg,1,.jpg
+BM 118826,Sargon II,train,/content/dataset/BM 118826-2.jpg,2,.jpg
+BM 118827,Sargon II,train,/content/dataset/BM 118827-1.jpg,1,.jpg
+BM 118827,Sargon II,train,/content/dataset/BM 118827-2.jpg,2,.jpg
+BM 118827,Sargon II,train,/content/dataset/BM 118827-3.jpg,3,.jpg
+BM 118828,Sargon II,train,/content/dataset/BM 118828-1.jpg,1,.jpg
+BM 118828,Sargon II,train,/content/dataset/BM 118828-2.jpg,2,.jpg
+BM 118828,Sargon II,train,/content/dataset/BM 118828-3.jpg,3,.jpg
+BM 118828,Sargon II,train,/content/dataset/BM 118828-4.jpg,4,.jpg
+BM 118828,Sargon II,train,/content/dataset/BM 118828-5.jpg,5,.jpg
+BM 118829,Sargon II,train,/content/dataset/BM 118829-1.jpg,1,.jpg
+BM 118829,Sargon II,train,/content/dataset/BM 118829-2.jpg,2,.jpg
+BM 118830,Sargon II,train,/content/dataset/BM 118830-1.jpg,1,.jpg
+BM 118830,Sargon II,train,/content/dataset/BM 118830-2.jpg,2,.jpg
+BM 118832,Sargon II,train,/content/dataset/BM 118832-1.jpg,1,.jpg
+BM 118832,Sargon II,train,/content/dataset/BM 118832-2.jpg,2,.jpg
+BM 118832,Sargon II,train,/content/dataset/BM 118832-3.jpg,3,.jpg
+BM 118832,Sargon II,train,/content/dataset/BM 118832-4.jpg,4,.jpg
+BM 118832,Sargon II,train,/content/dataset/BM 118832-5.jpg,5,.jpg
+BM 118874,Ashurnasirpal II,train,/content/dataset/BM 118874-1.jpg,1,.jpg
+BM 118874,Ashurnasirpal II,train,/content/dataset/BM 118874-2.jpg,2,.jpg
+BM 118874,Ashurnasirpal II,train,/content/dataset/BM 118874-3.jpg,3,.jpg
+BM 118874,Ashurnasirpal II,train,/content/dataset/BM 118874-4.jpg,4,.jpg
+BM 118876,Ashurnasirpal II,test,/content/dataset/BM 118876-1.jpg,1,.jpg
+BM 118876,Ashurnasirpal II,test,/content/dataset/BM 118876-2.jpg,2,.jpg
+BM 118876,Ashurnasirpal II,test,/content/dataset/BM 118876-3.jpg,3,.jpg
+BM 118876,Ashurnasirpal II,test,/content/dataset/BM 118876-4.jpg,4,.jpg
+BM 118879,OTHER,train,/content/dataset/BM 118879-1.jpg,1,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-1.jpg,1,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-2.jpg,2,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-3.jpg,3,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-4.jpg,4,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-5.jpg,5,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-6.jpg,6,.jpg
+BM 118882,OTHER,train,/content/dataset/BM 118882-7.jpg,7,.jpg
+BM 118900,OTHER,train,/content/dataset/BM 118900-1.jpg,1,.jpg
+BM 118900,OTHER,train,/content/dataset/BM 118900-2.jpg,2,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-1.jpg,1,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-2.jpg,2,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-3.jpg,3,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-4.jpg,4,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-5.jpg,5,.jpg
+BM 118903,OTHER,train,/content/dataset/BM 118903-6.jpg,6,.jpg
+BM 118905,OTHER,train,/content/dataset/BM 118905-1.jpg,1,.jpg
+BM 118905,OTHER,train,/content/dataset/BM 118905-2.jpg,2,.jpg
+BM 118907,OTHER,train,/content/dataset/BM 118907-1.jpg,1,.jpg
+BM 118907,OTHER,train,/content/dataset/BM 118907-2.jpg,2,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-1.jpg,1,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-2.jpg,2,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-3.jpg,3,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-4.jpg,4,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-5.jpg,5,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-6.jpg,6,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-7.png,7,.png
+BM 118908,OTHER,val,/content/dataset/BM 118908-8.jpg,8,.jpg
+BM 118908,OTHER,val,/content/dataset/BM 118908-9.png,9,.png
+BM 118908,OTHER,val,/content/dataset/BM 118908-10.png,10,.png
+BM 118908,OTHER,val,/content/dataset/BM 118908-11.png,11,.png
+BM 118908,OTHER,val,/content/dataset/BM 118908-12.png,12,.png
+BM 118908,OTHER,val,/content/dataset/BM 118908-13.png,13,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-1.jpg,1,.jpg
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-2.png,2,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-3.png,3,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-4.png,4,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-5.png,5,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-6.png,6,.png
+BM 118911,Ashurbanipal,test,/content/dataset/BM 118911-7.png,7,.png
+BM 118912,Ashurbanipal,train,/content/dataset/BM 118912-1.jpg,1,.jpg
+BM 118912,Ashurbanipal,train,/content/dataset/BM 118912-2.jpg,2,.jpg
+BM 118914,Ashurbanipal,test,/content/dataset/BM 118914-1.jpg,1,.jpg
+BM 118914,Ashurbanipal,test,/content/dataset/BM 118914-2.jpg,2,.jpg
+BM 118914,Ashurbanipal,test,/content/dataset/BM 118914-3.jpg,3,.jpg
+BM 118917,Ashurbanipal,val,/content/dataset/BM 118917-1.jpg,1,.jpg
+BM 118918,Ashurbanipal,train,/content/dataset/BM 118918-1.jpg,1,.jpg
+BM 118918,Ashurbanipal,train,/content/dataset/BM 118918-2.jpg,2,.jpg
+BM 118918,Ashurbanipal,train,/content/dataset/BM 118918-3.jpg,3,.jpg
+BM 118918,Ashurbanipal,train,/content/dataset/BM 118918-4.jpg,4,.jpg
+BM 118918,Ashurbanipal,train,/content/dataset/BM 118918-5.jpg,5,.jpg
+BM 118921,Ashurnasirpal II,val,/content/dataset/BM 118921-1.jpg,1,.jpg
+BM 124530,Ashurnasirpal II,train,/content/dataset/BM 124530-1.jpg,1,.jpg
+BM 124532,Ashurnasirpal II,train,/content/dataset/BM 124532-1.jpg,1,.jpg
+BM 124532,Ashurnasirpal II,train,/content/dataset/BM 124532-2.jpg,2,.jpg
+BM 124532,Ashurnasirpal II,train,/content/dataset/BM 124532-3.jpg,3,.jpg
+BM 124532,Ashurnasirpal II,train,/content/dataset/BM 124532-4.jpg,4,.jpg
+BM 124533,Ashurnasirpal II,train,/content/dataset/BM 124533-1.jpg,1,.jpg
+BM 124533,Ashurnasirpal II,train,/content/dataset/BM 124533-2.jpg,2,.jpg
+BM 124533,Ashurnasirpal II,train,/content/dataset/BM 124533-3.jpg,3,.jpg
+BM 124533,Ashurnasirpal II,train,/content/dataset/BM 124533-4.jpg,4,.jpg
+BM 124533,Ashurnasirpal II,train,/content/dataset/BM 124533-5.jpg,5,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-1.jpg,1,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-2.jpg,2,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-3.jpg,3,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-4.jpg,4,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-5.jpg,5,.jpg
+BM 124534,Ashurnasirpal II,test,/content/dataset/BM 124534-6.jpg,6,.jpg
+BM 124535,Ashurnasirpal II,test,/content/dataset/BM 124535-1.jpg,1,.jpg
+BM 124535,Ashurnasirpal II,test,/content/dataset/BM 124535-2.jpg,2,.jpg
+BM 124535,Ashurnasirpal II,test,/content/dataset/BM 124535-3.jpg,3,.jpg
+BM 124535,Ashurnasirpal II,test,/content/dataset/BM 124535-4.jpg,4,.jpg
+BM 124536,Ashurnasirpal II,train,/content/dataset/BM 124536-1.jpg,1,.jpg
+BM 124536,Ashurnasirpal II,train,/content/dataset/BM 124536-2.jpg,2,.jpg
+BM 124536,Ashurnasirpal II,train,/content/dataset/BM 124536-3.jpg,3,.jpg
+BM 124536,Ashurnasirpal II,train,/content/dataset/BM 124536-4.jpg,4,.jpg
+BM 124537,Ashurnasirpal II,test,/content/dataset/BM 124537-1.jpg,1,.jpg
+BM 124537,Ashurnasirpal II,test,/content/dataset/BM 124537-2.jpg,2,.jpg
+BM 124537,Ashurnasirpal II,test,/content/dataset/BM 124537-3.jpg,3,.jpg
+BM 124537,Ashurnasirpal II,test,/content/dataset/BM 124537-4.jpg,4,.jpg
+BM 124537,Ashurnasirpal II,test,/content/dataset/BM 124537-5.jpg,5,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-1.jpg,1,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-2.jpg,2,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-3.jpg,3,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-4.jpg,4,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-5.jpg,5,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-6.jpg,6,.jpg
+BM 124538,Ashurnasirpal II,train,/content/dataset/BM 124538-7.jpg,7,.jpg
+BM 124539,Ashurnasirpal II,train,/content/dataset/BM 124539-1.jpg,1,.jpg
+BM 124539,Ashurnasirpal II,train,/content/dataset/BM 124539-2.jpg,2,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-1.jpg,1,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-2.jpg,2,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-3.jpg,3,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-4.jpg,4,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-5.jpg,5,.jpg
+BM 124540,Ashurnasirpal II,train,/content/dataset/BM 124540-6.jpg,6,.jpg
+BM 124542,Ashurnasirpal II,val,/content/dataset/BM 124542-1.jpg,1,.jpg
+BM 124542,Ashurnasirpal II,val,/content/dataset/BM 124542-2.jpg,2,.jpg
+BM 124542,Ashurnasirpal II,val,/content/dataset/BM 124542-3.jpg,3,.jpg
+BM 124544,Ashurnasirpal II,train,/content/dataset/BM 124544-1.jpg,1,.jpg
+BM 124544,Ashurnasirpal II,train,/content/dataset/BM 124544-2.jpg,2,.jpg
+BM 124544,Ashurnasirpal II,train,/content/dataset/BM 124544-3.jpg,3,.jpg
+BM 124544,Ashurnasirpal II,train,/content/dataset/BM 124544-4.jpg,4,.jpg
+BM 124544,Ashurnasirpal II,train,/content/dataset/BM 124544-5.jpg,5,.jpg
+BM 124547,Ashurnasirpal II,test,/content/dataset/BM 124547-1.jpg,1,.jpg
+BM 124547,Ashurnasirpal II,test,/content/dataset/BM 124547-2.jpg,2,.jpg
+BM 124547,Ashurnasirpal II,test,/content/dataset/BM 124547-3.jpg,3,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-1.jpg,1,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-2.jpg,2,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-3.jpg,3,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-4.jpg,4,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-5.jpg,5,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-6.jpg,6,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-7.jpg,7,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-8.jpg,8,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-9.jpg,9,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-10.jpg,10,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-11.jpg,11,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-12.jpg,12,.jpg
+BM 124548,Ashurnasirpal II,train,/content/dataset/BM 124548-13.jpg,13,.jpg
+BM 124549,Ashurnasirpal II,train,/content/dataset/BM 124549-1.jpg,1,.jpg
+BM 124549,Ashurnasirpal II,train,/content/dataset/BM 124549-2.jpg,2,.jpg
+BM 124551,Ashurnasirpal II,train,/content/dataset/BM 124551-1.jpg,1,.jpg
+BM 124551,Ashurnasirpal II,train,/content/dataset/BM 124551-2.jpg,2,.jpg
+BM 124551,Ashurnasirpal II,train,/content/dataset/BM 124551-3.jpg,3,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-1.jpg,1,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-2.jpg,2,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-3.jpg,3,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-4.jpg,4,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-5.jpg,5,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-6.jpg,6,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-7.jpg,7,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-8.jpg,8,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-9.jpg,9,.jpg
+BM 124552,Ashurnasirpal II,val,/content/dataset/BM 124552-10.jpg,10,.jpg
+BM 124553,Ashurnasirpal II,train,/content/dataset/BM 124553-1.jpg,1,.jpg
+BM 124553,Ashurnasirpal II,train,/content/dataset/BM 124553-2.jpg,2,.jpg
+BM 124553,Ashurnasirpal II,train,/content/dataset/BM 124553-3.jpg,3,.jpg
+BM 124553,Ashurnasirpal II,train,/content/dataset/BM 124553-4.jpg,4,.jpg
+BM 124553,Ashurnasirpal II,train,/content/dataset/BM 124553-5.jpg,5,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-1.jpg,1,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-2.jpg,2,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-3.jpg,3,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-4.jpg,4,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-5.jpg,5,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-6.jpg,6,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-7.jpg,7,.jpg
+BM 124554,Ashurnasirpal II,train,/content/dataset/BM 124554-8.jpg,8,.jpg
+BM 124556,Ashurnasirpal II,train,/content/dataset/BM 124556-1.jpg,1,.jpg
+BM 124556,Ashurnasirpal II,train,/content/dataset/BM 124556-2.jpg,2,.jpg
+BM 124556,Ashurnasirpal II,train,/content/dataset/BM 124556-3.jpg,3,.jpg
+BM 124556,Ashurnasirpal II,train,/content/dataset/BM 124556-4.jpg,4,.jpg
+BM 124557,Ashurnasirpal II,train,/content/dataset/BM 124557-1.jpg,1,.jpg
+BM 124557,Ashurnasirpal II,train,/content/dataset/BM 124557-2.jpg,2,.jpg
+BM 124557,Ashurnasirpal II,train,/content/dataset/BM 124557-3.jpg,3,.jpg
+BM 124560,Ashurnasirpal II,train,/content/dataset/BM 124560-1.jpg,1,.jpg
+BM 124560,Ashurnasirpal II,train,/content/dataset/BM 124560-2.jpg,2,.jpg
+BM 124561,Ashurnasirpal II,test,/content/dataset/BM 124561-1.jpg,1,.jpg
+BM 124561,Ashurnasirpal II,test,/content/dataset/BM 124561-2.jpg,2,.jpg
+BM 124561,Ashurnasirpal II,test,/content/dataset/BM 124561-3.jpg,3,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-1.jpg,1,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-2.jpg,2,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-3.jpg,3,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-4.jpg,4,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-5.jpg,5,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-6.jpg,6,.jpg
+BM 124562,Ashurnasirpal II,train,/content/dataset/BM 124562-7.jpg,7,.jpg
+BM 124563,Ashurnasirpal II,val,/content/dataset/BM 124563-1.jpg,1,.jpg
+BM 124563,Ashurnasirpal II,val,/content/dataset/BM 124563-2.jpg,2,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-1.jpg,1,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-2.jpg,2,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-3.jpg,3,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-4.jpg,4,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-5.jpg,5,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-6.jpg,6,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-7.jpg,7,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-8.jpg,8,.jpg
+BM 124564,Ashurnasirpal II,train,/content/dataset/BM 124564-9.jpg,9,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-1.jpg,1,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-2.jpg,2,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-3.jpg,3,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-4.jpg,4,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-5.jpg,5,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-6.jpg,6,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-7.jpg,7,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-8.jpg,8,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-9.jpg,9,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-10.jpg,10,.jpg
+BM 124565,Ashurnasirpal II,train,/content/dataset/BM 124565-11.jpg,11,.jpg
+BM 124566,Ashurnasirpal II,val,/content/dataset/BM 124566-1.jpg,1,.jpg
+BM 124566,Ashurnasirpal II,val,/content/dataset/BM 124566-2.jpg,2,.jpg
+BM 124566,Ashurnasirpal II,val,/content/dataset/BM 124566-3.jpg,3,.jpg
+BM 124567,Ashurnasirpal II,test,/content/dataset/BM 124567-1.jpg,1,.jpg
+BM 124567,Ashurnasirpal II,test,/content/dataset/BM 124567-2.jpg,2,.jpg
+BM 124567,Ashurnasirpal II,test,/content/dataset/BM 124567-3.jpg,3,.jpg
+BM 124567,Ashurnasirpal II,test,/content/dataset/BM 124567-4.jpg,4,.jpg
+BM 124568,Ashurnasirpal II,test,/content/dataset/BM 124568-1.jpg,1,.jpg
+BM 124568,Ashurnasirpal II,test,/content/dataset/BM 124568-2.jpg,2,.jpg
+BM 124568,Ashurnasirpal II,test,/content/dataset/BM 124568-3.jpg,3,.jpg
+BM 124569,Ashurnasirpal II,train,/content/dataset/BM 124569-1.jpg,1,.jpg
+BM 124569,Ashurnasirpal II,train,/content/dataset/BM 124569-2.jpg,2,.jpg
+BM 124569,Ashurnasirpal II,train,/content/dataset/BM 124569-3.jpg,3,.jpg
+BM 124569,Ashurnasirpal II,train,/content/dataset/BM 124569-4.jpg,4,.jpg
+BM 124575,Ashurnasirpal II,train,/content/dataset/BM 124575-1.jpg,1,.jpg
+BM 124576,Ashurnasirpal II,train,/content/dataset/BM 124576-1.jpg,1,.jpg
+BM 124576,Ashurnasirpal II,train,/content/dataset/BM 124576-2.jpg,2,.jpg
+BM 124578,Ashurnasirpal II,val,/content/dataset/BM 124578-1.jpg,1,.jpg
+BM 124578,Ashurnasirpal II,val,/content/dataset/BM 124578-2.jpg,2,.jpg
+BM 124579,Ashurnasirpal II,test,/content/dataset/BM 124579-1.jpg,1,.jpg
+BM 124579,Ashurnasirpal II,test,/content/dataset/BM 124579-2.jpg,2,.jpg
+BM 124579,Ashurnasirpal II,test,/content/dataset/BM 124579-3.jpg,3,.jpg
+BM 124579,Ashurnasirpal II,test,/content/dataset/BM 124579-4.jpg,4,.jpg
+BM 124580,Ashurnasirpal II,train,/content/dataset/BM 124580-1.jpg,1,.jpg
+BM 124580,Ashurnasirpal II,train,/content/dataset/BM 124580-2.jpg,2,.jpg
+BM 124583,Ashurnasirpal II,train,/content/dataset/BM 124583-1.jpg,1,.jpg
+BM 124583,Ashurnasirpal II,train,/content/dataset/BM 124583-2.jpg,2,.jpg
+BM 124584,Ashurnasirpal II,train,/content/dataset/BM 124584-1.jpg,1,.jpg
+BM 124584,Ashurnasirpal II,train,/content/dataset/BM 124584-2.jpg,2,.jpg
+BM 124584,Ashurnasirpal II,train,/content/dataset/BM 124584-3.jpg,3,.jpg
+BM 124584,Ashurnasirpal II,train,/content/dataset/BM 124584-4.jpg,4,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-1.jpg,1,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-2.jpg,2,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-3.jpg,3,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-4.jpg,4,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-5.jpg,5,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-6.jpg,6,.jpg
+BM 124585,Ashurnasirpal II,train,/content/dataset/BM 124585-7.jpg,7,.jpg
+BM 124586,Ashurnasirpal II,val,/content/dataset/BM 124586-1.jpg,1,.jpg
+BM 124586,Ashurnasirpal II,val,/content/dataset/BM 124586-2.jpg,2,.jpg
+BM 124586,Ashurnasirpal II,val,/content/dataset/BM 124586-3.jpg,3,.jpg
+BM 124773,OTHER,test,/content/dataset/BM 124773-1.jpg,1,.jpg
+BM 124773,OTHER,test,/content/dataset/BM 124773-2.jpg,2,.jpg
+BM 124788,Ashurbanipal,test,/content/dataset/BM 124788-1.jpg,1,.jpg
+BM 124789,OTHER,train,/content/dataset/BM 124789-1.jpg,1,.jpg
+BM 124789,OTHER,train,/content/dataset/BM 124789-2.jpg,2,.jpg
+BM 124793,Ashurbanipal,train,/content/dataset/BM 124793-1.jpg,1,.jpg
+BM 124793,Ashurbanipal,train,/content/dataset/BM 124793-2.jpg,2,.jpg
+BM 124793,Ashurbanipal,train,/content/dataset/BM 124793-3.jpg,3,.jpg
+BM 124793,Ashurbanipal,train,/content/dataset/BM 124793-4.jpg,4,.jpg
+BM 124794,Ashurbanipal,train,/content/dataset/BM 124794-1.jpg,1,.jpg
+BM 124794,Ashurbanipal,train,/content/dataset/BM 124794-2.jpg,2,.jpg
+BM 124794,Ashurbanipal,train,/content/dataset/BM 124794-3.jpg,3,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-1.jpg,1,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-2.jpg,2,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-3.jpg,3,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-4.jpg,4,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-5.jpg,5,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-6.jpg,6,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-7.jpg,7,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-8.jpg,8,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-9.jpg,9,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-10.jpg,10,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-11.jpg,11,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-12.jpg,12,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-13.jpg,13,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-14.jpg,14,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-15.jpg,15,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-16.jpg,16,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-17.jpg,17,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-18.jpg,18,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-19.jpg,19,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-20.jpg,20,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-21.jpg,21,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-22.jpg,22,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-23.jpg,23,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-24.jpg,24,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-25.jpg,25,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-26.jpg,26,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-27.jpg,27,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-28.jpg,28,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-29.jpg,29,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-30.jpg,30,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-31.jpg,31,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-32.jpg,32,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-33.jpg,33,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-34.jpg,34,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-35.jpg,35,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-36.jpg,36,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-37.jpg,37,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-38.jpg,38,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-39.jpg,39,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-40.jpg,40,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-41.jpg,41,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-42.jpg,42,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-43.jpg,43,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-44.jpg,44,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-45.jpg,45,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-46.jpg,46,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-47.jpg,47,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-48.jpg,48,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-49.jpg,49,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-50.jpg,50,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-51.jpg,51,.jpg
+BM 124801,Ashurbanipal,train,/content/dataset/BM 124801-52.jpg,52,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-1.jpg,1,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-2.jpg,2,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-3.jpg,3,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-4.jpg,4,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-5.jpg,5,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-6.jpg,6,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-7.jpg,7,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-8.jpg,8,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-9.jpg,9,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-10.jpg,10,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-11.jpg,11,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-12.jpg,12,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-13.jpg,13,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-14.jpg,14,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-15.jpg,15,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-16.jpg,16,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-17.jpg,17,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-18.jpg,18,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-19.jpg,19,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-20.jpg,20,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-21.jpg,21,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-22.jpg,22,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-23.jpg,23,.jpg
+BM 124802,Ashurbanipal,val,/content/dataset/BM 124802-24.jpg,24,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-1.jpg,1,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-2.jpg,2,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-3.jpg,3,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-4.jpg,4,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-5.jpg,5,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-6.jpg,6,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-7.jpg,7,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-8.jpg,8,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-9.jpg,9,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-10.jpg,10,.jpg
+BM 124823,OTHER,train,/content/dataset/BM 124823-11.jpg,11,.jpg
+BM 124825,Ashurbanipal,val,/content/dataset/BM 124825-1.jpg,1,.jpg
+BM 124825,Ashurbanipal,val,/content/dataset/BM 124825-2.jpg,2,.jpg
+BM 124825,Ashurbanipal,val,/content/dataset/BM 124825-3.jpg,3,.jpg
+BM 124853,Ashurbanipal,train,/content/dataset/BM 124853-1.jpg,1,.jpg
+BM 124857,Ashurbanipal,train,/content/dataset/BM 124857-1.jpg,1,.jpg
+BM 124857,Ashurbanipal,train,/content/dataset/BM 124857-2.jpg,2,.jpg
+BM 124857,Ashurbanipal,train,/content/dataset/BM 124857-3.jpg,3,.jpg
+BM 124860,Ashurbanipal,test,/content/dataset/BM 124860-1.jpg,1,.jpg
+BM 124860,Ashurbanipal,test,/content/dataset/BM 124860-2.jpg,2,.jpg
+BM 124860,Ashurbanipal,test,/content/dataset/BM 124860-3.jpg,3,.jpg
+BM 124860,Ashurbanipal,test,/content/dataset/BM 124860-4.jpg,4,.jpg
+BM 124863,Ashurbanipal,train,/content/dataset/BM 124863-1.jpg,1,.jpg
+BM 124863,Ashurbanipal,train,/content/dataset/BM 124863-2.jpg,2,.jpg
+BM 124864,Ashurbanipal,val,/content/dataset/BM 124864-1.jpg,1,.jpg
+BM 124864,Ashurbanipal,val,/content/dataset/BM 124864-2.jpg,2,.jpg
+BM 124864,Ashurbanipal,val,/content/dataset/BM 124864-3.jpg,3,.jpg
+BM 124864,Ashurbanipal,val,/content/dataset/BM 124864-4.jpg,4,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-1.jpg,1,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-2.jpg,2,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-3.jpg,3,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-4.jpg,4,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-5.jpg,5,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-6.jpg,6,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-7.jpg,7,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-8.jpg,8,.jpg
+BM 124866,Ashurbanipal,train,/content/dataset/BM 124866-9.jpg,9,.jpg
+BM 124867,Ashurbanipal,train,/content/dataset/BM 124867-1.jpg,1,.jpg
+BM 124867,Ashurbanipal,train,/content/dataset/BM 124867-2.jpg,2,.jpg
+BM 124868,Ashurbanipal,train,/content/dataset/BM 124868-1.jpg,1,.jpg
+BM 124868,Ashurbanipal,train,/content/dataset/BM 124868-2.jpg,2,.jpg
+BM 124868,Ashurbanipal,train,/content/dataset/BM 124868-3.jpg,3,.jpg
+BM 124868,Ashurbanipal,train,/content/dataset/BM 124868-4.jpg,4,.jpg
+BM 124869,Ashurbanipal,train,/content/dataset/BM 124869-1.jpg,1,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-1.jpg,1,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-2.jpg,2,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-3.jpg,3,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-4.jpg,4,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-5.jpg,5,.jpg
+BM 124871,Ashurbanipal,train,/content/dataset/BM 124871-6.jpg,6,.jpg
+BM 124872,Ashurbanipal,train,/content/dataset/BM 124872-1.jpg,1,.jpg
+BM 124873,Ashurbanipal,val,/content/dataset/BM 124873-1.jpg,1,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-1.jpg,1,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-2.jpg,2,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-3.jpg,3,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-4.jpg,4,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-5.jpg,5,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-6.jpg,6,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-7.jpg,7,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-8.jpg,8,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-9.jpg,9,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-10.jpg,10,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-11.jpg,11,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-12.jpg,12,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-13.jpg,13,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-14.jpg,14,.jpg
+BM 124874,Ashurbanipal,train,/content/dataset/BM 124874-15.jpg,15,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-1.jpg,1,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-2.jpg,2,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-3.jpg,3,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-4.jpg,4,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-5.jpg,5,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-6.jpg,6,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-7.jpg,7,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-8.jpg,8,.jpg
+BM 124875,Ashurbanipal,train,/content/dataset/BM 124875-9.jpg,9,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-1.jpg,1,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-2.jpg,2,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-3.jpg,3,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-4.jpg,4,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-5.jpg,5,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-6.jpg,6,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-8.jpg,8,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-9.jpg,9,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-10.jpg,10,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-11.jpg,11,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-13.jpg,13,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-14.jpg,14,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-15.jpg,15,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-16.jpg,16,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-17.jpg,17,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-18.jpg,18,.jpg
+BM 124876,Ashurbanipal,train,/content/dataset/BM 124876-19.jpg,19,.jpg
+BM 124877,Ashurbanipal,train,/content/dataset/BM 124877-1.jpg,1,.jpg
+BM 124877,Ashurbanipal,train,/content/dataset/BM 124877-2.jpg,2,.jpg
+BM 124877,Ashurbanipal,train,/content/dataset/BM 124877-3.jpg,3,.jpg
+BM 124877,Ashurbanipal,train,/content/dataset/BM 124877-4.jpg,4,.jpg
+BM 124877,Ashurbanipal,train,/content/dataset/BM 124877-5.jpg,5,.jpg
+BM 124878,Ashurbanipal,test,/content/dataset/BM 124878-1.jpg,1,.jpg
+BM 124879,Ashurbanipal,test,/content/dataset/BM 124879-1.jpg,1,.jpg
+BM 124884,Ashurbanipal,val,/content/dataset/BM 124884-1.jpg,1,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-1.jpg,1,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-2.jpg,2,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-3.jpg,3,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-4.jpg,4,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-5.jpg,5,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-6.jpg,6,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-7.jpg,7,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-8.jpg,8,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-9.jpg,9,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-10.jpg,10,.jpg
+BM 124886,Ashurbanipal,test,/content/dataset/BM 124886-11.jpg,11,.jpg
+BM 124887,Ashurbanipal,train,/content/dataset/BM 124887-1.jpg,1,.jpg
+BM 124887,Ashurbanipal,train,/content/dataset/BM 124887-2.jpg,2,.jpg
+BM 124888,Ashurbanipal,train,/content/dataset/BM 124888-1.jpg,1,.jpg
+BM 124889,Ashurbanipal,train,/content/dataset/BM 124889-1.jpg,1,.jpg
+BM 124889,Ashurbanipal,train,/content/dataset/BM 124889-2.jpg,2,.jpg
+BM 124889,Ashurbanipal,train,/content/dataset/BM 124889-3.jpg,3,.jpg
+BM 124890,Ashurbanipal,train,/content/dataset/BM 124890-1.jpg,1,.jpg
+BM 124890,Ashurbanipal,train,/content/dataset/BM 124890-2.jpg,2,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-1.jpg,1,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-2.jpg,2,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-3.jpg,3,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-4.jpg,4,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-5.jpg,5,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-6.jpg,6,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-7.jpg,7,.jpg
+BM 124893,Ashurbanipal,train,/content/dataset/BM 124893-8.jpg,8,.jpg
+BM 124896,Ashurbanipal,train,/content/dataset/BM 124896-1.jpg,1,.jpg
+BM 124897,Ashurbanipal,val,/content/dataset/BM 124897-1.jpg,1,.jpg
+BM 124901,OTHER,test,/content/dataset/BM 124901-1.jpg,1,.jpg
+BM 124901,OTHER,test,/content/dataset/BM 124901-2.jpg,2,.jpg
+BM 124907,OTHER,train,/content/dataset/BM 124907-1.jpg,1,.jpg
+BM 124908,OTHER,train,/content/dataset/BM 124908-1.jpg,1,.jpg
+BM 124908,OTHER,train,/content/dataset/BM 124908-2.jpg,2,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-1.jpg,1,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-2.jpg,2,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-3.jpg,3,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-4.jpg,4,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-5.jpg,5,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-6.jpg,6,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-7.jpg,7,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-8.jpg,8,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-9.jpg,9,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-10.jpg,10,.jpg
+BM 124911,OTHER,test,/content/dataset/BM 124911-11.jpg,11,.jpg
+BM 124918,Ashurbanipal,train,/content/dataset/BM 124918-1.jpg,1,.jpg
+BM 124918,Ashurbanipal,train,/content/dataset/BM 124918-2.jpg,2,.jpg
+BM 124918,Ashurbanipal,train,/content/dataset/BM 124918-3.jpg,3,.jpg
+BM 124919,Ashurbanipal,test,/content/dataset/BM 124919-1.jpg,1,.jpg
+BM 124919,Ashurbanipal,test,/content/dataset/BM 124919-2.jpg,2,.jpg
+BM 124919,Ashurbanipal,test,/content/dataset/BM 124919-3.jpg,3,.jpg
+BM 124919,Ashurbanipal,test,/content/dataset/BM 124919-4.jpg,4,.jpg
+BM 124919,Ashurbanipal,test,/content/dataset/BM 124919-5.jpg,5,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-1.jpg,1,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-2.jpg,2,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-3.jpg,3,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-4.jpg,4,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-5.jpg,5,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-6.jpg,6,.jpg
+BM 124920,Ashurbanipal,train,/content/dataset/BM 124920-7.jpg,7,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-1.jpg,1,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-2.jpg,2,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-3.jpg,3,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-4.jpg,4,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-5.jpg,5,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-6.jpg,6,.jpg
+BM 124922,Ashurbanipal,train,/content/dataset/BM 124922-7.jpg,7,.jpg
+BM 124926,Ashurbanipal,train,/content/dataset/BM 124926-1.jpg,1,.jpg
+BM 124926,Ashurbanipal,train,/content/dataset/BM 124926-2.jpg,2,.jpg
+BM 124926,Ashurbanipal,train,/content/dataset/BM 124926-3.jpg,3,.jpg
+BM 124928,Ashurbanipal,train,/content/dataset/BM 124928-1.jpg,1,.jpg
+BM 124928,Ashurbanipal,train,/content/dataset/BM 124928-2.jpg,2,.jpg
+BM 124931,Ashurbanipal,train,/content/dataset/BM 124931-1.jpg,1,.jpg
+BM 124933,Ashurbanipal,test,/content/dataset/BM 124933-1.jpg,1,.jpg
+BM 124933,Ashurbanipal,test,/content/dataset/BM 124933-2.jpg,2,.jpg
+BM 124936,Ashurbanipal,train,/content/dataset/BM 124936-1.jpg,1,.jpg
+BM 124937,Ashurbanipal,train,/content/dataset/BM 124937-1.jpg,1,.jpg
+BM 124937,Ashurbanipal,train,/content/dataset/BM 124937-2.jpg,2,.jpg
+BM 124937,Ashurbanipal,train,/content/dataset/BM 124937-3.jpg,3,.jpg
+BM 124938,Ashurbanipal,val,/content/dataset/BM 124938-1.jpg,1,.jpg
+BM 124939,Ashurbanipal,train,/content/dataset/BM 124939-1.jpg,1,.jpg
+BM 124939,Ashurbanipal,train,/content/dataset/BM 124939-2.jpg,2,.jpg
+BM 124953,OTHER,train,/content/dataset/BM 124953-1.jpg,1,.jpg
+BM 124955,OTHER,val,/content/dataset/BM 124955-1.jpg,1,.jpg
+BM 124955,OTHER,val,/content/dataset/BM 124955-2.jpg,2,.jpg
+BM 124955,OTHER,val,/content/dataset/BM 124955-3.jpg,3,.jpg
+BM 124955,OTHER,val,/content/dataset/BM 124955-4.jpg,4,.jpg
+BM 132306,OTHER,train,/content/dataset/BM 132306-1.jpg,1,.jpg
+BM 135157,Ashurnasirpal II,test,/content/dataset/BM 135157-1.jpg,1,.jpg
+BM 135741,Ashurnasirpal II,train,/content/dataset/BM 135741-1.jpg,1,.jpg
+BM 135741,Ashurnasirpal II,train,/content/dataset/BM 135741-2.jpg,2,.jpg
+BM 135741,Ashurnasirpal II,train,/content/dataset/BM 135741-3.jpg,3,.jpg
+BM 135741,Ashurnasirpal II,train,/content/dataset/BM 135741-4.jpg,4,.jpg
+BM 136773,OTHER,train,/content/dataset/BM 136773-1.jpg,1,.jpg
+BM 136773,OTHER,train,/content/dataset/BM 136773-2.jpg,2,.jpg
+BM 136773,OTHER,train,/content/dataset/BM 136773-3.jpg,3,.jpg
+BM 136774,Ashurbanipal,train,/content/dataset/BM 136774-1.jpg,1,.jpg
+BM 136774,Ashurbanipal,train,/content/dataset/BM 136774-2.png,2,.png
+BM 136774,Ashurbanipal,train,/content/dataset/BM 136774-3.png,3,.png
+BM 1847,Sargon II,train,/content/dataset/BM 1847-1.jpg,1,.jpg
+BM 1847,Sargon II,train,/content/dataset/BM 1847-2.jpg,2,.jpg
+BM 1847,Sargon II,train,/content/dataset/BM 1847-3.jpg,3,.jpg
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-1.jpg,1,.jpg
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-2.jpg,2,.jpg
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-3.jpg,3,.jpg
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-4.png,4,.png
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-5.png,5,.png
+BM 98061,Ashurnasirpal II,train,/content/dataset/BM 98061-6.png,6,.png
+BM 98064,Ashurnasirpal II,test,/content/dataset/BM 98064-1.jpg,1,.jpg
+BM 98064,Ashurnasirpal II,test,/content/dataset/BM 98064-2.png,2,.png
+BM 98064,Ashurnasirpal II,test,/content/dataset/BM 98064-3.png,3,.png
+BOS 35.731,Ashurnasirpal II,train,/content/dataset/BOS 35.731-1.jpg,1,.jpg
+BOS 35.731,Ashurnasirpal II,train,/content/dataset/BOS 35.731-2.jpg,2,.jpg
+BRK 55.149,Ashurnasirpal II,train,/content/dataset/BRK 55.149-1.jpg,1,.jpg
+BRK 55.149,Ashurnasirpal II,train,/content/dataset/BRK 55.149-2.jpg,2,.jpg
+BRK 55.150,Ashurnasirpal II,val,/content/dataset/BRK 55.150-1.jpg,1,.jpg
+BRK 55.152,Ashurnasirpal II,train,/content/dataset/BRK 55.152-1.jpg,1,.jpg
+BRK 55.153,Ashurnasirpal II,train,/content/dataset/BRK 55.153-1.jpg,1,.jpg
+BRK 55.155,Ashurnasirpal II,train,/content/dataset/BRK 55.155-1.jpg,1,.jpg
+BRK 55.155,Ashurnasirpal II,train,/content/dataset/BRK 55.155-2.jpg,2,.jpg
+HM 3938,Ashurnasirpal II,train,/content/dataset/HM 3938-1.jpg,1,.jpg
+HM 3939,Ashurnasirpal II,val,/content/dataset/HM 3939-1.jpg,1,.jpg
+HM 3943,OTHER,train,/content/dataset/HM 3943-1.jpg,1,.jpg
+HM 3943,OTHER,train,/content/dataset/HM 3943-2.jpg,2,.jpg
+MET 17.190.2077,Ashurnasirpal II,train,/content/dataset/MET 17.190.2077-1.jpg,1,.jpg
+MET 17.190.2078,Ashurnasirpal II,train,/content/dataset/MET 17.190.2078-1.jpg,1,.jpg
+MET 17.190.2079,Ashurnasirpal II,train,/content/dataset/MET 17.190.2079-1.jpg,1,.jpg
+MET 17.190.2080,Ashurnasirpal II,train,/content/dataset/MET 17.190.2080-1.jpg,1,.jpg
+MET 17.190.2081,Ashurnasirpal II,train,/content/dataset/MET 17.190.2081-1.jpg,1,.jpg
+MET 17.190.2082,Ashurnasirpal II,train,/content/dataset/MET 17.190.2082-1.jpg,1,.jpg
+MET 31.72.1,Ashurnasirpal II,train,/content/dataset/MET 31.72.1-1.jpg,1,.jpg
+MET 31.72.2,Ashurnasirpal II,val,/content/dataset/MET 31.72.2-1.jpg,1,.jpg
+MET 31.72.3,Ashurnasirpal II,train,/content/dataset/MET 31.72.3-1.jpg,1,.jpg
+MET 32.143.11,Ashurnasirpal II,val,/content/dataset/MET 32.143.11-1.jpg,1,.jpg
+MET 32.143.12,Ashurnasirpal II,train,/content/dataset/MET 32.143.12-1.jpg,1,.jpg
+MET 32.143.16,OTHER,train,/content/dataset/MET 32.143.16-1.jpg,1,.jpg
+MET 32.143.3,Ashurnasirpal II,train,/content/dataset/MET 32.143.3-1.jpg,1,.jpg
+MET 32.143.4,Ashurnasirpal II,train,/content/dataset/MET 32.143.4-1.jpg,1,.jpg
+MET 32.143.4,Ashurnasirpal II,train,/content/dataset/MET 32.143.4-2.jpg,2,.jpg
+MET 32.143.6,Ashurnasirpal II,train,/content/dataset/MET 32.143.6-1.jpg,1,.jpg
+MET 32.143.6,Ashurnasirpal II,train,/content/dataset/MET 32.143.6-2.jpg,2,.jpg
+MET 32.143.7,Ashurnasirpal II,train,/content/dataset/MET 32.143.7-1.jpg,1,.jpg
+MET 32.143.8,Ashurnasirpal II,test,/content/dataset/MET 32.143.8-1.jpg,1,.jpg
+MET 32.143.9,Ashurnasirpal II,train,/content/dataset/MET 32.143.9-1.jpg,1,.jpg
+MET 33.16.1,Sargon II,val,/content/dataset/MET 33.16.1-1.jpg,1,.jpg
+MET 33.16.2,Sargon II,test,/content/dataset/MET 33.16.2-1.jpg,1,.jpg
+MET 84.11,Ashurnasirpal II,train,/content/dataset/MET 84.11-1.jpg,1,.jpg

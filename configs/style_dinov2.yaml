@@ -1,0 +1,33 @@
+data:
+  csv_path: data/splits/image_level_dataset.csv
+  image_root: /mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset
+  filename_sep: "-"
+
+splits:
+  train: train
+  val: val
+  test: test
+
+model:
+  model_name: dinov2_vits14
+  emb_dim: 256
+
+train:
+  batch_size: 16
+  num_workers: 0
+  num_epochs: 5
+  lr: 0.001
+  weight_decay: 0.0001
+
+outputs:
+  checkpoint_path: outputs/checkpoints/dinov2_probe.pt
+  history_path: outputs/checkpoints/dinov2_probe.history.csv
+  eval_metrics_path: outputs/eval/test_metrics.json
+  eval_retrieval_path: outputs/eval/test_retrieval.csv
+  umap_html_path: outputs/umap/test_umap.html
+  umap_csv_path: outputs/umap/test_umap.csv
+  retrieval_metrics_path: outputs/retrieval/test_metrics.json
+  retrieval_top1_path: outputs/retrieval/test_top1.csv
+  retrieval_topk_path: outputs/retrieval/test_topk.csv
+  retrieval_failures_path: outputs/retrieval/test_failures.csv
+  
