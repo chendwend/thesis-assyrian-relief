@@ -12,6 +12,18 @@ def collect_predictions_with_logits(
     loader: torch.utils.data.DataLoader,
     device: torch.device,
 ) -> list[dict]:
+    """Collect the predictions and logits for the relief level.
+
+    The predictions and logits are collected from the model for each batch in the loader and returned as a list of dictionaries.
+
+    Args:
+        model: The model to collect the predictions and logits from.
+        loader: The data loader to collect the predictions and logits from.
+        device: The device to collect the predictions and logits from.
+
+    Returns:
+        A list of dictionaries containing the predictions and logits for the relief level.
+    """
     model.eval()
 
     rows: list[dict] = []
@@ -41,6 +53,16 @@ def collect_predictions_with_logits(
 
 
 def aggregate_logits_by_relief(pred_rows: list[dict]) -> pd.DataFrame:
+    """Aggregate the predictions and logits by relief.
+
+    The predictions and logits are aggregated by relief id using the mean of the logits.
+
+    Args:
+        pred_rows: A list of dictionaries containing the predictions and logits for the relief level.
+
+    Returns:
+        A pandas DataFrame containing the aggregated predictions and logits by relief id.
+    """
     pred_df = pd.DataFrame(pred_rows)
 
     grouped_rows = []

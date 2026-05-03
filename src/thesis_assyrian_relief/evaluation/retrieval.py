@@ -81,6 +81,15 @@ def aggregate_relief_embeddings(emb_df: pd.DataFrame) -> pd.DataFrame:
 def build_class_centroids(relief_emb_df: pd.DataFrame) -> dict[str, np.ndarray]:
     """
     Build one centroid per authority label from relief-level embeddings.
+    The centroids are calculated as the mean of the embeddings for each authority label.
+    The centroids are L2-normalized.
+
+    Args:
+        relief_emb_df: A pandas DataFrame containing the relief-level embeddings.
+        
+
+    Returns:
+        A dictionary containing the centroids for each authority label as L2-normalized vectors.
     """
     centroids: dict[str, np.ndarray] = {}
 

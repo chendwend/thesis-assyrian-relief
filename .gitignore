@@ -34,3 +34,6 @@ images/
 
 # Colab / temporary
 content/
+
+# pytest
+.pytest_cache/

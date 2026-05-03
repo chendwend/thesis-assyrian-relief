@@ -102,6 +102,21 @@ def build_class_weights(
     dataset: ReliefStyleDataset,
     class_to_idx: dict[str, int],
 ) -> torch.Tensor:
+    """Build the class weights according to the class distribution in the dataset.
+
+    The class weights are calculated as the inverse of the class frequency.
+
+    The formula for the class weights is:
+    weights = sum(counts_by_idx) / (len(counts_by_idx) * counts_by_idx)
+
+    Args:
+        dataset: The dataset to build the class weights for.
+        class_to_idx: A dictionary mapping class names to labels.
+
+    Returns:
+        A tensor of class weights.
+    """
+
     counts = dataset.df["Authority"].value_counts()
 
     counts_by_idx = np.zeros(len(class_to_idx), dtype=np.float32)

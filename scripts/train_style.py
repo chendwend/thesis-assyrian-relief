@@ -115,7 +115,8 @@ def main() -> None:
 
     class_to_idx = build_class_to_idx(cfg["csv_path"])
     print("class_to_idx:", class_to_idx)
-
+    
+    print("Building train loader...")
     train_dataset, train_loader = build_dataloader(
         csv_path=cfg["csv_path"],
         split=cfg["train_split"],
@@ -172,6 +173,7 @@ def main() -> None:
         patience=2,
     )
 
+    print("Training model...")
     history = fit(
         model=model,
         train_loader=train_loader,

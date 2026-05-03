@@ -33,7 +33,7 @@ class ReliefStyleDataset(Dataset):
         suffix = ".jpg"
         filename_sep = "-"
 
-        -> "BM 124773_2.jpg"
+        -> "BM 124773-2.jpg"
     """
 
     REQUIRED_COLUMNS = {"Relief_ID", "Authority", "split"}
@@ -48,6 +48,18 @@ class ReliefStyleDataset(Dataset):
         filename_sep: str = "-",
         check_paths: bool = True,
     ) -> None:
+        """Initialize the dataset.
+        
+        Args:
+            csv_path: Path to the CSV file.
+            split: The split to use.
+            class_to_idx: A dictionary mapping class names to indices.
+            transform: A transform to apply to the images.
+            image_root: The root directory containing the images.
+            filename_sep: The separator between the Relief_ID and view_index.
+            check_paths: Whether to check if the image paths are valid.
+        """
+
         self.csv_path = Path(csv_path)
         self.split = split
         self.transform = transform
@@ -56,22 +68,27 @@ class ReliefStyleDataset(Dataset):
 
         self.df = pd.read_csv(self.csv_path).copy()
 
+        
+        # Check if the required columns are present
         missing_cols = self.REQUIRED_COLUMNS - set(self.df.columns)
         if missing_cols:
             raise ValueError(
                 f"Missing required columns in {self.csv_path}: {sorted(missing_cols)}"
             )
 
+        # Filter the dataframe for the given split
         self.df = self.df[self.df["split"] == split].copy().reset_index(drop=True)
         if self.df.empty:
             raise ValueError(f"No rows found for split='{split}' in {self.csv_path}")
 
+        # Build the class to index mapping
         if class_to_idx is None:
             classes = sorted(self.df["Authority"].dropna().unique())
             self.class_to_idx = {cls_name: idx for idx, cls_name in enumerate(classes)}
         else:
             self.class_to_idx = dict(class_to_idx)
 
+        # Check if there are any unknown classes
         unknown_classes = set(self.df["Authority"].unique()) - set(self.class_to_idx.keys())
         if unknown_classes:
             raise ValueError(
@@ -79,8 +96,10 @@ class ReliefStyleDataset(Dataset):
                 f"{sorted(unknown_classes)}"
             )
 
+        # Map the classes to labels according to the class_to_idx mapping
         self.df["label"] = self.df["Authority"].map(self.class_to_idx)
 
+        # Check if there are any missing labels
         if self.df["label"].isna().any():
             bad_rows = self.df[self.df["label"].isna()][["Relief_ID", "Authority"]].head(10)
             raise ValueError(
@@ -88,8 +107,10 @@ class ReliefStyleDataset(Dataset):
                 f"{bad_rows.to_string(index=False)}"
             )
 
+        # Convert the labels to integers
         self.df["label"] = self.df["label"].astype(int)
 
+        # Check if the image paths are valid
         if check_paths:
             missing_paths = []
             for idx in range(len(self.df)):
@@ -110,6 +131,20 @@ class ReliefStyleDataset(Dataset):
                 )
 
     def _normalize_suffix(self, suffix: str) -> str:
+        """Normalize the suffix.
+
+        The suffix is normalized by:
+        - Stripping whitespace
+        - Adding a leading dot if not present
+        - Returning the normalized suffix
+
+        Args:
+            suffix: The suffix to normalize.
+
+        Returns:
+            The normalized suffix.
+        """
+
         suffix = str(suffix).strip()
         if not suffix:
             raise ValueError("Empty suffix encountered.")
@@ -117,7 +152,19 @@ class ReliefStyleDataset(Dataset):
             suffix = f".{suffix}"
         return suffix
 
+    # Build the filename
     def _build_filename(self, row: pd.Series) -> str:
+        """Build the filename from the row.
+
+        The filename is built from the Relief_ID, view_index, and suffix according to the filename_sep.
+
+        Args:
+            row: The dataframe row to build the filename from.
+
+        Returns:
+            The built filename as a string.
+        """
+
         if "view_index" not in row.index:
             raise ValueError(
                 "CSV must contain 'view_index' when image_root is used to reconstruct paths."
@@ -134,6 +181,18 @@ class ReliefStyleDataset(Dataset):
         return f"{relief_id}{self.filename_sep}{view_index}{suffix}"
 
     def _resolve_image_path(self, row: pd.Series) -> Path:
+        """Resolve the image path from the row.
+
+        The image path is resolved from the dataframe row using the image_root and the filename.
+        If the image_root is not provided, the image path is resolved from the image_path column.
+
+        Args:
+            row: The dataframe row to resolve the image path from.
+
+        Returns:
+            The resolved image path as a Path object.
+        """
+
         if self.image_root is not None:
             filename = self._build_filename(row)
             return self.image_root / filename
@@ -145,6 +204,7 @@ class ReliefStyleDataset(Dataset):
 
         return Path(row["image_path"])
 
+    # Get the length of the dataset
     def __len__(self) -> int:
         return len(self.df)
 
