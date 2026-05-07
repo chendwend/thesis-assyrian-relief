@@ -17,6 +17,10 @@ from thesis_assyrian_relief.evaluation.retrieval import (
 from thesis_assyrian_relief.models.dinov2_probe import DinoStyleProbe
 from thesis_assyrian_relief.training.engine import load_checkpoint
 
+import warnings
+warnings.filterwarnings("ignore", message=".*xFormers is not available.*")
+warnings.filterwarnings("ignore", message=".*xFormers is available.*")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Run retrieval analysis for relief style embeddings.")

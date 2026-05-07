@@ -1,5 +1,6 @@
 data:
   local:
+    dataset_xlsx: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/main.xlsx"
     dataset_root: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset"
     image_level_csv: "data/splits/image_level_dataset.csv"
     output_html: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/outputs/umap_plot.html"

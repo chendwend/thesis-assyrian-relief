@@ -17,6 +17,10 @@ from thesis_assyrian_relief.utils.plotting import (
     plot_umap_plotly,
 )
 
+import warnings
+warnings.filterwarnings("ignore", message=".*xFormers is not available.*")
+warnings.filterwarnings("ignore", message=".*xFormers is available.*")
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build UMAP visualization for relief style embeddings.")
