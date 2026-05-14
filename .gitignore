@@ -34,6 +34,8 @@ images/
 
 # Colab / temporary
 content/
+configs/style_dinov2_runtime.yaml
+configs/style_dinov2_colab.yaml
 
 # pytest
 .pytest_cache/

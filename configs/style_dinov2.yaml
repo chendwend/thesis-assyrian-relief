@@ -1,6 +1,6 @@
 data:
-  csv_path: data/splits/image_level_dataset.csv
-  image_root: /mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset
+  csv_path: data/splits/image_level_dataset_v2.csv
+  image_root: /mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset_v2
   filename_sep: "-"
 
 splits:
@@ -14,20 +14,48 @@ model:
 
 train:
   batch_size: 16
-  num_workers: 0
-  num_epochs: 5
+  num_workers: 2
+  num_epochs: 50
   lr: 0.001
   weight_decay: 0.0001
 
-outputs:
-  checkpoint_path: outputs/checkpoints/dinov2_probe.pt
-  history_path: outputs/checkpoints/dinov2_probe.history.csv
-  eval_metrics_path: outputs/eval/test_metrics.json
-  eval_retrieval_path: outputs/eval/test_retrieval.csv
-  umap_html_path: outputs/umap/test_umap.html
-  umap_csv_path: outputs/umap/test_umap.csv
-  retrieval_metrics_path: outputs/retrieval/test_metrics.json
-  retrieval_top1_path: outputs/retrieval/test_top1.csv
-  retrieval_topk_path: outputs/retrieval/test_topk.csv
-  retrieval_failures_path: outputs/retrieval/test_failures.csv
+early_stopping:
+  enabled: true
+  patience: 6
+  monitor: val_macro_f1
+  mode: max
+  min_delta: 0.001
+
+
+optimizer:
+  name: adamw
+  lr: 0.001
+  weight_decay: 0.0001
+
+loss:
+  name: cross_entropy
+  class_weighting: balanced
+
+# loss:
+#   name: ce_supcon
+#   class_weighting: balanced
+#   ce_weight: 1.0
+#   supcon_weight: 0.1
+#   supcon_temperature: 0.07
+
+scheduler:
+  enabled: true
+  name: reduce_on_plateau
+  monitor: val_macro_f1
+  mode: max
+  factor: 0.5
+  patience: 2
+
+evaluation:
+  relief_aggregation: mean_logits
+  loss_class_weighting: none
+
+
+
+  
   

@@ -8,15 +8,15 @@ import umap
 
 
 def build_umap_dataframe(
-    relief_emb_dfs: list[pd.DataFrame],
-    split_names: list[str],
+    fit_relief_emb_df: pd.DataFrame,
+    project_relief_emb_dfs: list[tuple[pd.DataFrame, str]],
     n_neighbors: int = 10,
     min_dist: float = 0.2,
     metric: str = "cosine",
     random_state: int = 42,
 ) -> pd.DataFrame:
     """
-    Combine one or more relief-level embedding dataframes and compute a 2D UMAP projection.
+    Fit UMAP on one relief-level embedding set, then project any number of splits into the same space.
 
     Each relief dataframe is expected to contain:
         - relief_id
@@ -26,44 +26,53 @@ def build_umap_dataframe(
 
     Parameters
     ----------
-    relief_emb_dfs:
-        List of relief-level embedding dataframes.
-    split_names:
-        Same length as relief_emb_dfs. Example: ["train", "test"].
+    fit_relief_emb_df:
+        Embeddings used only to fit the UMAP model (not necessarily included in the output).
+    project_relief_emb_dfs:
+        List of (relief_emb_df, split_name) pairs to transform with the fitted model and concatenate.
     """
-    if len(relief_emb_dfs) != len(split_names):
-        raise ValueError("relief_emb_dfs and split_names must have the same length.")
+    required_emb_cols = {"relief_id", "authority", "embedding"}
+    if fit_relief_emb_df.empty:
+        raise ValueError("fit_relief_emb_df is empty; cannot fit UMAP.")
 
-    frames = []
-    for df, split_name in zip(relief_emb_dfs, split_names):
-        cur = df.copy()
-        cur["split"] = split_name
-        frames.append(cur)
+    missing_fit = required_emb_cols - set(fit_relief_emb_df.columns)
+    if missing_fit:
+        raise ValueError(f"fit_relief_emb_df missing columns: {sorted(missing_fit)}")
 
-    viz_df = pd.concat(frames, ignore_index=True)
+    if not project_relief_emb_dfs:
+        raise ValueError("project_relief_emb_dfs is empty; nothing to project or plot.")
 
-    if viz_df.empty:
-        raise ValueError("No embeddings available for UMAP visualization.")
-
-    required_cols = {"relief_id", "authority", "embedding", "split"}
-    missing = required_cols - set(viz_df.columns)
-    if missing:
-        raise ValueError(f"Missing required columns for UMAP dataframe: {sorted(missing)}")
-
-    X = np.stack(viz_df["embedding"].to_list(), axis=0)
+    X_fit = np.stack(fit_relief_emb_df["embedding"].to_list(), axis=0)
+    n_fit = X_fit.shape[0]
+    n_neighbors_eff = min(n_neighbors, max(2, n_fit - 1))
 
     reducer = umap.UMAP(
-        n_neighbors=n_neighbors,
+        n_neighbors=n_neighbors_eff,
         min_dist=min_dist,
         metric=metric,
         random_state=random_state,
     )
-    X_2d = reducer.fit_transform(X)
+    reducer.fit(X_fit)
 
-    viz_df = viz_df.copy()
-    viz_df["umap_x"] = X_2d[:, 0]
-    viz_df["umap_y"] = X_2d[:, 1]
+    frames: list[pd.DataFrame] = []
+    for df, split_name in project_relief_emb_dfs:
+        if df.empty:
+            continue
+        missing = required_emb_cols - set(df.columns)
+        if missing:
+            raise ValueError(f"Relief dataframe for split {split_name!r} missing columns: {sorted(missing)}")
+        X = np.stack(df["embedding"].to_list(), axis=0)
+        X_2d = reducer.transform(X)
+        cur = df.copy()
+        cur["split"] = split_name
+        cur["umap_x"] = X_2d[:, 0]
+        cur["umap_y"] = X_2d[:, 1]
+        frames.append(cur)
 
+    if not frames:
+        raise ValueError("All projected split dataframes were empty.")
+
+    viz_df = pd.concat(frames, ignore_index=True)
     return viz_df
 
 
@@ -113,6 +122,17 @@ def plot_umap_matplotlib(
     return fig, ax
 
 
+SPLIT_MARKER_SYMBOL: dict[str, str] = {
+    "train": "circle",
+    "val": "square",
+    "test": "triangle-up",
+}
+
+
+def _marker_symbol_for_split(split: str) -> str:
+    return SPLIT_MARKER_SYMBOL.get(split, "circle")
+
+
 def plot_umap_plotly(
     viz_df: pd.DataFrame,
     title: str = "Interactive UMAP of Relief-Level Embeddings",
@@ -122,6 +142,7 @@ def plot_umap_plotly(
     Interactive Plotly UMAP plot.
 
     - Color encodes authority
+    - Marker shape encodes data split (train=circle, val=square, test=triangle-up; other splits default to circle)
     - Highlighted reliefs are overlaid as a separate trace with larger markers
     """
     required_cols = {"authority", "relief_id", "split", "umap_x", "umap_y"}
@@ -137,12 +158,18 @@ def plot_umap_plotly(
     if "n_views" in plot_df.columns:
         hover_cols.append("n_views")
 
-    # Base layer: all points, legend only by authority
+    base_df = plot_df[~plot_df["is_highlighted"]]
+    present_splits = list(dict.fromkeys(base_df["split"].astype(str).tolist()))
+    symbol_map = {s: _marker_symbol_for_split(s) for s in present_splits}
+
     fig = px.scatter(
-        plot_df[~plot_df["is_highlighted"]],
+        base_df,
         x="umap_x",
         y="umap_y",
         color="authority",
+        color_discrete_map={"Ashurbanipal": "red", "Ashurnarsipal II": "blue", "Sargon II": "green", "Sennacherib": "Purple", "Tiglath-Pileser III": "Yellow"},
+        symbol="split",
+        symbol_map=symbol_map,
         hover_data=hover_cols,
         title=title,
         width=1000,

@@ -61,8 +61,11 @@ train_relief_emb_df = extract_embeddings(model, train_loader, device)
 test_relief_emb_df = extract_embeddings(model, test_loader, device)
 
 viz_df = build_umap_dataframe(
-    relief_emb_dfs=[train_relief_emb_df, test_relief_emb_df],
-    split_names=["train", "test"],
+    fit_relief_emb_df=train_relief_emb_df,
+    project_relief_emb_dfs=[
+        (train_relief_emb_df, "train"),
+        (test_relief_emb_df, "test"),
+    ],
 )
 
 print(viz_df.head())

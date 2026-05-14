@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import argparse
 
+import pandas as pd
 import torch
 from thesis_assyrian_relief.utils.data import build_dataloader
 
@@ -33,6 +34,20 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument("--train-split", type=str, default=None)
     parser.add_argument("--eval-split", type=str, default=None)
+
+    parser.add_argument(
+        "--umap-fit-split",
+        type=str,
+        default=None,
+        help="Dataset split name used to fit UMAP (default: train split from config, see --train-split)",
+    )
+    parser.add_argument(
+        "--umap-plot-splits",
+        type=str,
+        nargs="*",
+        default=None,
+        help="Splits to project with the fitted UMAP and include in the plot (default: val). Example: val test",
+    )
 
     parser.add_argument("--checkpoint-path", type=str, default=None)
     parser.add_argument("--batch-size", type=int, default=None)
@@ -99,6 +114,22 @@ def resolve_config(args: argparse.Namespace) -> dict:
         ),
     }
 
+    umap_cfg = cfg.get("umap", {}) or {}
+    if args.umap_fit_split is not None:
+        resolved["umap_fit_split"] = args.umap_fit_split
+    elif isinstance(umap_cfg.get("fit_split"), str):
+        resolved["umap_fit_split"] = umap_cfg["fit_split"]
+    else:
+        resolved["umap_fit_split"] = resolved["train_split"]
+
+    if args.umap_plot_splits is not None:
+        resolved["umap_plot_splits"] = list(args.umap_plot_splits)
+    elif umap_cfg.get("plot_splits") is not None:
+        ps = umap_cfg["plot_splits"]
+        resolved["umap_plot_splits"] = ps if isinstance(ps, list) else [ps]
+    else:
+        resolved["umap_plot_splits"] = ["val"]
+
     return resolved
 
 
@@ -132,50 +163,54 @@ def main() -> None:
 
     load_checkpoint(model, cfg["checkpoint_path"], device=device)
 
-    _, train_loader = build_dataloader(
-        csv_path=cfg["csv_path"],
-        split=cfg["train_split"],
-        class_to_idx=class_to_idx,
-        image_root=cfg["image_root"],
-        filename_sep=cfg["filename_sep"],
-        batch_size=cfg["batch_size"],
-        num_workers=cfg["num_workers"],
-        shuffle=False,
-        train=False,
-        check_paths=True,
-    )
+    fit_split = cfg["umap_fit_split"]
+    plot_splits_raw: list[str] = cfg["umap_plot_splits"]
+    seen_plot: set[str] = set()
+    plot_splits: list[str] = []
+    for s in plot_splits_raw:
+        if s not in seen_plot:
+            seen_plot.add(s)
+            plot_splits.append(s)
 
-    _, eval_loader = build_dataloader(
-        csv_path=cfg["csv_path"],
-        split=cfg["eval_split"],
-        class_to_idx=class_to_idx,
-        image_root=cfg["image_root"],
-        filename_sep=cfg["filename_sep"],
-        batch_size=cfg["batch_size"],
-        num_workers=cfg["num_workers"],
-        shuffle=False,
-        train=False,
-        check_paths=True,
-    )
+    if not plot_splits:
+        raise ValueError(
+            "No splits to plot; set --umap-plot-splits or config umap.plot_splits (non-empty)."
+        )
 
-    print("Extracting train embeddings...")
-    train_img_emb_df = extract_embeddings(model, train_loader, device)
-    print("Extracting eval embeddings...")
-    eval_img_emb_df = extract_embeddings(model, eval_loader, device)
+    required_splits = {fit_split} | set(plot_splits)
 
-    train_relief_emb_df = aggregate_relief_embeddings(train_img_emb_df)
-    eval_relief_emb_df = aggregate_relief_embeddings(eval_img_emb_df)
+    relief_emb_by_split: dict[str, pd.DataFrame] = {}
+    for split in sorted(required_splits):
+        print(f"Extracting embeddings for split={split!r}...")
+        _, loader = build_dataloader(
+            csv_path=cfg["csv_path"],
+            split=split,
+            class_to_idx=class_to_idx,
+            image_root=cfg["image_root"],
+            filename_sep=cfg["filename_sep"],
+            batch_size=cfg["batch_size"],
+            num_workers=cfg["num_workers"],
+            shuffle=False,
+            train=False,
+            check_paths=True,
+        )
+        img_emb_df = extract_embeddings(model, loader, device)
+        relief_emb_by_split[split] = aggregate_relief_embeddings(img_emb_df)
+
+    fit_relief_emb_df = relief_emb_by_split[fit_split]
+    project_pairs = [(relief_emb_by_split[s], s) for s in plot_splits]
 
     viz_df = build_umap_dataframe(
-        relief_emb_dfs=[train_relief_emb_df, eval_relief_emb_df],
-        split_names=[cfg["train_split"], cfg["eval_split"]],
+        fit_relief_emb_df=fit_relief_emb_df,
+        project_relief_emb_dfs=project_pairs,
     )
 
     html_out = ensure_parent_dir(cfg["html_out"])
 
+    plot_desc = ", ".join(plot_splits)
     fig = plot_umap_plotly(
         viz_df,
-        title=f"Interactive UMAP of Relief-Level Embeddings ({cfg["train_split"]} + {cfg["eval_split"]})",
+        title=f"Interactive UMAP (fit={fit_split!r}, plotted={plot_desc})",
         highlight_relief_ids=set(cfg["highlight_relief_ids"]),
     )
     fig.write_html(str(html_out), include_plotlyjs="cdn")

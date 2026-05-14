@@ -1,11 +1,12 @@
 data:
   local:
     dataset_xlsx: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/main.xlsx"
-    dataset_root: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset"
-    image_level_csv: "data/splits/image_level_dataset.csv"
+    dataset_root: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset_v2"
+    image_level_csv: "data/splits/image_level_dataset_v2.csv"
     output_html: "/mnt/c/Users/chend/Desktop/My_Files/Thesis/outputs/umap_plot.html"
 
   remote:
+    dataset_xlsx: "~/gdrive/Graduate_Studies/Thesis/Dataset/main.xlsx"
     dataset_root: "/content/dataset"
     image_level_csv: "/content/drive/MyDrive/Graduate_Studies/Thesis/Dataset/image_level_dataset.csv"
 

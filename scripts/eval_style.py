@@ -6,10 +6,17 @@ import json
 import torch
 import torch.nn as nn
 from sklearn.metrics import accuracy_score, f1_score
-from thesis_assyrian_relief.utils.data import build_dataloader
+from thesis_assyrian_relief.utils.data import (
+    build_dataloader,
+    build_class_weights,
+)
 
 from thesis_assyrian_relief.utils.config import load_yaml_config, ensure_parent_dir
-from thesis_assyrian_relief.evaluation.relief_level import evaluate_relief_level
+from thesis_assyrian_relief.evaluation.confusion_plot import save_confusion_matrix_plot
+from thesis_assyrian_relief.evaluation.relief_level import (
+    evaluate_relief_level,
+    evaluate_relief_level_all_methods,
+)
 from thesis_assyrian_relief.evaluation.retrieval import (
     aggregate_relief_embeddings,
     build_class_centroids,
@@ -43,6 +50,26 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument("--metrics-out", type=str, default=None, help="Optional JSON path for metrics output")
     parser.add_argument("--retrieval-out", type=str, default=None, help="Optional CSV path for retrieval results")
+    parser.add_argument(
+    "--relief-aggregation",
+    type=str,
+    default=None,
+    choices=["mean_logits", "mean_probs", "mean_log_probs", "majority_vote"],
+    help="Aggregation method used for selected relief-level confusion matrix.",
+)
+
+    parser.add_argument(
+        "--relief-preds-out",
+        type=str,
+        default=None,
+        help="Optional CSV path for relief-level predictions from all aggregation methods.",
+    )
+    parser.add_argument(
+        "--confusion-matrix-out",
+        type=str,
+        default=None,
+        help="Optional PNG path for relief-level confusion matrix",
+    )
 
     return parser.parse_args()
 
@@ -86,12 +113,54 @@ def resolve_config(args: argparse.Namespace) -> dict:
         "batch_size": pick(args.batch_size, "train", "batch_size", default=16),
         "num_workers": pick(args.num_workers, "train", "num_workers", default=2),
 
+
+        "eval_loss_class_weighting": pick(
+            None,
+            "evaluation",
+            "loss_class_weighting",
+            required=False,
+            default="none",
+        ),
+
         "metrics_out": pick(args.metrics_out, "outputs", "eval_metrics_path", required=False),
         "retrieval_out": pick(args.retrieval_out, "outputs", "eval_retrieval_path", required=False),
+        "confusion_matrix_path": pick(
+            args.confusion_matrix_out,
+            "outputs",
+            "confusion_matrix_path",
+            required=False,
+            default=None,
+        ),
+        "relief_aggregation": pick(args.relief_aggregation,"evaluation","relief_aggregation",
+        required=False,
+        default="mean_logits",
+        ),
+
+        "relief_preds_out": pick(args.relief_preds_out,"outputs","relief_predictions_path",required=False,),
     }
 
     return resolved
 
+def build_eval_loss(
+    loss_class_weighting: str,
+    train_dataset,
+    class_to_idx: dict[str, int],
+    device: torch.device,
+) -> nn.Module:
+    if loss_class_weighting == "none":
+        print("eval loss class weighting: none")
+        return nn.CrossEntropyLoss()
+
+    if loss_class_weighting == "same_as_training":
+        class_weights = build_class_weights(train_dataset, class_to_idx).to(device)
+        print("eval loss class weighting: same_as_training")
+        print("eval class_weights:", class_weights)
+        return nn.CrossEntropyLoss(weight=class_weights)
+
+    raise ValueError(
+        f"Unsupported evaluation.loss_class_weighting={loss_class_weighting!r}. "
+        "Supported: 'none', 'same_as_training'."
+    )
 
 def main() -> None:
     args = parse_args()
@@ -101,6 +170,7 @@ def main() -> None:
     for k, v in cfg.items():
         print(f"  {k}: {v}")
 
+    # 0. load checkpoint
     checkpoint = torch.load(cfg["checkpoint_path"], map_location="cpu")
 
     if "class_to_idx" not in checkpoint:
@@ -153,7 +223,12 @@ def main() -> None:
         check_paths=True,
     )
 
-    criterion = nn.CrossEntropyLoss()
+    criterion = build_eval_loss(
+        loss_class_weighting=cfg["eval_loss_class_weighting"],
+        train_dataset=train_ds,
+        class_to_idx=class_to_idx,
+        device=device,
+    )
 
     # 1. image-level evaluation
     image_metrics = evaluate(
@@ -164,11 +239,37 @@ def main() -> None:
     )
 
     # 2. relief-level evaluation
-    relief_metrics, relief_eval_df = evaluate_relief_level(
-        model=model,
-        loader=eval_loader,
-        device=device,
+    relief_metrics_by_method, relief_eval_all_df = evaluate_relief_level_all_methods(
+    model=model,
+    loader=eval_loader,
+    device=device,
     )
+
+    selected_aggregation = cfg["relief_aggregation"]
+
+    if selected_aggregation not in relief_metrics_by_method:
+        raise ValueError(
+            f"Selected aggregation method '{selected_aggregation}' was not evaluated. "
+            f"Available methods: {list(relief_metrics_by_method.keys())}"
+        )
+
+    relief_metrics = relief_metrics_by_method[selected_aggregation]
+
+    relief_eval_df = relief_eval_all_df[
+        relief_eval_all_df["aggregation_method"] == selected_aggregation
+    ].copy()
+
+    if cfg["confusion_matrix_path"] is not None:
+        class_names = [name for name, _ in sorted(class_to_idx.items(), key=lambda kv: kv[1])]
+        cm_path = ensure_parent_dir(cfg["confusion_matrix_path"])
+        save_confusion_matrix_plot(
+            relief_eval_df["true_label"].to_numpy(),
+            relief_eval_df["pred_label"].to_numpy(),
+            cm_path,
+            class_names=class_names,
+            title=f"Relief-level confusion matrix ({cfg['eval_split']})",
+        )
+        print(f"Saved confusion matrix to: {cm_path}")
 
     # 3. embedding extraction
     train_img_emb_df = extract_embeddings(model, train_loader, device)
@@ -194,11 +295,15 @@ def main() -> None:
     )
 
     all_metrics = {
-        "image_level": image_metrics,
-        "relief_level": relief_metrics,
-        "centroid": centroid_metrics,
-        "retrieval": retrieval_metrics,
-    }
+    "image_level": image_metrics,
+    "relief_level": {
+        "selected_aggregation": selected_aggregation,
+        "selected_metrics": relief_metrics,
+        "all_aggregation_methods": relief_metrics_by_method,
+    },
+    "centroid": centroid_metrics,
+    "retrieval": retrieval_metrics,
+}
 
     print("\n=== Evaluation Summary ===")
     print(json.dumps(all_metrics, indent=2))
@@ -213,6 +318,11 @@ def main() -> None:
         retrieval_path = ensure_parent_dir(cfg["retrieval_out"])
         retrieval_results_df.to_csv(retrieval_path, index=False)
         print(f"Saved retrieval CSV to: {retrieval_path}")
+
+    if cfg["relief_preds_out"] is not None:
+        relief_preds_path = ensure_parent_dir(cfg["relief_preds_out"])
+        relief_eval_all_df.to_csv(relief_preds_path, index=False)
+        print(f"Saved relief-level predictions CSV to: {relief_preds_path}")
 
 if __name__ == "__main__":
     main()
