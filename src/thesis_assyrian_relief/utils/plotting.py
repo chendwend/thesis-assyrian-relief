@@ -133,6 +133,37 @@ def _marker_symbol_for_split(split: str) -> str:
     return SPLIT_MARKER_SYMBOL.get(split, "circle")
 
 
+
+def _ordered_splits(values: pd.Series) -> list[str]:
+    preferred = ["train", "val", "test"]
+    present = list(dict.fromkeys(values.dropna().astype(str).tolist()))
+
+    ordered = [s for s in preferred if s in present]
+    ordered += [s for s in present if s not in ordered]
+    return ordered
+
+
+def _infer_trace_split_from_name(trace_name: str, splits: list[str]) -> str | None:
+    """
+    Plotly Express usually creates trace names like:
+        'Ashurbanipal, train'
+    when using color='authority' and symbol='split'.
+
+    This helper makes the split extraction explicit and slightly safer.
+    """
+    parts = [p.strip() for p in str(trace_name).split(",")]
+    for part in parts:
+        if part in splits:
+            return part
+
+    # fallback
+    for split in splits:
+        if split in str(trace_name):
+            return split
+
+    return None
+
+
 def plot_umap_plotly(
     viz_df: pd.DataFrame,
     title: str = "Interactive UMAP of Relief-Level Embeddings",
@@ -167,7 +198,7 @@ def plot_umap_plotly(
         x="umap_x",
         y="umap_y",
         color="authority",
-        color_discrete_map={"Ashurbanipal": "red", "Ashurnarsipal II": "blue", "Sargon II": "green", "Sennacherib": "Purple", "Tiglath-Pileser III": "Yellow"},
+        color_discrete_map={"Ashurbanipal": "red", "Ashurnasirpal II": "blue", "Sargon II": "green", "Sennacherib": "purple", "Tiglath-Pileser III": "gold"},
         symbol="split",
         symbol_map=symbol_map,
         hover_data=hover_cols,
@@ -177,6 +208,14 @@ def plot_umap_plotly(
     )
 
     fig.update_traces(marker=dict(size=9, opacity=0.8))
+
+    splits = _ordered_splits(plot_df["split"])
+
+    # Attach split metadata to Plotly Express traces.
+    # This makes dropdown filtering robust.
+    for trace in fig.data:
+        trace_split = _infer_trace_split_from_name(str(trace.name), splits)
+        trace.meta = {"split": trace_split}
 
     # Overlay highlighted points as separate traces, without adding legend clutter
     highlighted_df = plot_df[plot_df["is_highlighted"]]
@@ -203,8 +242,136 @@ def plot_umap_plotly(
                     symbol="diamond",
                     line=dict(color="yellow", width=2),
                 ),
+                meta={"split": str(row["split"])},
                 name=f"highlight: {row['relief_id']}",
                 showlegend=False,
+                
             )
+    fig = add_split_visibility_buttons(
+        fig,
+        plot_df,
+        split_col="split",
+        base_title=title,
+    )
+
+    return fig
+
+
+
+def add_split_visibility_buttons(
+    fig,
+    viz_df: pd.DataFrame,
+    split_col: str = "split",
+    base_title: str = "Interactive UMAP",
+):
+    """
+    Add a dropdown that controls which data splits are visible.
+
+    Assumes each trace has trace.meta["split"] when possible.
+    Falls back to inferring split from trace.name.
+    """
+    if split_col not in viz_df.columns:
+        raise ValueError(f"viz_df does not contain split column: {split_col!r}")
+
+    splits = _ordered_splits(viz_df[split_col])
+    split_set = set(splits)
+
+    trace_splits: list[str | None] = []
+    for trace in fig.data:
+        meta = getattr(trace, "meta", None)
+
+        trace_split = None
+        if isinstance(meta, dict):
+            candidate = meta.get("split")
+            if candidate in split_set:
+                trace_split = candidate
+
+        if trace_split is None:
+            trace_split = _infer_trace_split_from_name(str(trace.name), splits)
+
+        trace_splits.append(trace_split)
+
+    buttons = []
+
+    buttons.append(
+        dict(
+            label="All",
+            method="update",
+            args=[
+                {"visible": [True] * len(fig.data)},
+                {"title.text": f"{base_title} — all splits"},
+            ],
+        )
+    )
+
+    for split in splits:
+        visible = [ts == split for ts in trace_splits]
+        buttons.append(
+            dict(
+                label=split,
+                method="update",
+                args=[
+                    {"visible": visible},
+                    {"title.text": f"{base_title} — {split} only"},
+                ],
+            )
+        )
+
+    combo_specs = [
+        ("val + test", ["val", "test"]),
+        ("train + val", ["train", "val"]),
+        ("train + test", ["train", "test"]),
+    ]
+
+    for label, subset_list in combo_specs:
+        subset = set(subset_list)
+        if subset.issubset(split_set):
+            visible = [ts in subset for ts in trace_splits]
+            buttons.append(
+                dict(
+                    label=label,
+                    method="update",
+                    args=[
+                        {"visible": visible},
+                        {"title.text": f"{base_title} — {label}"},
+                    ],
+                )
+            )
+
+    fig.update_layout(
+        title=dict(
+            text=base_title,
+            x=0.5,
+            xanchor="center",
+            y=0.98,
+            yanchor="top",
+        ),
+        updatemenus=[
+            dict(
+                type="dropdown",
+                direction="down",
+                x=0.18,
+                y=1.08,
+                xanchor="left",
+                yanchor="top",
+                buttons=buttons,
+                showactive=True,
+            )
+        ],
+        annotations=[
+            dict(
+                text="Show split:",
+                x=0.0,
+                y=1.055,
+                xref="paper",
+                yref="paper",
+                showarrow=False,
+                xanchor="left",
+                yanchor="middle",
+                font=dict(size=13),
+            )
+        ],
+        margin=dict(t=150, r=180),
+    )
 
     return fig

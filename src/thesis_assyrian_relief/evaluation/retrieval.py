@@ -157,7 +157,7 @@ def compute_retrieval_metrics(
         q_label = row["authority"]
         q_relief_id = row["relief_id"]
 
-        sims = gallery_embs @ q_emb
+        sims = gallery_embs @ q_emb # embeddings alreadly l2-normalized
         ranked_idx = np.argsort(-sims)
 
         ranked_labels = [gallery_labels[i] for i in ranked_idx]

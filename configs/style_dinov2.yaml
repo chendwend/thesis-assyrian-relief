@@ -1,4 +1,9 @@
+random_seed: 42
+
 data:
+  dataset_type: core_train
+  classes: ["Ashurbanipal", "Ashurnasirpal II", "Sargon II"]
+  dataset_xlsx: ~/gdrive/Graduate_Studies/Thesis/Dataset/main.xlsx
   csv_path: data/splits/image_level_dataset_v2.csv
   image_root: /mnt/c/Users/chend/Desktop/My_Files/Thesis/Dataset/dataset_v2
   filename_sep: "-"
@@ -7,6 +12,9 @@ splits:
   train: train
   val: val
   test: test
+  train_size: 0.7
+  val_size: 0.2
+  test_size: 0.1
 
 model:
   model_name: dinov2_vits14
@@ -54,6 +62,12 @@ scheduler:
 evaluation:
   relief_aggregation: mean_logits
   loss_class_weighting: none
+
+
+  umap:
+    fit_split: train
+    plot_splits: [train, val, test]
+    highlight_relief_ids: []
 
 
 

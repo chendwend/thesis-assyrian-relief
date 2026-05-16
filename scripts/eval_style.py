@@ -97,9 +97,58 @@ def resolve_config(args: argparse.Namespace) -> dict:
 
         if required:
             joined = ".".join(path)
-            raise ValueError(f"Missing required configuration value: CLI arg or config field '{joined}'")
+            raise ValueError(
+                f"Missing required configuration value: CLI arg or config field '{joined}'"
+            )
 
         return None
+
+    # Resolve eval split first, because nested eval outputs depend on it.
+    eval_split = pick(
+        args.eval_split,
+        "evaluation",
+        "eval_split",
+        required=False,
+        default=None,
+    )
+
+    if eval_split is None:
+        eval_split = pick(
+            None,
+            "splits",
+            "test",
+            required=False,
+            default="test",
+        )
+
+    outputs_cfg = cfg.get("outputs", {}) or {}
+    eval_outputs_cfg = (
+        outputs_cfg
+        .get("eval", {})
+        .get(eval_split, {})
+    )
+
+    def pick_eval_output(cli_value, key: str, required: bool = False, default=None):
+        """
+        Output path priority:
+        1. CLI override
+        2. outputs.eval.<eval_split>.<key>
+        3. outputs.<key>  # backward compatibility with older flat configs
+        4. default / None
+        """
+        if cli_value is not None:
+            return cli_value
+
+        if isinstance(eval_outputs_cfg, dict) and key in eval_outputs_cfg:
+            return eval_outputs_cfg[key]
+
+        return pick(
+            None,
+            "outputs",
+            key,
+            required=required,
+            default=default,
+        )
 
     resolved = {
         "csv_path": pick(args.csv_path, "data", "csv_path"),
@@ -107,12 +156,11 @@ def resolve_config(args: argparse.Namespace) -> dict:
         "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
-        "eval_split": pick(args.eval_split, "splits", "test", default="test"),
+        "eval_split": eval_split,
 
         "checkpoint_path": pick(args.checkpoint_path, "outputs", "checkpoint_path"),
         "batch_size": pick(args.batch_size, "train", "batch_size", default=16),
         "num_workers": pick(args.num_workers, "train", "num_workers", default=2),
-
 
         "eval_loss_class_weighting": pick(
             None,
@@ -122,21 +170,35 @@ def resolve_config(args: argparse.Namespace) -> dict:
             default="none",
         ),
 
-        "metrics_out": pick(args.metrics_out, "outputs", "eval_metrics_path", required=False),
-        "retrieval_out": pick(args.retrieval_out, "outputs", "eval_retrieval_path", required=False),
-        "confusion_matrix_path": pick(
+        "metrics_out": pick_eval_output(
+            args.metrics_out,
+            "eval_metrics_path",
+            required=False,
+        ),
+        "retrieval_out": pick_eval_output(
+            args.retrieval_out,
+            "eval_retrieval_path",
+            required=False,
+        ),
+        "confusion_matrix_path": pick_eval_output(
             args.confusion_matrix_out,
-            "outputs",
             "confusion_matrix_path",
             required=False,
             default=None,
         ),
-        "relief_aggregation": pick(args.relief_aggregation,"evaluation","relief_aggregation",
-        required=False,
-        default="mean_logits",
+        "relief_preds_out": pick_eval_output(
+            args.relief_preds_out,
+            "relief_predictions_path",
+            required=False,
         ),
 
-        "relief_preds_out": pick(args.relief_preds_out,"outputs","relief_predictions_path",required=False,),
+        "relief_aggregation": pick(
+            args.relief_aggregation,
+            "evaluation",
+            "relief_aggregation",
+            required=False,
+            default="mean_logits",
+        ),
     }
 
     return resolved

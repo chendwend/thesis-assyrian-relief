@@ -19,8 +19,15 @@ from thesis_assyrian_relief.utils.plotting import (
 )
 
 import warnings
+from numba.core.errors import NumbaWarning
 warnings.filterwarnings("ignore", message=".*xFormers is not available.*")
 warnings.filterwarnings("ignore", message=".*xFormers is available.*")
+warnings.filterwarnings(
+    "ignore",
+    message="n_jobs value .* overridden to 1 by setting random_state.*",
+)
+
+warnings.filterwarnings("ignore", category=NumbaWarning)
 
 
 def parse_args() -> argparse.Namespace:
