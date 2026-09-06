@@ -6,7 +6,7 @@
 
 Read `../thesis-overleaf/audit/final_submission_qa_2026-09-07.md` for final checks and limits. Twenty tests passed; numerical and figure inputs retain their audited hashes; all final page bodies were visually checked. No retraining or external inference occurred. English-first departmental order and the remote Overleaf compiler setting remain unverified. No portal submission or message was sent.
 
-Dated preflight and progress sections below are historical. Do not restart completed phases. Final checkpoint/push verification is being recorded at the end of this file.
+Dated preflight and progress sections below are historical. Do not restart completed phases. Both final checkpoints were pushed and verified; details are recorded at the end of this file.
 
 ## Start here
 
@@ -197,3 +197,14 @@ Suggested next-task prompt:
 - Manuscript checkpoint: `791a1704dbe20d30a1a35ebc793b5279c9dfac0e`, “Complete bilingual thesis, evidence audit, and final PDF verification”. Remote push verification is recorded below after it succeeds.
 - Remaining administrative checks are English-first departmental ordering and Overleaf's XeLaTeX setting/remote compilation. The locally reviewed PDF is the deliverable; alternative font fallbacks may reflow the remote build.
 - No additional thesis edits, retraining, external inference, portal submission or communication are implied. The technical and editorial work is complete within the documented scope.
+
+## Verified final checkpoints — 7 September 2026
+
+| Repository | Checkpoint | Remote verification |
+|---|---|---|
+| Manuscript / Overleaf main | `791a1704dbe20d30a1a35ebc793b5279c9dfac0e` | Push succeeded; remote refs/heads/main equals this commit |
+| Analysis / GitHub main | `414ebd0edc626e75d544c06156988612544f1472` | Push succeeded; remote refs/heads/main equals this commit |
+
+A subsequent documentation-only commit records this verification; its identity is available in Git history. Neither push was forced. No dataset, weight or checkpoint artifact was altered. The Overleaf credential-store helper printed its existing stale-path warning, but authentication, push and remote HEAD verification all succeeded; no global credential settings were changed.
+
+The final PDF remains the locally verified 57-page artifact identified above. A successful Overleaf Git push does not establish a successful remote PDF build. Further work should be limited to any user-requested correction, departmental ordering confirmation, compiler selection if rebuilding remotely, and the user's submission process.
