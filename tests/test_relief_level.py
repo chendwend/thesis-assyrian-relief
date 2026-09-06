@@ -117,3 +117,31 @@ def test_aggregate_logits_by_relief_uses_single_row_per_relief() -> None:
 
     assert len(relief_df) == 2
     assert relief_df["relief_id"].nunique() == 2
+
+
+def test_mean_logits_does_not_fall_back_to_mean_probabilities() -> None:
+    pred_rows = [
+        {
+            "relief_id": "BM 1",
+            "authority": "Ashurbanipal",
+            "label": 0,
+            "pred": 0,
+            "logits": np.array([100.0, 0.0], dtype=np.float32),
+        },
+        *[
+            {
+                "relief_id": "BM 1",
+                "authority": "Ashurbanipal",
+                "label": 0,
+                "pred": 1,
+                "logits": np.array([0.0, 1.0], dtype=np.float32),
+            }
+            for _ in range(3)
+        ],
+    ]
+
+    mean_logits = aggregate_logits_by_relief(pred_rows, method="mean_logits")
+    mean_probs = aggregate_logits_by_relief(pred_rows, method="mean_probs")
+
+    assert mean_logits.iloc[0]["pred_label"] == 0
+    assert mean_probs.iloc[0]["pred_label"] == 1

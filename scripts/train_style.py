@@ -15,6 +15,7 @@ from thesis_assyrian_relief.models.dinov2_probe import DinoStyleProbe
 from thesis_assyrian_relief.training.curves import save_training_curves
 from thesis_assyrian_relief.training.engine import fit
 from thesis_assyrian_relief.utils.config import load_yaml_config, ensure_parent_dir
+from thesis_assyrian_relief.utils.reproducibility import seed_everything
 import warnings
 
 # Ignore specific warning containing the xFormers message
@@ -85,9 +86,19 @@ def resolve_config(args: argparse.Namespace) -> dict:
         return None
 
     resolved = {
+        "seed": pick(
+            None, "experiment", "seed", required=False,
+            default=pick(None, "random_seed", required=False, default=24),
+        ),
+        "deterministic": pick(
+            None, "experiment", "deterministic", required=False, default=False,
+        ),
         "csv_path": pick(args.csv_path, "data", "csv_path"),
         "image_root": pick(args.image_root, "data", "image_root"),
         "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
+        "resize_mode": pick(
+            None, "data", "resize_mode", required=False, default="stretch"
+        ),
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
         "val_split": pick(args.val_split, "splits", "val", default="val"),
@@ -345,6 +356,8 @@ def main() -> None:
     args = parse_args()
     cfg = resolve_config(args)
 
+    seed_everything(cfg["seed"], deterministic=cfg["deterministic"])
+
     # check if early_stopping.monitor and checkpoint.monitor are the same
     if cfg["early_stopping_monitor"] != cfg["checkpoint_monitor"]:
         raise ValueError(
@@ -389,6 +402,7 @@ def main() -> None:
         class_to_idx=class_to_idx,
         image_root=cfg["image_root"],
         filename_sep=cfg["filename_sep"],
+        resize_mode=cfg["resize_mode"],
         batch_size=cfg["batch_size"],
         num_workers=cfg["num_workers"],
         shuffle=True,
@@ -402,6 +416,7 @@ def main() -> None:
         class_to_idx=class_to_idx,
         image_root=cfg["image_root"],
         filename_sep=cfg["filename_sep"],
+        resize_mode=cfg["resize_mode"],
         batch_size=cfg["batch_size"],
         num_workers=cfg["num_workers"],
         shuffle=False,
@@ -475,6 +490,7 @@ def main() -> None:
             "class_to_idx": class_to_idx,
             "model_name": cfg["model_name"],
             "emb_dim": cfg["emb_dim"],
+            "resize_mode": cfg["resize_mode"],
             "optimizer_name": cfg["optimizer_name"],
             "lr": cfg["lr"],
             "weight_decay": cfg["weight_decay"],

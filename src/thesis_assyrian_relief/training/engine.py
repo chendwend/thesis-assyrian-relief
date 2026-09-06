@@ -1,10 +1,12 @@
 from __future__ import annotations
 
+from pathlib import Path
 from typing import Any
 
 import torch
 from sklearn.metrics import accuracy_score, f1_score
 from tqdm.auto import tqdm
+
 
 
 def compute_classification_metrics(
@@ -87,6 +89,99 @@ def evaluate(
 
     return metrics
 
+def _safe_class_column_name(class_name: str) -> str:
+    return (
+        str(class_name)
+        .replace(" ", "_")
+        .replace("-", "_")
+        .replace("/", "_")
+    )
+
+
+def _get_batch_item(batch: dict, key: str, index: int, default=None):
+    if key not in batch:
+        return default
+
+    value = batch[key]
+
+    if isinstance(value, torch.Tensor):
+        item = value[index]
+        if item.ndim == 0:
+            return item.item()
+        return item.detach().cpu().tolist()
+
+    return value[index]
+
+
+@torch.no_grad()
+def predict_image_level(
+    model: torch.nn.Module,
+    loader: torch.utils.data.DataLoader,
+    device: torch.device,
+    idx_to_class: dict[int, str],
+) -> list[dict[str, Any]]:
+    """
+    Export one prediction row per image/view.
+
+    This is intended for error analysis, for example:
+        BM 124920-1.jpg
+        BM 124920-2.jpg
+        ...
+    """
+
+    model.eval()
+
+    rows: list[dict[str, Any]] = []
+
+    class_indices = sorted(idx_to_class.keys())
+    class_names = [idx_to_class[idx] for idx in class_indices]
+
+    for batch in tqdm(loader, leave=False):
+        images = batch["image"].to(device, non_blocking=True)
+        labels = batch["label"].to(device, non_blocking=True)
+
+        logits, emb = model(images)
+
+        probs = torch.softmax(logits, dim=1)
+        preds = torch.argmax(probs, dim=1)
+        confidences = torch.max(probs, dim=1).values
+
+        batch_size = images.size(0)
+
+        for i in range(batch_size):
+            true_label = int(labels[i].detach().cpu().item())
+            pred_label = int(preds[i].detach().cpu().item())
+
+            image_path = str(_get_batch_item(batch, "image_path", i))
+            image_filename = Path(image_path).name
+
+            row: dict[str, Any] = {
+                "image_path": image_path,
+                "image_filename": image_filename,
+                "relief_id": str(_get_batch_item(batch, "relief_id", i)),
+                "view_index": _get_batch_item(batch, "view_index", i),
+                "suffix": _get_batch_item(batch, "suffix", i),
+                "true_label": true_label,
+                "true_authority": idx_to_class[true_label],
+                "pred_label": pred_label,
+                "pred_authority": idx_to_class[pred_label],
+                "confidence": float(confidences[i].detach().cpu().item()),
+                "correct": bool(pred_label == true_label),
+            }
+
+            for class_idx, class_name in zip(class_indices, class_names):
+                safe_name = _safe_class_column_name(class_name)
+
+                row[f"logit_{safe_name}"] = float(
+                    logits[i, class_idx].detach().cpu().item()
+                )
+                row[f"prob_{safe_name}"] = float(
+                    probs[i, class_idx].detach().cpu().item()
+                )
+
+            rows.append(row)
+
+    return rows
 
 def fit(
     model: torch.nn.Module,

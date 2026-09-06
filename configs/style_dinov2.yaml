@@ -1,4 +1,10 @@
-random_seed: 42
+experiment:
+  name: only_3_classes
+  seed: 42
+  deterministic: false
+
+
+random_seed: 24
 
 data:
   dataset_type: core_train
@@ -19,6 +25,9 @@ splits:
 model:
   model_name: dinov2_vits14
   emb_dim: 256
+  dropout: 0.2
+  freeze_backbone: true
+  pretrained: true
 
 train:
   batch_size: 16
@@ -68,6 +77,10 @@ evaluation:
     fit_split: train
     plot_splits: [train, val, test]
     highlight_relief_ids: []
+    n_neighbors: 10
+    min_dist: 0.2
+    metric: cosine
+    random_seed: 42
 
 
 

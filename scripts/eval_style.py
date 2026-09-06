@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+
+import pandas as pd
 import argparse
 import json
 
@@ -14,7 +16,6 @@ from thesis_assyrian_relief.utils.data import (
 from thesis_assyrian_relief.utils.config import load_yaml_config, ensure_parent_dir
 from thesis_assyrian_relief.evaluation.confusion_plot import save_confusion_matrix_plot
 from thesis_assyrian_relief.evaluation.relief_level import (
-    evaluate_relief_level,
     evaluate_relief_level_all_methods,
 )
 from thesis_assyrian_relief.evaluation.retrieval import (
@@ -25,7 +26,11 @@ from thesis_assyrian_relief.evaluation.retrieval import (
     predict_by_nearest_centroid,
 )
 from thesis_assyrian_relief.models.dinov2_probe import DinoStyleProbe
-from thesis_assyrian_relief.training.engine import evaluate, load_checkpoint
+from thesis_assyrian_relief.training.engine import (
+    evaluate,
+    load_checkpoint,
+    predict_image_level,
+)
 
 import warnings
 warnings.filterwarnings("ignore", message=".*xFormers is not available.*")
@@ -70,7 +75,30 @@ def parse_args() -> argparse.Namespace:
         default=None,
         help="Optional PNG path for relief-level confusion matrix",
     )
-
+    parser.add_argument(
+    "--image-preds-out",
+    type=str,
+    default=None,
+    help="Optional CSV path for image-level prediction output",
+    )
+    parser.add_argument(
+    "--train-image-embeddings-path",
+    type=str,
+    default=None,
+    help="Optional path for train image embeddings",
+    )
+    parser.add_argument(
+    "--val-image-embeddings-path",
+    type=str,
+    default=None,
+    help="Optional path for val image embeddings",
+    )
+    parser.add_argument(
+    "--test-image-embeddings-path",
+    type=str,
+    default=None,
+    help="Optional path for test image embeddings",
+    )
     return parser.parse_args()
 
 
@@ -150,10 +178,39 @@ def resolve_config(args: argparse.Namespace) -> dict:
             default=default,
         )
 
+
+    if eval_split == "val":
+        eval_image_embeddings_cli = args.val_image_embeddings_path
+        eval_image_embeddings_legacy_key = "val_image_embeddings_path"
+    elif eval_split == "test":
+        eval_image_embeddings_cli = args.test_image_embeddings_path
+        eval_image_embeddings_legacy_key = "test_image_embeddings_path"
+    else:
+        eval_image_embeddings_cli = None
+        eval_image_embeddings_legacy_key = f"{eval_split}_image_embeddings_path"
+
+    eval_image_embeddings_path = pick_eval_output(
+        eval_image_embeddings_cli,
+        "image_embeddings_path",
+        required=False,
+        default=None,
+    )
+
+    if eval_image_embeddings_path is None:
+        eval_image_embeddings_path = pick_eval_output(
+            eval_image_embeddings_cli,
+            eval_image_embeddings_legacy_key,
+            required=False,
+            default=None,
+        )
+
     resolved = {
         "csv_path": pick(args.csv_path, "data", "csv_path"),
         "image_root": pick(args.image_root, "data", "image_root"),
         "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
+        "resize_mode": pick(
+            None, "data", "resize_mode", required=False, default="stretch"
+        ),
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
         "eval_split": eval_split,
@@ -180,6 +237,11 @@ def resolve_config(args: argparse.Namespace) -> dict:
             "eval_retrieval_path",
             required=False,
         ),
+        "image_preds_out": pick_eval_output(
+            args.image_preds_out,
+            "image_predictions_path",
+            required=False,
+        ),
         "confusion_matrix_path": pick_eval_output(
             args.confusion_matrix_out,
             "confusion_matrix_path",
@@ -199,6 +261,13 @@ def resolve_config(args: argparse.Namespace) -> dict:
             required=False,
             default="mean_logits",
         ),
+        "train_image_embeddings_path": pick_eval_output(
+            args.train_image_embeddings_path,
+            "train_image_embeddings_path",
+            required=False,
+            default=None,
+        ),
+        "eval_image_embeddings_path": eval_image_embeddings_path,
     }
 
     return resolved
@@ -265,6 +334,7 @@ def main() -> None:
         class_to_idx=class_to_idx,
         image_root=cfg["image_root"],
         filename_sep=cfg["filename_sep"],
+        resize_mode=cfg["resize_mode"],
         batch_size=cfg["batch_size"],
         num_workers=cfg["num_workers"],
         shuffle=False,
@@ -278,6 +348,7 @@ def main() -> None:
         class_to_idx=class_to_idx,
         image_root=cfg["image_root"],
         filename_sep=cfg["filename_sep"],
+        resize_mode=cfg["resize_mode"],
         batch_size=cfg["batch_size"],
         num_workers=cfg["num_workers"],
         shuffle=False,
@@ -299,6 +370,23 @@ def main() -> None:
         criterion=criterion,
         device=device,
     )
+
+    # 1b. image-level prediction export
+    idx_to_class = {int(idx): class_name for class_name, idx in class_to_idx.items()}
+
+    image_prediction_rows = predict_image_level(
+        model=model,
+        loader=eval_loader,
+        device=device,
+        idx_to_class=idx_to_class,
+    )
+
+    image_predictions_df = pd.DataFrame(image_prediction_rows)
+
+    if cfg["image_preds_out"] is not None:
+        image_preds_path = ensure_parent_dir(cfg["image_preds_out"])
+        image_predictions_df.to_csv(image_preds_path, index=False)
+        print(f"Saved image-level predictions CSV to: {image_preds_path}")
 
     # 2. relief-level evaluation
     relief_metrics_by_method, relief_eval_all_df = evaluate_relief_level_all_methods(
@@ -339,6 +427,19 @@ def main() -> None:
 
     train_relief_emb_df = aggregate_relief_embeddings(train_img_emb_df)
     eval_relief_emb_df = aggregate_relief_embeddings(eval_img_emb_df)
+
+    if cfg["train_image_embeddings_path"] is not None:
+        train_img_emb_path = ensure_parent_dir(cfg["train_image_embeddings_path"])
+        train_img_emb_df.to_pickle(train_img_emb_path)
+        print(f"Saved train image embeddings to: {train_img_emb_path}")
+
+    if cfg["eval_image_embeddings_path"] is not None:
+        eval_img_emb_path = ensure_parent_dir(cfg["eval_image_embeddings_path"])
+        eval_img_emb_df.to_pickle(eval_img_emb_path)
+        print(
+            f"Saved {cfg['eval_split']} image embeddings to: "
+            f"{eval_img_emb_path}"
+        )
 
     # 4. centroid evaluation
     centroids = build_class_centroids(train_relief_emb_df)

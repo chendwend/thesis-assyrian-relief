@@ -57,7 +57,9 @@ def collect_predictions_with_logits(
     return rows
 
 
-def aggregate_logits_by_relief(pred_rows: list[dict], method: str = "mean") -> pd.DataFrame:
+def aggregate_logits_by_relief(
+    pred_rows: list[dict], method: str = "mean_logits"
+) -> pd.DataFrame:
     """Aggregate image-level predictions/logits by relief.
 
     The predictions and logits are aggregated by relief id using the mean of the logits.
@@ -109,9 +111,9 @@ def aggregate_logits_by_relief(pred_rows: list[dict], method: str = "mean") -> p
         mean_log_probs = np.log(probs_stack + 1e-12).mean(axis=0)
 
         if method == "mean_logits":
-            scores = mean_probs
+            scores = mean_logits
             pred_label = int(scores.argmax())
-            confidence = float(scores.max())
+            confidence = float(softmax_np(scores[None, :], axis=1).max())
 
         elif method == "mean_probs":
             scores = mean_probs

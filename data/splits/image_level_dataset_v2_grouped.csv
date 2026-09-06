@@ -1,0 +1,665 @@
+Relief_ID,Authority,split,image_path,view_index,suffix
+AN 1982.224,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/AN 1982.224-1.png,1,.png
+AN 1982.224,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/AN 1982.224-2.png,2,.png
+AN 1982.224,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/AN 1982.224-3.png,3,.png
+AO 1432,Sargon II,val,/home/kostya/projects/dataset_v2/AO 1432-1.jpg,1,.jpg
+AO 1432,Sargon II,val,/home/kostya/projects/dataset_v2/AO 1432-2.jpg,2,.jpg
+AO 1434,Sargon II,test,/home/kostya/projects/dataset_v2/AO 1434-1.jpg,1,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-1.jpg,1,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-2.jpg,2,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-3.jpg,3,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-4.jpg,4,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-5.jpg,5,.jpg
+AO 19863,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19863-6.jpg,6,.jpg
+AO 19864,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19864-1.jpg,1,.jpg
+AO 19865,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19865-1.jpg,1,.jpg
+AO 19865,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19865-2.jpg,2,.jpg
+AO 19867,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19867-1.jpg,1,.jpg
+AO 19869,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19869-1.jpg,1,.jpg
+AO 19869,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19869-2.jpg,2,.jpg
+AO 19869,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19869-3.jpg,3,.jpg
+AO 19869,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19869-4.jpg,4,.jpg
+AO 19870,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19870-1.jpg,1,.jpg
+AO 19870,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19870-2.jpg,2,.jpg
+AO 19870,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19870-3.jpg,3,.jpg
+AO 19871,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19871-1.jpg,1,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-1.jpg,1,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-2.jpg,2,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-3.jpg,3,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-4.jpg,4,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-5.jpg,5,.jpg
+AO 19872,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19872-6.jpg,6,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-1.jpg,1,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-2.jpg,2,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-3.jpg,3,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-4.jpg,4,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-5.jpg,5,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-6.jpg,6,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-7.jpg,7,.jpg
+AO 19873,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19873-8.jpg,8,.jpg
+AO 19875,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19875-1.jpg,1,.jpg
+AO 19875,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19875-2.jpg,2,.jpg
+AO 19875,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19875-3.jpg,3,.jpg
+AO 19875,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19875-4.jpg,4,.jpg
+AO 19876,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19876-1.jpg,1,.jpg
+AO 19876,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19876-2.jpg,2,.jpg
+AO 19876,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19876-3.jpg,3,.jpg
+AO 19877,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19877-1.jpg,1,.jpg
+AO 19877,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19877-2.jpg,2,.jpg
+AO 19877,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19877-3.jpg,3,.jpg
+AO 19877,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19877-4.jpg,4,.jpg
+AO 19878,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19878-1.jpg,1,.jpg
+AO 19878,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19878-2.jpg,2,.jpg
+AO 19878,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19878-3.jpg,3,.jpg
+AO 19880,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19880-1.jpg,1,.jpg
+AO 19881,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19881-1.jpg,1,.jpg
+AO 19881,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19881-2.jpg,2,.jpg
+AO 19881,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19881-3.jpg,3,.jpg
+AO 19881,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19881-4.jpg,4,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-1.jpg,1,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-2.jpg,2,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-3.jpg,3,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-4.jpg,4,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-5.jpg,5,.jpg
+AO 19883,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19883-6.jpg,6,.jpg
+AO 19884,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19884-1.jpg,1,.jpg
+AO 19884,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19884-2.jpg,2,.jpg
+AO 19884,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19884-3.jpg,3,.jpg
+AO 19885,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19885-1.jpg,1,.jpg
+AO 19885,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19885-2.jpg,2,.jpg
+AO 19886,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19886-1.jpg,1,.jpg
+AO 19886,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19886-2.jpg,2,.jpg
+AO 19886,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19886-3.jpg,3,.jpg
+AO 19887,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19887-1.jpg,1,.jpg
+AO 19887,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19887-2.jpg,2,.jpg
+AO 19887,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19887-3.jpg,3,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-1.jpg,1,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-10.jpg,10,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-11.jpg,11,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-2.jpg,2,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-3.jpg,3,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-5.jpg,5,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-6.jpg,6,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-7.jpg,7,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-8.jpg,8,.jpg
+AO 19889,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19889-9.jpg,9,.jpg
+AO 19890,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19890-1.jpg,1,.jpg
+AO 19890,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19890-2.jpg,2,.jpg
+AO 19890,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19890-3.jpg,3,.jpg
+AO 19890,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19890-4.jpg,4,.jpg
+AO 19893,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19893-1.jpg,1,.jpg
+AO 19894,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19894-1.jpg,1,.jpg
+AO 19896,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19896-1.jpg,1,.jpg
+AO 19897,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19897-1.jpg,1,.jpg
+AO 19897,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19897-2.jpg,2,.jpg
+AO 19898,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19898-1.jpg,1,.jpg
+AO 19902,Ashurbanipal,test,/home/kostya/projects/dataset_v2/AO 19902-1.jpg,1,.jpg
+AO 19904,Ashurbanipal,test,/home/kostya/projects/dataset_v2/AO 19904-1.jpg,1,.jpg
+AO 19904,Ashurbanipal,test,/home/kostya/projects/dataset_v2/AO 19904-2.jpg,2,.jpg
+AO 19909,Ashurbanipal,test,/home/kostya/projects/dataset_v2/AO 19909-1.jpg,1,.jpg
+AO 19917,Sargon II,test,/home/kostya/projects/dataset_v2/AO 19917-1.jpg,1,.jpg
+AO 19918,Sargon II,train,/home/kostya/projects/dataset_v2/AO 19918-1.jpg,1,.jpg
+AO 19922,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19922-1.jpg,1,.jpg
+AO 19922,Sargon II,val,/home/kostya/projects/dataset_v2/AO 19922-2.jpg,2,.jpg
+AO 22196,Sargon II,train,/home/kostya/projects/dataset_v2/AO 22196-1.jpg,1,.jpg
+AO 22196,Sargon II,train,/home/kostya/projects/dataset_v2/AO 22196-2.jpg,2,.jpg
+AO 22197,Sargon II,train,/home/kostya/projects/dataset_v2/AO 22197-1.jpg,1,.jpg
+AO 7374,Sargon II,train,/home/kostya/projects/dataset_v2/AO 7374-1.jpg,1,.jpg
+AO 7375,Sargon II,val,/home/kostya/projects/dataset_v2/AO 7375-1.jpg,1,.jpg
+BM 102401,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 102401-1.jpg,1,.jpg
+BM 102401,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 102401-2.jpg,2,.jpg
+BM 102401,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 102401-3.png,3,.png
+BM 102401,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 102401-4.png,4,.png
+BM 118803,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 118803-1.jpg,1,.jpg
+BM 118810,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118810-1.jpg,1,.jpg
+BM 118810,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118810-2.jpg,2,.jpg
+BM 118811,Sargon II,test,/home/kostya/projects/dataset_v2/BM 118811-1.jpg,1,.jpg
+BM 118811,Sargon II,test,/home/kostya/projects/dataset_v2/BM 118811-2.jpg,2,.jpg
+BM 118812,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118812-1.jpg,1,.jpg
+BM 118812,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118812-2.jpg,2,.jpg
+BM 118812,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118812-3.jpg,3,.jpg
+BM 118812,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118812-4.jpg,4,.jpg
+BM 118814,Sargon II,test,/home/kostya/projects/dataset_v2/BM 118814-1.jpg,1,.jpg
+BM 118816,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118816-1.jpg,1,.jpg
+BM 118816,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118816-2.jpg,2,.jpg
+BM 118816,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118816-3.jpg,3,.jpg
+BM 118818,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118818-1.jpg,1,.jpg
+BM 118818,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118818-2.jpg,2,.jpg
+BM 118818,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118818-3.jpg,3,.jpg
+BM 118820,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118820-1.jpg,1,.jpg
+BM 118822,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118822-1.jpg,1,.jpg
+BM 118822,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118822-2.jpg,2,.jpg
+BM 118824,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118824-1.jpg,1,.jpg
+BM 118826,Sargon II,val,/home/kostya/projects/dataset_v2/BM 118826-1.jpg,1,.jpg
+BM 118826,Sargon II,val,/home/kostya/projects/dataset_v2/BM 118826-2.jpg,2,.jpg
+BM 118827,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118827-1.jpg,1,.jpg
+BM 118827,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118827-2.jpg,2,.jpg
+BM 118827,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118827-3.jpg,3,.jpg
+BM 118828,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118828-1.jpg,1,.jpg
+BM 118828,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118828-2.jpg,2,.jpg
+BM 118828,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118828-3.jpg,3,.jpg
+BM 118828,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118828-4.jpg,4,.jpg
+BM 118828,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118828-5.jpg,5,.jpg
+BM 118829,Sargon II,test,/home/kostya/projects/dataset_v2/BM 118829-1.jpg,1,.jpg
+BM 118829,Sargon II,test,/home/kostya/projects/dataset_v2/BM 118829-2.jpg,2,.jpg
+BM 118830,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118830-1.jpg,1,.jpg
+BM 118830,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118830-2.jpg,2,.jpg
+BM 118831,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118831-1.jpg,1,.jpg
+BM 118832,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118832-1.jpg,1,.jpg
+BM 118832,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118832-2.jpg,2,.jpg
+BM 118832,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118832-3.jpg,3,.jpg
+BM 118832,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118832-4.jpg,4,.jpg
+BM 118832,Sargon II,train,/home/kostya/projects/dataset_v2/BM 118832-5.jpg,5,.jpg
+BM 118874,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118874-1.jpg,1,.jpg
+BM 118876,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118876-1.jpg,1,.jpg
+BM 118876,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118876-2.jpg,2,.jpg
+BM 118876,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118876-3.jpg,3,.jpg
+BM 118876,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118876-4.jpg,4,.jpg
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-1.jpg,1,.jpg
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-2.png,2,.png
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-3.png,3,.png
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-4.png,4,.png
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-5.png,5,.png
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-6.png,6,.png
+BM 118911,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118911-7.png,7,.png
+BM 118912,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 118912-1.jpg,1,.jpg
+BM 118912,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 118912-2.jpg,2,.jpg
+BM 118914,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118914-1.jpg,1,.jpg
+BM 118914,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118914-2.jpg,2,.jpg
+BM 118914,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 118914-3.jpg,3,.jpg
+BM 118917,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118917-1.jpg,1,.jpg
+BM 118918,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118918-1.jpg,1,.jpg
+BM 118918,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118918-2.jpg,2,.jpg
+BM 118918,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118918-3.jpg,3,.jpg
+BM 118918,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118918-4.jpg,4,.jpg
+BM 118918,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 118918-5.jpg,5,.jpg
+BM 118921,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118921-1.jpg,1,.jpg
+BM 118922,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 118922-1.jpg,1,.jpg
+BM 124530,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124530-1.jpg,1,.jpg
+BM 124532,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124532-1.jpg,1,.jpg
+BM 124532,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124532-2.jpg,2,.jpg
+BM 124532,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124532-3.jpg,3,.jpg
+BM 124532,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124532-4.jpg,4,.jpg
+BM 124533,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124533-1.jpg,1,.jpg
+BM 124533,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124533-2.jpg,2,.jpg
+BM 124533,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124533-3.jpg,3,.jpg
+BM 124533,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124533-4.jpg,4,.jpg
+BM 124533,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124533-5.jpg,5,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-1.jpg,1,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-2.jpg,2,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-3.jpg,3,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-4.jpg,4,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-5.jpg,5,.jpg
+BM 124534,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124534-6.jpg,6,.jpg
+BM 124535,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124535-1.jpg,1,.jpg
+BM 124535,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124535-2.jpg,2,.jpg
+BM 124535,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124535-3.jpg,3,.jpg
+BM 124535,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124535-4.jpg,4,.jpg
+BM 124536,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124536-1.jpg,1,.jpg
+BM 124536,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124536-2.jpg,2,.jpg
+BM 124536,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124536-3.jpg,3,.jpg
+BM 124536,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124536-4.jpg,4,.jpg
+BM 124537,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124537-1.jpg,1,.jpg
+BM 124537,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124537-2.jpg,2,.jpg
+BM 124537,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124537-3.jpg,3,.jpg
+BM 124537,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124537-4.jpg,4,.jpg
+BM 124537,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124537-5.jpg,5,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-1.jpg,1,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-2.jpg,2,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-3.jpg,3,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-4.jpg,4,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-5.jpg,5,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-6.jpg,6,.jpg
+BM 124538,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124538-7.jpg,7,.jpg
+BM 124539,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124539-1.jpg,1,.jpg
+BM 124539,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124539-2.jpg,2,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-1.jpg,1,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-2.jpg,2,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-3.jpg,3,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-4.jpg,4,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-5.jpg,5,.jpg
+BM 124540,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124540-6.jpg,6,.jpg
+BM 124542,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124542-1.jpg,1,.jpg
+BM 124542,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124542-2.jpg,2,.jpg
+BM 124542,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124542-3.jpg,3,.jpg
+BM 124544,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124544-1.jpg,1,.jpg
+BM 124544,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124544-2.jpg,2,.jpg
+BM 124544,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124544-3.jpg,3,.jpg
+BM 124544,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124544-4.jpg,4,.jpg
+BM 124544,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124544-5.jpg,5,.jpg
+BM 124547,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124547-1.jpg,1,.jpg
+BM 124547,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124547-2.jpg,2,.jpg
+BM 124547,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124547-3.jpg,3,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-1.jpg,1,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-10.jpg,10,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-11.jpg,11,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-12.jpg,12,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-13.jpg,13,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-2.jpg,2,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-3.jpg,3,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-4.jpg,4,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-5.jpg,5,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-6.jpg,6,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-7.jpg,7,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-8.jpg,8,.jpg
+BM 124548,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124548-9.jpg,9,.jpg
+BM 124549,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124549-1.jpg,1,.jpg
+BM 124549,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124549-2.jpg,2,.jpg
+BM 124551,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124551-1.jpg,1,.jpg
+BM 124551,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124551-2.jpg,2,.jpg
+BM 124551,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124551-3.jpg,3,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-1.jpg,1,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-10.jpg,10,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-2.jpg,2,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-3.jpg,3,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-4.jpg,4,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-5.jpg,5,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-6.jpg,6,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-7.jpg,7,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-8.jpg,8,.jpg
+BM 124552,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124552-9.jpg,9,.jpg
+BM 124553,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124553-1.jpg,1,.jpg
+BM 124553,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124553-2.jpg,2,.jpg
+BM 124553,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124553-3.jpg,3,.jpg
+BM 124553,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124553-4.jpg,4,.jpg
+BM 124553,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124553-5.jpg,5,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-1.jpg,1,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-2.jpg,2,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-3.jpg,3,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-4.jpg,4,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-5.jpg,5,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-6.jpg,6,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-7.jpg,7,.jpg
+BM 124554,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124554-8.jpg,8,.jpg
+BM 124556,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124556-1.jpg,1,.jpg
+BM 124556,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124556-2.jpg,2,.jpg
+BM 124556,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124556-3.jpg,3,.jpg
+BM 124556,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124556-4.jpg,4,.jpg
+BM 124557,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124557-1.jpg,1,.jpg
+BM 124557,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124557-2.jpg,2,.jpg
+BM 124557,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124557-3.jpg,3,.jpg
+BM 124560,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124560-1.jpg,1,.jpg
+BM 124560,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124560-2.jpg,2,.jpg
+BM 124561,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124561-1.jpg,1,.jpg
+BM 124561,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124561-2.jpg,2,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-1.jpg,1,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-2.jpg,2,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-3.jpg,3,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-4.jpg,4,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-5.jpg,5,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-6.jpg,6,.jpg
+BM 124562,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124562-7.jpg,7,.jpg
+BM 124563,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124563-1.jpg,1,.jpg
+BM 124563,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 124563-2.jpg,2,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-1.jpg,1,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-2.jpg,2,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-3.jpg,3,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-4.jpg,4,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-5.jpg,5,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-6.jpg,6,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-7.jpg,7,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-8.jpg,8,.jpg
+BM 124564,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124564-9.jpg,9,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-1.jpg,1,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-10.jpg,10,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-11.jpg,11,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-2.jpg,2,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-3.jpg,3,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-4.jpg,4,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-5.jpg,5,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-6.jpg,6,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-7.jpg,7,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-8.jpg,8,.jpg
+BM 124565,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124565-9.jpg,9,.jpg
+BM 124566,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124566-1.jpg,1,.jpg
+BM 124566,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124566-2.jpg,2,.jpg
+BM 124566,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124566-3.jpg,3,.jpg
+BM 124567,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124567-1.jpg,1,.jpg
+BM 124567,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124567-2.jpg,2,.jpg
+BM 124567,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124567-3.jpg,3,.jpg
+BM 124567,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124567-4.jpg,4,.jpg
+BM 124568,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124568-1.jpg,1,.jpg
+BM 124568,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124568-2.jpg,2,.jpg
+BM 124568,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124568-3.jpg,3,.jpg
+BM 124569,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124569-1.jpg,1,.jpg
+BM 124569,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124569-2.jpg,2,.jpg
+BM 124569,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124569-3.jpg,3,.jpg
+BM 124569,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124569-4.jpg,4,.jpg
+BM 124575,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124575-1.jpg,1,.jpg
+BM 124576,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124576-1.jpg,1,.jpg
+BM 124576,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124576-2.jpg,2,.jpg
+BM 124578,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124578-1.jpg,1,.jpg
+BM 124578,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124578-2.jpg,2,.jpg
+BM 124579,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124579-1.jpg,1,.jpg
+BM 124579,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124579-2.jpg,2,.jpg
+BM 124579,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124579-3.jpg,3,.jpg
+BM 124579,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124579-4.jpg,4,.jpg
+BM 124580,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124580-1.jpg,1,.jpg
+BM 124580,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124580-2.jpg,2,.jpg
+BM 124583,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124583-1.jpg,1,.jpg
+BM 124583,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 124583-2.jpg,2,.jpg
+BM 124584,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124584-1.jpg,1,.jpg
+BM 124584,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124584-2.jpg,2,.jpg
+BM 124584,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124584-3.jpg,3,.jpg
+BM 124584,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124584-4.jpg,4,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-1.jpg,1,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-2.jpg,2,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-3.jpg,3,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-4.jpg,4,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-5.jpg,5,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-6.jpg,6,.jpg
+BM 124585,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124585-7.jpg,7,.jpg
+BM 124586,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124586-1.jpg,1,.jpg
+BM 124586,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124586-2.jpg,2,.jpg
+BM 124586,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 124586-3.jpg,3,.jpg
+BM 124773,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124773-1.jpg,1,.jpg
+BM 124773,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124773-2.jpg,2,.jpg
+BM 124788,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124788-1.jpg,1,.jpg
+BM 124793,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124793-1.jpg,1,.jpg
+BM 124793,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124793-2.jpg,2,.jpg
+BM 124793,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124793-3.jpg,3,.jpg
+BM 124793,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124793-4.jpg,4,.jpg
+BM 124794,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124794-1.jpg,1,.jpg
+BM 124794,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124794-2.jpg,2,.jpg
+BM 124794,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124794-3.jpg,3,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-1.jpg,1,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-10.jpg,10,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-11.jpg,11,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-12.jpg,12,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-13.jpg,13,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-14.jpg,14,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-15.jpg,15,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-16.jpg,16,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-17.jpg,17,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-18.jpg,18,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-19.jpg,19,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-2.jpg,2,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-20.jpg,20,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-21.jpg,21,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-22.jpg,22,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-23.jpg,23,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-24.jpg,24,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-25.jpg,25,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-26.jpg,26,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-27.jpg,27,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-28.jpg,28,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-29.jpg,29,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-3.jpg,3,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-30.jpg,30,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-31.jpg,31,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-32.jpg,32,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-33.jpg,33,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-34.jpg,34,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-35.jpg,35,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-36.jpg,36,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-37.jpg,37,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-38.jpg,38,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-39.jpg,39,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-4.jpg,4,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-40.jpg,40,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-41.jpg,41,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-42.jpg,42,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-43.jpg,43,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-44.jpg,44,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-45.jpg,45,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-46.jpg,46,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-47.jpg,47,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-48.jpg,48,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-49.jpg,49,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-5.jpg,5,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-50.jpg,50,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-51.jpg,51,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-52.jpg,52,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-6.jpg,6,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-7.jpg,7,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-8.jpg,8,.jpg
+BM 124801,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124801-9.jpg,9,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-1.jpg,1,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-10.jpg,10,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-11.jpg,11,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-12.jpg,12,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-13.jpg,13,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-14.jpg,14,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-15.jpg,15,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-16.jpg,16,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-17.jpg,17,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-18.jpg,18,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-19.jpg,19,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-2.jpg,2,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-20.jpg,20,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-21.jpg,21,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-22.jpg,22,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-23.jpg,23,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-24.jpg,24,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-3.jpg,3,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-4.jpg,4,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-5.jpg,5,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-6.jpg,6,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-7.jpg,7,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-8.jpg,8,.jpg
+BM 124802,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124802-9.jpg,9,.jpg
+BM 124825,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124825-1.jpg,1,.jpg
+BM 124825,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124825-2.jpg,2,.jpg
+BM 124825,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124825-3.jpg,3,.jpg
+BM 124853,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124853-1.jpg,1,.jpg
+BM 124857,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124857-1.jpg,1,.jpg
+BM 124857,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124857-2.jpg,2,.jpg
+BM 124860,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124860-1.jpg,1,.jpg
+BM 124860,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124860-2.jpg,2,.jpg
+BM 124860,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124860-3.jpg,3,.jpg
+BM 124860,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124860-4.jpg,4,.jpg
+BM 124863,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124863-1.jpg,1,.jpg
+BM 124863,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124863-2.jpg,2,.jpg
+BM 124864,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124864-1.jpg,1,.jpg
+BM 124864,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124864-2.jpg,2,.jpg
+BM 124864,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124864-3.jpg,3,.jpg
+BM 124864,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124864-4.jpg,4,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-1.jpg,1,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-2.jpg,2,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-3.jpg,3,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-4.jpg,4,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-5.jpg,5,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-6.jpg,6,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-7.jpg,7,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-8.jpg,8,.jpg
+BM 124866,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124866-9.jpg,9,.jpg
+BM 124867,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124867-1.jpg,1,.jpg
+BM 124867,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124867-2.jpg,2,.jpg
+BM 124868,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124868-1.jpg,1,.jpg
+BM 124868,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124868-2.jpg,2,.jpg
+BM 124868,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124868-3.jpg,3,.jpg
+BM 124868,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124868-4.jpg,4,.jpg
+BM 124869,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124869-1.jpg,1,.jpg
+BM 124871,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124871-1.jpg,1,.jpg
+BM 124871,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124871-2.jpg,2,.jpg
+BM 124871,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124871-3.jpg,3,.jpg
+BM 124871,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124871-4.jpg,4,.jpg
+BM 124871,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124871-5.jpg,5,.jpg
+BM 124872,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124872-1.jpg,1,.jpg
+BM 124873,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124873-1.jpg,1,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-1.jpg,1,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-10.jpg,10,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-11.jpg,11,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-12.jpg,12,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-13.jpg,13,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-14.jpg,14,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-15.jpg,15,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-2.jpg,2,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-3.jpg,3,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-4.jpg,4,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-5.jpg,5,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-6.jpg,6,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-7.jpg,7,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-8.jpg,8,.jpg
+BM 124874,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124874-9.jpg,9,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-1.jpg,1,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-2.jpg,2,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-3.jpg,3,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-4.jpg,4,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-5.jpg,5,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-6.jpg,6,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-7.jpg,7,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-8.jpg,8,.jpg
+BM 124875,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124875-9.jpg,9,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-1.jpg,1,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-10.jpg,10,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-11.jpg,11,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-13.jpg,13,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-14.jpg,14,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-15.jpg,15,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-16.jpg,16,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-17.jpg,17,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-18.jpg,18,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-19.jpg,19,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-2.jpg,2,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-3.jpg,3,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-4.jpg,4,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-5.jpg,5,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-6.jpg,6,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-8.jpg,8,.jpg
+BM 124876,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124876-9.jpg,9,.jpg
+BM 124877,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124877-1.jpg,1,.jpg
+BM 124877,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124877-2.jpg,2,.jpg
+BM 124877,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124877-3.jpg,3,.jpg
+BM 124877,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124877-4.jpg,4,.jpg
+BM 124877,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124877-5.jpg,5,.jpg
+BM 124878,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124878-1.jpg,1,.jpg
+BM 124879,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124879-1.jpg,1,.jpg
+BM 124884,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124884-1.jpg,1,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-1.jpg,1,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-10.jpg,10,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-11.jpg,11,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-2.jpg,2,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-3.jpg,3,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-4.jpg,4,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-5.jpg,5,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-6.jpg,6,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-7.jpg,7,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-8.jpg,8,.jpg
+BM 124886,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124886-9.jpg,9,.jpg
+BM 124887,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124887-1.jpg,1,.jpg
+BM 124887,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124887-2.jpg,2,.jpg
+BM 124888,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124888-1.jpg,1,.jpg
+BM 124889,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124889-1.jpg,1,.jpg
+BM 124889,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124889-2.jpg,2,.jpg
+BM 124889,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124889-3.jpg,3,.jpg
+BM 124890,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124890-1.jpg,1,.jpg
+BM 124890,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124890-2.jpg,2,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-1.jpg,1,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-10.jpg,10,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-11.jpg,11,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-12.jpg,12,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-13.jpg,13,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-14.jpg,14,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-2.jpg,2,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-3.jpg,3,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-4.jpg,4,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-5.jpg,5,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-6.jpg,6,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-7.jpg,7,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-8.jpg,8,.jpg
+BM 124893,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124893-9.jpg,9,.jpg
+BM 124918,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124918-1.jpg,1,.jpg
+BM 124918,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124918-2.jpg,2,.jpg
+BM 124918,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124918-3.jpg,3,.jpg
+BM 124919,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124919-1.jpg,1,.jpg
+BM 124919,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124919-2.jpg,2,.jpg
+BM 124919,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124919-3.jpg,3,.jpg
+BM 124919,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124919-4.jpg,4,.jpg
+BM 124919,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124919-5.jpg,5,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-1.jpg,1,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-2.jpg,2,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-3.jpg,3,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-4.jpg,4,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-5.jpg,5,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-6.jpg,6,.jpg
+BM 124920,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124920-7.jpg,7,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-1.jpg,1,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-2.jpg,2,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-3.jpg,3,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-4.jpg,4,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-5.jpg,5,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-6.jpg,6,.jpg
+BM 124922,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124922-7.jpg,7,.jpg
+BM 124926,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124926-1.jpg,1,.jpg
+BM 124926,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124926-2.jpg,2,.jpg
+BM 124926,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124926-3.jpg,3,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-1.jpg,1,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-2.jpg,2,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-3.jpg,3,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-4.jpg,4,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-5.jpg,5,.jpg
+BM 124928,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124928-6.jpg,6,.jpg
+BM 124931,Ashurbanipal,test,/home/kostya/projects/dataset_v2/BM 124931-1.jpg,1,.jpg
+BM 124933,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124933-1.jpg,1,.jpg
+BM 124933,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124933-2.jpg,2,.jpg
+BM 124936,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124936-1.jpg,1,.jpg
+BM 124937,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124937-1.jpg,1,.jpg
+BM 124937,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124937-2.jpg,2,.jpg
+BM 124937,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124937-3.jpg,3,.jpg
+BM 124938,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124938-1.jpg,1,.jpg
+BM 124939,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124939-1.jpg,1,.jpg
+BM 124939,Ashurbanipal,val,/home/kostya/projects/dataset_v2/BM 124939-2.jpg,2,.jpg
+BM 124955,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124955-1.jpg,1,.jpg
+BM 124955,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124955-2.jpg,2,.jpg
+BM 124955,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124955-3.jpg,3,.jpg
+BM 124955,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 124955-4.jpg,4,.jpg
+BM 135156,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135156-1.jpg,1,.jpg
+BM 135157,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135157-1.jpg,1,.jpg
+BM 135741,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135741-1.jpg,1,.jpg
+BM 135741,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135741-2.jpg,2,.jpg
+BM 135741,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135741-3.jpg,3,.jpg
+BM 135741,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BM 135741-4.jpg,4,.jpg
+BM 136774,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 136774-1.jpg,1,.jpg
+BM 136774,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 136774-2.png,2,.png
+BM 136774,Ashurbanipal,train,/home/kostya/projects/dataset_v2/BM 136774-3.png,3,.png
+"BM 1847,0702.23",Sargon II,val,"/home/kostya/projects/dataset_v2/BM 1847,0702.23-1.jpg",1,.jpg
+"BM 1847,0702.23",Sargon II,val,"/home/kostya/projects/dataset_v2/BM 1847,0702.23-2.jpg",2,.jpg
+"BM 1847,0702.23",Sargon II,val,"/home/kostya/projects/dataset_v2/BM 1847,0702.23-3.jpg",3,.jpg
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-1.jpg,1,.jpg
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-2.jpg,2,.jpg
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-3.jpg,3,.jpg
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-4.png,4,.png
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-5.png,5,.png
+BM 98061,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BM 98061-6.png,6,.png
+BM 98064,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 98064-1.jpg,1,.jpg
+BM 98064,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 98064-2.png,2,.png
+BM 98064,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BM 98064-3.png,3,.png
+BOS 35.731,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BOS 35.731-1.jpg,1,.jpg
+BOS 35.731,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BOS 35.731-2.jpg,2,.jpg
+BRK 55.149,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BRK 55.149-1.jpg,1,.jpg
+BRK 55.149,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BRK 55.149-2.jpg,2,.jpg
+BRK 55.150,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/BRK 55.150-1.jpg,1,.jpg
+BRK 55.152,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BRK 55.152-1.jpg,1,.jpg
+BRK 55.153,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/BRK 55.153-1.jpg,1,.jpg
+BRK 55.155,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BRK 55.155-1.jpg,1,.jpg
+BRK 55.155,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/BRK 55.155-2.jpg,2,.jpg
+HM 3938,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/HM 3938-1.jpg,1,.jpg
+HM 3939,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/HM 3939-1.jpg,1,.jpg
+HM 3944,Sargon II,train,/home/kostya/projects/dataset_v2/HM 3944-1.jpg,1,.jpg
+HM 3944,Sargon II,train,/home/kostya/projects/dataset_v2/HM 3944-2.jpg,2,.jpg
+HM 3944,Sargon II,train,/home/kostya/projects/dataset_v2/HM 3944-3.jpg,3,.jpg
+HM 3945,Sargon II,train,/home/kostya/projects/dataset_v2/HM 3945-1.jpg,1,.jpg
+HM 3945,Sargon II,train,/home/kostya/projects/dataset_v2/HM 3945-2.jpg,2,.jpg
+HMA S.856.3.1,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/HMA S.856.3.1-1.tif,1,.tif
+MET 17.190.2077,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 17.190.2077-1.jpg,1,.jpg
+MET 17.190.2078,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 17.190.2078-1.jpg,1,.jpg
+MET 17.190.2079,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 17.190.2079-1.jpg,1,.jpg
+MET 17.190.2080,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/MET 17.190.2080-1.jpg,1,.jpg
+MET 17.190.2081,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/MET 17.190.2081-1.jpg,1,.jpg
+MET 17.190.2082,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 17.190.2082-1.jpg,1,.jpg
+MET 31.72.1,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 31.72.1-1.jpg,1,.jpg
+MET 31.72.2,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/MET 31.72.2-1.jpg,1,.jpg
+MET 31.72.3,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 31.72.3-1.jpg,1,.jpg
+MET 32.143.11,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 32.143.11-1.jpg,1,.jpg
+MET 32.143.12,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 32.143.12-1.jpg,1,.jpg
+MET 32.143.3,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/MET 32.143.3-1.jpg,1,.jpg
+MET 32.143.4,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 32.143.4-1.jpg,1,.jpg
+MET 32.143.4,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 32.143.4-2.jpg,2,.jpg
+MET 32.143.4,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 32.143.4-3.jpg,3,.jpg
+MET 32.143.7,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 32.143.7-1.jpg,1,.jpg
+MET 32.143.8,Ashurnasirpal II,val,/home/kostya/projects/dataset_v2/MET 32.143.8-1.jpg,1,.jpg
+MET 32.143.9,Ashurnasirpal II,test,/home/kostya/projects/dataset_v2/MET 32.143.9-1.jpg,1,.jpg
+MET 33.16.1,Sargon II,val,/home/kostya/projects/dataset_v2/MET 33.16.1-1.jpg,1,.jpg
+MET 33.16.2,Sargon II,val,/home/kostya/projects/dataset_v2/MET 33.16.2-1.jpg,1,.jpg
+MET 84.11,Ashurnasirpal II,train,/home/kostya/projects/dataset_v2/MET 84.11-1.jpg,1,.jpg

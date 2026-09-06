@@ -213,3 +213,78 @@ def plot_query_and_retrieved_reliefs(
         plt.show()
 
     return fig
+
+
+def plot_query_image_retrieval_row(
+    retrieval_row: pd.Series,
+    image_root: str | Path,
+    k: int = 5,
+    figsize_scale: float = 4.5,
+    show: bool = False,
+):
+    """
+    Plot one query image and its top-k retrieved image neighbors.
+
+    Expected columns:
+        query_image_path or query_image_filename
+        top1_image_path or top1_image_filename
+        ...
+    """
+
+    image_root = Path(image_root)
+
+    def resolve_path(prefix: str) -> Path:
+        path_col = f"{prefix}_image_path"
+        filename_col = f"{prefix}_image_filename"
+
+        if path_col in retrieval_row.index and pd.notna(retrieval_row[path_col]):
+            return Path(retrieval_row[path_col])
+
+        if filename_col in retrieval_row.index and pd.notna(retrieval_row[filename_col]):
+            return image_root / str(retrieval_row[filename_col])
+
+        raise ValueError(f"Could not resolve image path for prefix={prefix!r}")
+
+    prefixes = ["query"] + [f"top{rank}" for rank in range(1, k + 1)]
+
+    fig, axes = plt.subplots(
+        1,
+        len(prefixes),
+        figsize=(figsize_scale * len(prefixes), figsize_scale),
+        constrained_layout=True,
+    )
+
+    if len(prefixes) == 1:
+        axes = [axes]
+
+    for ax, prefix in zip(axes, prefixes):
+        img_path = resolve_path(prefix)
+
+        if not img_path.is_file():
+            raise FileNotFoundError(f"Image file does not exist: {img_path}")
+
+        img = Image.open(img_path).convert("RGB")
+        ax.imshow(img)
+        ax.axis("off")
+
+        if prefix == "query":
+            title = (
+                f"QUERY\n"
+                f"{retrieval_row.get('query_image_filename', img_path.name)}\n"
+                f"{retrieval_row.get('query_authority', '')}"
+            )
+        else:
+            rank = prefix.replace("top", "")
+            title = (
+                f"Top {rank}\n"
+                f"{retrieval_row.get(f'{prefix}_image_filename', img_path.name)}\n"
+                f"{retrieval_row.get(f'{prefix}_authority', '')}\n"
+                f"sim={retrieval_row.get(f'{prefix}_similarity', float('nan')):.3f}"
+            )
+
+        ax.set_title(title, fontsize=10)
+
+    if show:
+        plt.show()
+
+    return fig

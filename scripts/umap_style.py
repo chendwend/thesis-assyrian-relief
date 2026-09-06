@@ -1,7 +1,9 @@
 from __future__ import annotations
 
 import argparse
+import re
 
+import matplotlib.pyplot as plt
 import pandas as pd
 import torch
 from thesis_assyrian_relief.utils.data import build_dataloader
@@ -10,6 +12,9 @@ from thesis_assyrian_relief.utils.config import load_yaml_config, ensure_parent_
 from thesis_assyrian_relief.evaluation.retrieval import (
     aggregate_relief_embeddings,
     extract_embeddings,
+)
+from thesis_assyrian_relief.evaluation.dependency_group import (
+    aggregate_image_embeddings_by_dependency_group,
 )
 from thesis_assyrian_relief.models.dinov2_probe import DinoStyleProbe
 from thesis_assyrian_relief.training.engine import load_checkpoint
@@ -38,6 +43,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--csv-path", type=str, default=None, help="Path to image_level_dataset.csv")
     parser.add_argument("--image-root", type=str, default=None, help="Root directory containing image files")
     parser.add_argument("--filename-sep", type=str, default=None, help="Filename separator between Relief_ID and view_index")
+    parser.add_argument(
+        "--components-path",
+        type=str,
+        default=None,
+        help="Optional frozen component CSV; when supplied, aggregate and plot dependency groups.",
+    )
 
     parser.add_argument("--train-split", type=str, default=None)
     parser.add_argument("--eval-split", type=str, default=None)
@@ -62,6 +73,7 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument("--html-out", type=str, default=None, help="Output HTML for interactive Plotly figure")
     parser.add_argument("--csv-out", type=str, default=None, help="Optional CSV with UMAP coordinates")
+    parser.add_argument("--png-out", type=str, default=None, help="Optional static PNG for the thesis")
     parser.add_argument(
         "--highlight-relief-ids",
         type=str,
@@ -103,6 +115,7 @@ def resolve_config(args: argparse.Namespace) -> dict:
         "csv_path": pick(args.csv_path, "data", "csv_path"),
         "image_root": pick(args.image_root, "data", "image_root"),
         "filename_sep": pick(args.filename_sep, "data", "filename_sep", default="-"),
+        "components_path": args.components_path,
 
         "train_split": pick(args.train_split, "splits", "train", default="train"),
         "eval_split": pick(args.eval_split, "splits", "test", default="test"),
@@ -113,6 +126,7 @@ def resolve_config(args: argparse.Namespace) -> dict:
 
         "html_out": pick(args.html_out, "outputs", "umap_html_path"),
         "csv_out": pick(args.csv_out, "outputs", "umap_csv_path", required=False),
+        "png_out": pick(args.png_out, "outputs", "umap_png_path", required=False),
 
         "highlight_relief_ids": (
             args.highlight_relief_ids
@@ -138,6 +152,91 @@ def resolve_config(args: argparse.Namespace) -> dict:
         resolved["umap_plot_splits"] = ["val"]
 
     return resolved
+
+
+def source_from_relief_id(relief_id: str) -> str:
+    match = re.match(r"^([A-Za-z]+)", str(relief_id).strip())
+    source = match.group(1).upper() if match else "Other"
+    return source if source in {"AO", "BM", "MET"} else "Other"
+
+
+def plot_umap_static(viz_df: pd.DataFrame, out_path: str) -> None:
+    data = viz_df.copy()
+    source_values = data["relief_ids"] if "relief_ids" in data.columns else data["relief_id"]
+    data["source"] = source_values.map(source_from_relief_id)
+    authority_colors = {
+        "Ashurbanipal": "#3B6FB6",
+        "Ashurnasirpal II": "#D17A22",
+        "Sargon II": "#2F8F5B",
+    }
+    source_colors = {
+        "BM": "#3B6FB6",
+        "AO": "#C44E52",
+        "MET": "#55A868",
+        "Other": "#8172B2",
+    }
+    split_markers = {"train": "o", "val": "s", "test": "^"}
+
+    fig, axes = plt.subplots(1, 2, figsize=(11.5, 5.2), sharex=True, sharey=True)
+    for ax, column, colors, title in (
+        (axes[0], "authority", authority_colors, "A. Colour by ruler"),
+        (axes[1], "source", source_colors, "B. Colour by museum/source prefix"),
+    ):
+        for split, marker in split_markers.items():
+            for category, color in colors.items():
+                subset = data[(data["split"] == split) & (data[column] == category)]
+                if subset.empty:
+                    continue
+                ax.scatter(
+                    subset["umap_x"],
+                    subset["umap_y"],
+                    s=30 if split == "train" else 46,
+                    marker=marker,
+                    c=color,
+                    edgecolors="white",
+                    linewidths=0.45,
+                    alpha=0.78 if split == "train" else 0.95,
+                )
+        ax.set_title(title, loc="left", fontsize=11, fontweight="bold")
+        ax.set_xlabel("UMAP 1")
+        ax.grid(alpha=0.15, linewidth=0.5)
+        ax.spines[["top", "right"]].set_visible(False)
+    axes[0].set_ylabel("UMAP 2")
+
+    authority_handles = [
+        plt.Line2D([], [], marker="o", linestyle="", color=color, label=label)
+        for label, color in authority_colors.items()
+    ]
+    source_handles = [
+        plt.Line2D([], [], marker="o", linestyle="", color=color, label=label)
+        for label, color in source_colors.items()
+    ]
+    split_handles = [
+        plt.Line2D(
+            [], [], marker=marker, linestyle="", color="#555555", label=split
+        )
+        for split, marker in split_markers.items()
+    ]
+    axes[0].legend(
+        handles=authority_handles + split_handles,
+        fontsize=8,
+        frameon=False,
+        loc="best",
+    )
+    axes[1].legend(
+        handles=source_handles + split_handles,
+        fontsize=8,
+        frameon=False,
+        loc="best",
+    )
+    fig.suptitle(
+        "Dependency-group DINOv2 probe embeddings (UMAP fitted on training groups)",
+        fontsize=12,
+        y=1.01,
+    )
+    fig.tight_layout()
+    fig.savefig(out_path, dpi=300, bbox_inches="tight")
+    plt.close(fig)
 
 
 def main() -> None:
@@ -186,6 +285,11 @@ def main() -> None:
 
     required_splits = {fit_split} | set(plot_splits)
 
+    components_df = (
+        pd.read_csv(cfg["components_path"])
+        if cfg["components_path"] is not None
+        else None
+    )
     relief_emb_by_split: dict[str, pd.DataFrame] = {}
     for split in sorted(required_splits):
         print(f"Extracting embeddings for split={split!r}...")
@@ -202,7 +306,14 @@ def main() -> None:
             check_paths=True,
         )
         img_emb_df = extract_embeddings(model, loader, device)
-        relief_emb_by_split[split] = aggregate_relief_embeddings(img_emb_df)
+        if components_df is None:
+            relief_emb_by_split[split] = aggregate_relief_embeddings(img_emb_df)
+        else:
+            relief_emb_by_split[split] = aggregate_image_embeddings_by_dependency_group(
+                img_emb_df,
+                components_df,
+                split=split,
+            )
 
     fit_relief_emb_df = relief_emb_by_split[fit_split]
     project_pairs = [(relief_emb_by_split[s], s) for s in plot_splits]
@@ -227,6 +338,11 @@ def main() -> None:
         csv_out = ensure_parent_dir(cfg["csv_out"])
         viz_df.to_csv(csv_out, index=False)
         print(f"Saved UMAP dataframe CSV to: {csv_out}")
+
+    if cfg["png_out"] is not None:
+        png_out = ensure_parent_dir(cfg["png_out"])
+        plot_umap_static(viz_df, str(png_out))
+        print(f"Saved static UMAP PNG to: {png_out}")
 
 
 if __name__ == "__main__":

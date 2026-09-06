@@ -1,0 +1,56 @@
+{
+  "seed": 24,
+  "ratios": {
+    "train": 0.7,
+    "val": 0.2,
+    "test": 0.1
+  },
+  "target_classes": [
+    "Ashurbanipal",
+    "Ashurnasirpal II",
+    "Sargon II"
+  ],
+  "image_count": 664,
+  "component_count": 171,
+  "excluded_images": {
+    "Sennacherib": 62,
+    "Tiglath-Pileser III": 51
+  },
+  "image_counts": {
+    "Ashurbanipal": {
+      "train": 194,
+      "val": 55,
+      "test": 28
+    },
+    "Ashurnasirpal II": {
+      "train": 166,
+      "val": 48,
+      "test": 24
+    },
+    "Sargon II": {
+      "train": 104,
+      "val": 30,
+      "test": 15
+    }
+  },
+  "component_counts": {
+    "Ashurbanipal": {
+      "train": 20,
+      "val": 15,
+      "test": 13
+    },
+    "Ashurnasirpal II": {
+      "train": 35,
+      "val": 22,
+      "test": 16
+    },
+    "Sargon II": {
+      "train": 25,
+      "val": 15,
+      "test": 10
+    }
+  },
+  "manifest_sha256": "4942ec4984fa5a5b261cd9b2c7cc141e37a17ae84d82cf0e41becd83d518690e",
+  "group_leaks": 0,
+  "checksum_leaks": 0
+}

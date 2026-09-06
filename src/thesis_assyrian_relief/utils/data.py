@@ -7,6 +7,7 @@ import pandas as pd
 import torch
 from torch.utils.data import DataLoader
 from torchvision import transforms
+from torchvision.transforms import functional as transform_functional
 
 from thesis_assyrian_relief.datasets.relief_style_dataset import ReliefStyleDataset
 
@@ -20,9 +21,51 @@ def build_class_to_idx(csv_path: str | Path) -> dict[str, int]:
     return {cls_name: idx for idx, cls_name in enumerate(classes)}
 
 
-def build_eval_transform():
+class ResizeAndPad:
+    """Resize the long edge to a square canvas while preserving aspect ratio."""
+
+    def __init__(
+        self,
+        size: int = 224,
+        fill: tuple[int, int, int] = (124, 116, 104),
+    ) -> None:
+        self.size = size
+        self.fill = fill
+
+    def __call__(self, image):
+        width, height = image.size
+        scale = self.size / max(width, height)
+        resized_width = max(1, round(width * scale))
+        resized_height = max(1, round(height * scale))
+        resized = transform_functional.resize(
+            image,
+            [resized_height, resized_width],
+            antialias=True,
+        )
+        horizontal = self.size - resized_width
+        vertical = self.size - resized_height
+        padding = [
+            horizontal // 2,
+            vertical // 2,
+            horizontal - horizontal // 2,
+            vertical - vertical // 2,
+        ]
+        return transform_functional.pad(resized, padding, fill=self.fill)
+
+
+def build_resize_transform(resize_mode: str):
+    if resize_mode == "stretch":
+        return transforms.Resize((224, 224))
+    if resize_mode == "pad":
+        return ResizeAndPad(size=224)
+    raise ValueError(
+        f"Unknown resize mode {resize_mode!r}; expected 'stretch' or 'pad'"
+    )
+
+
+def build_eval_transform(resize_mode: str = "stretch"):
     return transforms.Compose([
-        transforms.Resize((224, 224)),
+        build_resize_transform(resize_mode),
         transforms.ToTensor(),
         transforms.Normalize(
             mean=[0.485, 0.456, 0.406],
@@ -31,10 +74,9 @@ def build_eval_transform():
     ])
 
 
-def build_train_transform():
-    # Keep conservative for now. We can expand augmentations later.
+def build_train_transform(resize_mode: str = "stretch"):
     return transforms.Compose([
-        transforms.Resize((224, 224)),
+        build_resize_transform(resize_mode),
         transforms.ToTensor(),
         transforms.Normalize(
             mean=[0.485, 0.456, 0.406],
@@ -49,10 +91,15 @@ def build_dataset(
     class_to_idx: dict[str, int],
     image_root: str,
     filename_sep: str = "-",
+    resize_mode: str = "stretch",
     train: bool = False,
     check_paths: bool = True,
 ) -> ReliefStyleDataset:
-    transform = build_train_transform() if train else build_eval_transform()
+    transform = (
+        build_train_transform(resize_mode)
+        if train
+        else build_eval_transform(resize_mode)
+    )
 
     return ReliefStyleDataset(
         csv_path=csv_path,
@@ -71,6 +118,7 @@ def build_dataloader(
     class_to_idx: dict[str, int],
     image_root: str,
     filename_sep: str = "-",
+    resize_mode: str = "stretch",
     batch_size: int = 16,
     num_workers: int = 2,
     shuffle: bool = False,
@@ -83,6 +131,7 @@ def build_dataloader(
         class_to_idx=class_to_idx,
         image_root=image_root,
         filename_sep=filename_sep,
+        resize_mode=resize_mode,
         train=train,
         check_paths=check_paths,
     )

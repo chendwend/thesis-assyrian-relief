@@ -1,0 +1,59 @@
+- No citation of Frahm
+- added two more sources: "Cultural analytics", "Homo pictor..."
+
+1.2 
+"not as an autonomous authority capable, of proving an attribution." - in general I don't like this negation style wording, it's too chatgpt. 
+1.4 
+"rather than through a single accuracy score." - again negation style.
+1.5
+- What was done earlier isn't relevant, only what contributes to this thesis work. 
+- " isolate a culturally pure concept of style" - Don't try to see if style can be isolated per monarch?
+
+2.4 
+"three operational labels" - why only 3 and not 5?
+
+3.1
+- why are we mentioning "distinct data products"? we only care of what's relevant to the thesis
+3.2.1
+"The current canonical.." why current? thesis should contain final work...
+- "The corpus contains records for rulers outside the three-class experiment": why not specify them?
+- "it is not equivalent to the modelling subset." - what?
+
+3.2.2
+- "A PostgreSQL schema...." maybe we should simplify this, since archaegoloists are going to read it too. and also no "currently"
+
+
+3.2.3 
+-Why are we mentioning legacy work? 
+We care how the dataset was labeled, what work has been done for.
+ALso, after assigning style_analysis_use, images included in dataset_v2 were screened from those assignments, so on image-level inspection. 
+- "The later dataset_v2 directory..." why are we talking about the intrigues, names of directories etc.? how does it contribute to the clarity of the thesis?
+
+3.3.1
+- If the current relief_id column isn't good, let's deal with it. We shouldn't discuss internal work which doesn't contribute to the thesis.
+- What if a photograph covers one relief and some percentage of an adjacent relief? I've tried to crop out the main relief. 
+- I think there's a missing processing step - cropped images from nearbuy reliefs and their surroundigns to reduce chance of backgrounds affecting decision, etc.
+
+3.3.2
+- Again, intrigues and history that don't add to the clarity of the thesis should be omitted "legacy Relief_ID", "OTHER class". 
+- We talk here about split, without mentioning the parameters of splitting, and then we talk again about splitting in 3.4 - why?
+- what is catalogue records? we should be consistnet in the nomenclature across the whole work.
+3.3.3
+- "are byte-identical..": this detail is irrelevant here. if mistakes were done by me, I should be aware of them and we should fix them. Thesis shouldn't contain such information.
+-
+3.4.1
+- I don't understand the notion of connected component and how it is used here.
+- I don't understand this section.
+3.4.2
+- Maybe we should explain this identification process logic, and cite the relevant paper - if missing, let me know.
+- People from archaeology reading this, and using notions such as SHA-256, DCT etc... - i'm not sure it's smart, without even introducing concepts of how it's done. I even don't understand this chapter.
+3.4.3
+Don't understand.
+3.4.4
+please clarify
+3.5
+-  preserve aspect ratio: why didn't we do it then? 
+- why did we preprocess it like this?
+3.6.1
+- Why did we decide on this backbone?
+- why not use  contrastive metric-learning model?
