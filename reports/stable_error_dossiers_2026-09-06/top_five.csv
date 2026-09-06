@@ -1,0 +1,91 @@
+seed,query_group,query_relief_ids,query_authority,rank,neighbour_group,neighbour_relief_ids,neighbour_authority,cosine_similarity,same_label
+24,component:49dfc86ff54bc4de,BM 118829,Sargon II,1,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.9349076747894287,False
+24,component:49dfc86ff54bc4de,BM 118829,Sargon II,2,component:72f4a3fe5e28d6aa,BM 124553,Ashurnasirpal II,0.9309300184249878,False
+24,component:49dfc86ff54bc4de,BM 118829,Sargon II,3,component:f1361a1a2e806a6e,BM 124552,Ashurnasirpal II,0.925169825553894,False
+24,component:49dfc86ff54bc4de,BM 118829,Sargon II,4,component:d9a32fc73c776b8f,BM 98061,Ashurnasirpal II,0.91840660572052,False
+24,component:49dfc86ff54bc4de,BM 118829,Sargon II,5,component:7c47474369feae95,BM 124551,Ashurnasirpal II,0.9157085418701172,False
+24,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,1,component:e3555baf0baf0dda,BM 124586,Ashurnasirpal II,0.9541974663734436,False
+24,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,2,component:8948646c0aba7b34,BM 124578,Ashurnasirpal II,0.9341830015182495,False
+24,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,3,component:fc2233d0d06153f5,BRK 55.153,Ashurnasirpal II,0.9292713403701782,False
+24,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,4,component:3073a63f6c4efce2,MET 31.72.2,Ashurnasirpal II,0.9231061935424805,False
+24,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,5,component:8d39f08650c1146c,AN 1982.224,Ashurnasirpal II,0.9229931831359863,False
+24,component:780c196f9e54b401,AO 19909,Ashurbanipal,1,component:89e36a40d358915d,BM 124801;BM 124802,Ashurbanipal,0.9695802927017212,True
+24,component:780c196f9e54b401,AO 19909,Ashurbanipal,2,component:242afe8b9ec37c4f,BM 136774,Ashurbanipal,0.969403862953186,True
+24,component:780c196f9e54b401,AO 19909,Ashurbanipal,3,component:139252299d267a57,BM 124928,Ashurbanipal,0.9673177003860474,True
+24,component:780c196f9e54b401,AO 19909,Ashurbanipal,4,component:7bde19305458e067,BM 124938,Ashurbanipal,0.9635841250419617,True
+24,component:780c196f9e54b401,AO 19909,Ashurbanipal,5,component:9a39941197451d81,BM 124886,Ashurbanipal,0.9591323733329773,True
+24,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,1,component:c2a831c92b9da5f5,BM 118918,Ashurbanipal,0.9421059489250183,True
+24,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,2,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.9279339909553528,False
+24,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,3,component:72f4a3fe5e28d6aa,BM 124553,Ashurnasirpal II,0.9238722324371338,False
+24,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,4,component:97fdc419825cbe03,MET 32.143.3,Ashurnasirpal II,0.9174259305000305,False
+24,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,5,component:f1361a1a2e806a6e,BM 124552,Ashurnasirpal II,0.9032422304153442,False
+24,component:d50b8e780f731a29,BM 124867,Ashurbanipal,1,component:c2a831c92b9da5f5,BM 118918,Ashurbanipal,0.9300307035446167,True
+24,component:d50b8e780f731a29,BM 124867,Ashurbanipal,2,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.9275254011154175,False
+24,component:d50b8e780f731a29,BM 124867,Ashurbanipal,3,component:72f4a3fe5e28d6aa,BM 124553,Ashurnasirpal II,0.9229087829589844,False
+24,component:d50b8e780f731a29,BM 124867,Ashurbanipal,4,component:f1361a1a2e806a6e,BM 124552,Ashurnasirpal II,0.9098414182662964,False
+24,component:d50b8e780f731a29,BM 124867,Ashurbanipal,5,component:97fdc419825cbe03,MET 32.143.3,Ashurnasirpal II,0.898798942565918,False
+24,component:f9766de051a8a32d,AO 19894,Sargon II,1,component:af96050e0dcf5973,AO 19870,Sargon II,0.872954249382019,True
+24,component:f9766de051a8a32d,AO 19894,Sargon II,2,component:96ac818096e6f999,AO 19883,Sargon II,0.8643235564231873,True
+24,component:f9766de051a8a32d,AO 19894,Sargon II,3,component:b0677c4f454d2452,BM 118812;BM 118816;BM 118818;BM 118824;BM 118827;BM 118828;BM 118830,Sargon II,0.8258460760116577,True
+24,component:f9766de051a8a32d,AO 19894,Sargon II,4,component:83428ae96cd80e09,BM 118822,Sargon II,0.808617353439331,True
+24,component:f9766de051a8a32d,AO 19894,Sargon II,5,component:1ea64e618b4f360d,HM 3944,Sargon II,0.806550920009613,True
+42,component:49dfc86ff54bc4de,BM 118829,Sargon II,1,component:1d0f12f23787ad6e,BM 118917,Ashurbanipal,0.542390763759613,False
+42,component:49dfc86ff54bc4de,BM 118829,Sargon II,2,component:842ac1d29f484e20,BM 124825,Ashurbanipal,0.5311169028282166,False
+42,component:49dfc86ff54bc4de,BM 118829,Sargon II,3,component:c2a831c92b9da5f5,BM 118918,Ashurbanipal,0.46904313564300537,False
+42,component:49dfc86ff54bc4de,BM 118829,Sargon II,4,component:06ebd955af403609,BM 124575,Ashurnasirpal II,0.45487314462661743,False
+42,component:49dfc86ff54bc4de,BM 118829,Sargon II,5,component:7f7a4a218eee6934,BM 124936,Ashurbanipal,0.43097543716430664,False
+42,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,1,component:06ebd955af403609,BM 124575,Ashurnasirpal II,0.3674643635749817,False
+42,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,2,component:13f42e84829385d1,BM 124538,Ashurnasirpal II,0.3556821346282959,False
+42,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,3,component:98d94e84b4c2b40f,BM 124532;BM 124533,Ashurnasirpal II,0.33776962757110596,False
+42,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,4,component:d9a32fc73c776b8f,BM 98061,Ashurnasirpal II,0.33716386556625366,False
+42,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,5,component:7c47474369feae95,BM 124551,Ashurnasirpal II,0.3358493447303772,False
+42,component:780c196f9e54b401,AO 19909,Ashurbanipal,1,component:242afe8b9ec37c4f,BM 136774,Ashurbanipal,0.9555673599243164,True
+42,component:780c196f9e54b401,AO 19909,Ashurbanipal,2,component:cd3a833ae20aee8d,BM 124793,Ashurbanipal,0.9530205726623535,True
+42,component:780c196f9e54b401,AO 19909,Ashurbanipal,3,component:c2a831c92b9da5f5,BM 118918,Ashurbanipal,0.9455586075782776,True
+42,component:780c196f9e54b401,AO 19909,Ashurbanipal,4,component:7f7a4a218eee6934,BM 124936,Ashurbanipal,0.9435402154922485,True
+42,component:780c196f9e54b401,AO 19909,Ashurbanipal,5,component:0bf45e75d49b75ea,BM 124794;BM 124920;BM 124922,Ashurbanipal,0.9390319585800171,True
+42,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,1,component:06ebd955af403609,BM 124575,Ashurnasirpal II,0.9093926548957825,False
+42,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,2,component:d9a32fc73c776b8f,BM 98061,Ashurnasirpal II,0.863492488861084,False
+42,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,3,component:13f42e84829385d1,BM 124538,Ashurnasirpal II,0.8568446636199951,False
+42,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,4,component:012bee4adb044601,BRK 55.152,Ashurnasirpal II,0.8210201859474182,False
+42,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,5,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.8062667846679688,False
+42,component:d50b8e780f731a29,BM 124867,Ashurbanipal,1,component:06ebd955af403609,BM 124575,Ashurnasirpal II,0.899499773979187,False
+42,component:d50b8e780f731a29,BM 124867,Ashurbanipal,2,component:d9a32fc73c776b8f,BM 98061,Ashurnasirpal II,0.8388450741767883,False
+42,component:d50b8e780f731a29,BM 124867,Ashurbanipal,3,component:13f42e84829385d1,BM 124538,Ashurnasirpal II,0.8081024885177612,False
+42,component:d50b8e780f731a29,BM 124867,Ashurbanipal,4,component:012bee4adb044601,BRK 55.152,Ashurnasirpal II,0.7783385515213013,False
+42,component:d50b8e780f731a29,BM 124867,Ashurbanipal,5,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.7645325660705566,False
+42,component:f9766de051a8a32d,AO 19894,Sargon II,1,component:59b79106796ffa78,AO 22197,Sargon II,0.978864312171936,True
+42,component:f9766de051a8a32d,AO 19894,Sargon II,2,component:523e94ba0d2d4c84,AO 7374,Sargon II,0.9731971025466919,True
+42,component:f9766de051a8a32d,AO 19894,Sargon II,3,component:b0677c4f454d2452,BM 118812;BM 118816;BM 118818;BM 118824;BM 118827;BM 118828;BM 118830,Sargon II,0.9703950881958008,True
+42,component:f9766de051a8a32d,AO 19894,Sargon II,4,component:b7737af97c955939,AO 19918,Sargon II,0.9685375094413757,True
+42,component:f9766de051a8a32d,AO 19894,Sargon II,5,component:889f6ec812739c34,BM 118832,Sargon II,0.959394097328186,True
+77,component:49dfc86ff54bc4de,BM 118829,Sargon II,1,component:c2a831c92b9da5f5,BM 118918,Ashurbanipal,0.5855971574783325,False
+77,component:49dfc86ff54bc4de,BM 118829,Sargon II,2,component:842ac1d29f484e20,BM 124825,Ashurbanipal,0.5513420104980469,False
+77,component:49dfc86ff54bc4de,BM 118829,Sargon II,3,component:1d0f12f23787ad6e,BM 118917,Ashurbanipal,0.5246597528457642,False
+77,component:49dfc86ff54bc4de,BM 118829,Sargon II,4,component:cd3a833ae20aee8d,BM 124793,Ashurbanipal,0.4980030953884125,False
+77,component:49dfc86ff54bc4de,BM 118829,Sargon II,5,component:7f7a4a218eee6934,BM 124936,Ashurbanipal,0.4963316023349762,False
+77,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,1,component:e3555baf0baf0dda,BM 124586,Ashurnasirpal II,0.8677444458007812,False
+77,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,2,component:3073a63f6c4efce2,MET 31.72.2,Ashurnasirpal II,0.8658953905105591,False
+77,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,3,component:06ebd955af403609,BM 124575,Ashurnasirpal II,0.8618567585945129,False
+77,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,4,component:13f42e84829385d1,BM 124538,Ashurnasirpal II,0.8578681349754333,False
+77,component:5ac1df0635a784a9,AO 19902,Ashurbanipal,5,component:012bee4adb044601,BRK 55.152,Ashurnasirpal II,0.8553943634033203,False
+77,component:780c196f9e54b401,AO 19909,Ashurbanipal,1,component:7bde19305458e067,BM 124938,Ashurbanipal,0.9434093832969666,True
+77,component:780c196f9e54b401,AO 19909,Ashurbanipal,2,component:242afe8b9ec37c4f,BM 136774,Ashurbanipal,0.9432225227355957,True
+77,component:780c196f9e54b401,AO 19909,Ashurbanipal,3,component:139252299d267a57,BM 124928,Ashurbanipal,0.9420921802520752,True
+77,component:780c196f9e54b401,AO 19909,Ashurbanipal,4,component:89e36a40d358915d,BM 124801;BM 124802,Ashurbanipal,0.9417564868927002,True
+77,component:780c196f9e54b401,AO 19909,Ashurbanipal,5,component:0fefa98f5ee860a9,BM 124863,Ashurbanipal,0.9381517171859741,True
+77,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,1,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.9061843156814575,False
+77,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,2,component:72f4a3fe5e28d6aa,BM 124553,Ashurnasirpal II,0.8902661204338074,False
+77,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,3,component:f1361a1a2e806a6e,BM 124552,Ashurnasirpal II,0.8685297966003418,False
+77,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,4,component:97fdc419825cbe03,MET 32.143.3,Ashurnasirpal II,0.8614602088928223,False
+77,component:d02b2dac92a774f5,BM 124931,Ashurbanipal,5,component:b36e0484649da15a,BM 124544,Ashurnasirpal II,0.8479791879653931,False
+77,component:d50b8e780f731a29,BM 124867,Ashurbanipal,1,component:50368ece00ecbe9e,BM 124537,Ashurnasirpal II,0.9165289402008057,False
+77,component:d50b8e780f731a29,BM 124867,Ashurbanipal,2,component:72f4a3fe5e28d6aa,BM 124553,Ashurnasirpal II,0.9040617942810059,False
+77,component:d50b8e780f731a29,BM 124867,Ashurbanipal,3,component:f1361a1a2e806a6e,BM 124552,Ashurnasirpal II,0.8831455111503601,False
+77,component:d50b8e780f731a29,BM 124867,Ashurbanipal,4,component:b36e0484649da15a,BM 124544,Ashurnasirpal II,0.8570655584335327,False
+77,component:d50b8e780f731a29,BM 124867,Ashurbanipal,5,component:7c47474369feae95,BM 124551,Ashurnasirpal II,0.8505976796150208,False
+77,component:f9766de051a8a32d,AO 19894,Sargon II,1,component:59b79106796ffa78,AO 22197,Sargon II,0.9714939594268799,True
+77,component:f9766de051a8a32d,AO 19894,Sargon II,2,component:96ac818096e6f999,AO 19883,Sargon II,0.9692698121070862,True
+77,component:f9766de051a8a32d,AO 19894,Sargon II,3,component:523e94ba0d2d4c84,AO 7374,Sargon II,0.9637237191200256,True
+77,component:f9766de051a8a32d,AO 19894,Sargon II,4,component:b0677c4f454d2452,BM 118812;BM 118816;BM 118818;BM 118824;BM 118827;BM 118828;BM 118830,Sargon II,0.9534487724304199,True
+77,component:f9766de051a8a32d,AO 19894,Sargon II,5,component:1f23fa1ca4c4a2cc,AO 22196,Sargon II,0.9518030285835266,True

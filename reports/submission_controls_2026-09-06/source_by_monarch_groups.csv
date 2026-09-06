@@ -1,0 +1,18 @@
+source,split,Ashurbanipal,Ashurnasirpal II,Sargon II
+AN,train,0,1,0
+AO,test,3,0,7
+AO,train,0,0,17
+AO,val,0,0,11
+BM,test,10,6,3
+BM,train,20,25,6
+BM,val,15,16,2
+BOS,train,0,1,0
+BRK,test,0,1,0
+BRK,train,0,2,0
+BRK,val,0,1,0
+HM,test,0,1,0
+HM,train,0,1,2
+HMA,val,0,1,0
+MET,test,0,8,0
+MET,train,0,5,0
+MET,val,0,4,2

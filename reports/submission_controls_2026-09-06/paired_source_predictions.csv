@@ -1,0 +1,118 @@
+seed,component_key,authority,source,source_prediction,source_correct,model_correct
+24,component:04ced4585574cfc3,Sargon II,AO,Sargon II,True,True
+24,component:05d16ddb0bdbd2e1,Sargon II,AO,Sargon II,True,True
+24,component:0c378f95e2bd8162,Ashurbanipal,BM,Ashurnasirpal II,False,False
+24,component:139864b96e6ccf45,Ashurbanipal,AO,Sargon II,False,True
+24,component:163b7fbb90fc152d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:194818d86f4f5bc5,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:2267ae1a000e44cc,Sargon II,AO,Sargon II,True,True
+24,component:389caffffea9065d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:49dfc86ff54bc4de,Sargon II,BM,Ashurnasirpal II,False,False
+24,component:522b510b30a82ec1,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:553eddc261bfeb8b,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:5ac1df0635a784a9,Ashurbanipal,AO,Sargon II,False,False
+24,component:61844604118d8373,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:63b31dd3bf2f99b3,Ashurbanipal,BM,Ashurnasirpal II,False,False
+24,component:650b4f291e093537,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:74c99548cb578fc4,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:780c196f9e54b401,Ashurbanipal,AO,Sargon II,False,True
+24,component:86b9d6521ef4cf93,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:9046945fe1c51b0e,Sargon II,AO,Sargon II,True,True
+24,component:9ff43ffeb33e9ebe,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:a2c3e4662a48afa6,Ashurnasirpal II,BRK,Ashurnasirpal II,True,True
+24,component:a8ac52075a51d8c9,Sargon II,AO,Sargon II,True,True
+24,component:af4283a3cfc298d8,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:b2f2d98de5f75ad9,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:bce90e2dbcf0afa8,Sargon II,BM,Ashurnasirpal II,False,True
+24,component:c640a4bd702bc287,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:cdcde6e96b8e38c3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:d02b2dac92a774f5,Ashurbanipal,BM,Ashurnasirpal II,False,False
+24,component:d50b8e780f731a29,Ashurbanipal,BM,Ashurnasirpal II,False,False
+24,component:d53c1a364259480d,Sargon II,AO,Sargon II,True,True
+24,component:d56157afc437d0e1,Sargon II,BM,Ashurnasirpal II,False,False
+24,component:de87f3b13f238d84,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:e17c334a61158cf3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+24,component:e92d5ff2d726f1c0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:eb7c0d98ada46e0a,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:ee070c7dc38ffef0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+24,component:f36e8573ad031797,Ashurbanipal,BM,Ashurnasirpal II,False,True
+24,component:f9766de051a8a32d,Sargon II,AO,Sargon II,True,True
+24,component:fb98add81b13c43f,Ashurnasirpal II,HM,Sargon II,False,True
+42,component:04ced4585574cfc3,Sargon II,AO,Sargon II,True,True
+42,component:05d16ddb0bdbd2e1,Sargon II,AO,Sargon II,True,True
+42,component:0c378f95e2bd8162,Ashurbanipal,BM,Ashurnasirpal II,False,False
+42,component:139864b96e6ccf45,Ashurbanipal,AO,Sargon II,False,True
+42,component:163b7fbb90fc152d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:194818d86f4f5bc5,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:2267ae1a000e44cc,Sargon II,AO,Sargon II,True,True
+42,component:389caffffea9065d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:49dfc86ff54bc4de,Sargon II,BM,Ashurnasirpal II,False,False
+42,component:522b510b30a82ec1,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:553eddc261bfeb8b,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:5ac1df0635a784a9,Ashurbanipal,AO,Sargon II,False,False
+42,component:61844604118d8373,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:63b31dd3bf2f99b3,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:650b4f291e093537,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:74c99548cb578fc4,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:780c196f9e54b401,Ashurbanipal,AO,Sargon II,False,True
+42,component:86b9d6521ef4cf93,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:9046945fe1c51b0e,Sargon II,AO,Sargon II,True,True
+42,component:9ff43ffeb33e9ebe,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:a2c3e4662a48afa6,Ashurnasirpal II,BRK,Ashurnasirpal II,True,True
+42,component:a8ac52075a51d8c9,Sargon II,AO,Sargon II,True,True
+42,component:af4283a3cfc298d8,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:b2f2d98de5f75ad9,Ashurnasirpal II,MET,Ashurnasirpal II,True,False
+42,component:bce90e2dbcf0afa8,Sargon II,BM,Ashurnasirpal II,False,True
+42,component:c640a4bd702bc287,Ashurbanipal,BM,Ashurnasirpal II,False,False
+42,component:cdcde6e96b8e38c3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:d02b2dac92a774f5,Ashurbanipal,BM,Ashurnasirpal II,False,False
+42,component:d50b8e780f731a29,Ashurbanipal,BM,Ashurnasirpal II,False,False
+42,component:d53c1a364259480d,Sargon II,AO,Sargon II,True,True
+42,component:d56157afc437d0e1,Sargon II,BM,Ashurnasirpal II,False,True
+42,component:de87f3b13f238d84,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:e17c334a61158cf3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+42,component:e92d5ff2d726f1c0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:eb7c0d98ada46e0a,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:ee070c7dc38ffef0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+42,component:f36e8573ad031797,Ashurbanipal,BM,Ashurnasirpal II,False,True
+42,component:f9766de051a8a32d,Sargon II,AO,Sargon II,True,True
+42,component:fb98add81b13c43f,Ashurnasirpal II,HM,Sargon II,False,True
+77,component:04ced4585574cfc3,Sargon II,AO,Sargon II,True,True
+77,component:05d16ddb0bdbd2e1,Sargon II,AO,Sargon II,True,True
+77,component:0c378f95e2bd8162,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:139864b96e6ccf45,Ashurbanipal,AO,Sargon II,False,True
+77,component:163b7fbb90fc152d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:194818d86f4f5bc5,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:2267ae1a000e44cc,Sargon II,AO,Sargon II,True,True
+77,component:389caffffea9065d,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:49dfc86ff54bc4de,Sargon II,BM,Ashurnasirpal II,False,False
+77,component:522b510b30a82ec1,Ashurnasirpal II,MET,Ashurnasirpal II,True,False
+77,component:553eddc261bfeb8b,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:5ac1df0635a784a9,Ashurbanipal,AO,Sargon II,False,False
+77,component:61844604118d8373,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:63b31dd3bf2f99b3,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:650b4f291e093537,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:74c99548cb578fc4,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:780c196f9e54b401,Ashurbanipal,AO,Sargon II,False,True
+77,component:86b9d6521ef4cf93,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:9046945fe1c51b0e,Sargon II,AO,Sargon II,True,True
+77,component:9ff43ffeb33e9ebe,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:a2c3e4662a48afa6,Ashurnasirpal II,BRK,Ashurnasirpal II,True,True
+77,component:a8ac52075a51d8c9,Sargon II,AO,Sargon II,True,True
+77,component:af4283a3cfc298d8,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:b2f2d98de5f75ad9,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:bce90e2dbcf0afa8,Sargon II,BM,Ashurnasirpal II,False,True
+77,component:c640a4bd702bc287,Ashurbanipal,BM,Ashurnasirpal II,False,False
+77,component:cdcde6e96b8e38c3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:d02b2dac92a774f5,Ashurbanipal,BM,Ashurnasirpal II,False,False
+77,component:d50b8e780f731a29,Ashurbanipal,BM,Ashurnasirpal II,False,False
+77,component:d53c1a364259480d,Sargon II,AO,Sargon II,True,True
+77,component:d56157afc437d0e1,Sargon II,BM,Ashurnasirpal II,False,True
+77,component:de87f3b13f238d84,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:e17c334a61158cf3,Ashurnasirpal II,MET,Ashurnasirpal II,True,True
+77,component:e92d5ff2d726f1c0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:eb7c0d98ada46e0a,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:ee070c7dc38ffef0,Ashurnasirpal II,BM,Ashurnasirpal II,True,True
+77,component:f36e8573ad031797,Ashurbanipal,BM,Ashurnasirpal II,False,True
+77,component:f9766de051a8a32d,Sargon II,AO,Sargon II,True,True
+77,component:fb98add81b13c43f,Ashurnasirpal II,HM,Sargon II,False,True

@@ -1,0 +1,18 @@
+{
+  "thesis-assyrian-relief/outputs/grouped_seed42/eval/umap_dependency_groups.csv": "67047e5d61765910123151f55aec4a09cecafe28bd3c2a8fd56349bf72571a61",
+  "thesis-assyrian-relief/outputs/grouped_seed42/explainability/occlusion/AO_19894-1/AO_19894-1_margin_Sargon_II_vs_Ashurnasirpal_II_heatmap.npy": "778dec3ff0a6f2c9393d796c8c1a3669913f0f0d62181841b87b4674a180daa2",
+  "thesis-assyrian-relief/outputs/grouped_seed42/explainability/occlusion/AO_19894-1/AO_19894-1_metadata.json": "9286e1379a4c07bca2e74bb3529335b8520a38ab79d07fe78225e23752b437fa",
+  "dataset_v2/AO 19894-1.jpg": "8df569e7d9380ac72b92f9705fd1e6156b94aaf997334aa030972d1b7c594587",
+  "thesis-assyrian-relief/outputs/grouped_seed42/explainability/occlusion/BM_124931-1/BM_124931-1_margin_Ashurnasirpal_II_vs_Ashurbanipal_heatmap.npy": "96260fb7329cdb756bde2bbe33884dd6dec7ec62ea43157db4f42631b9cf6dd9",
+  "thesis-assyrian-relief/outputs/grouped_seed42/explainability/occlusion/BM_124931-1/BM_124931-1_metadata.json": "c776636cef7b37759a0568a7dc3082b217c1ff445578a84ba9d0c27eeb2bddb2",
+  "dataset_v2/BM 124931-1.jpg": "ca0961c0e75d2e87ce689a68a2492fc08cbe00b68a04fa3ba4c9b070ec4e37ad",
+  "thesis-assyrian-relief/reports/submission_controls_2026-09-06/retrieval_all_ranks.csv": "ee4c8a0c683ffae3d0a050f784a8ac34e24bac2878af53737d427e2aa8a0dc80",
+  "dataset_v2/AO 19902-1.jpg": "d377ea453e3bea9140a11adc7ca10c42bffde12e1335b053f74e22b0e4cb43c9",
+  "dataset_v2/BM 124586-1.jpg": "46db8113205ba811875644a04cb63e5eaa4dda9ae417826dcb80d5d80e7b0930",
+  "dataset_v2/BM 124575-1.jpg": "7ba78af7b945ed4e18d467f150e3c2164c522afd6d999b81121ac0ec6a12e00d",
+  "dataset_v2/BM 124867-1.jpg": "0a05ed98c0c823bafcbfdb08e90e245db6ec8a17010be9f705e7d136e0b13356",
+  "dataset_v2/BM 118918-1.jpg": "3a6fd51a9e7853b879da4189154872c00d201e727d39dcac636a5ce8baf57b56",
+  "dataset_v2/BM 124537-1.jpg": "ad9dc93dfd7b60e58b26431d114955cd3a84caf9ca59204eb45755f07f8369f6",
+  "dataset_v2/BM 118829-1.jpg": "3dee47f08ad23df92231626ab97eaa5d430fe0fff198b01d3fa4f03ca1452759",
+  "dataset_v2/BM 118917-1.jpg": "f00c0a15098f744253464161c7f0c214ca084370e431e9a1fb5180c984325aee"
+}

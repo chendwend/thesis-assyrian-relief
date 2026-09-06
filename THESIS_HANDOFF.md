@@ -1,6 +1,8 @@
 # Thesis project handoff
 
-Last updated: 2026-09-01
+Current continuation: [FINAL_SUBMISSION_HANDOFF.md](FINAL_SUBMISSION_HANDOFF.md), updated 2026-09-06. Read that file first for the submission plan, completed pushes, and confirmed bilingual metadata.
+
+Historical handoff below, last updated: 2026-09-01
 
 ## Critical 2026-09-01 update (supersedes stale metrics below)
 

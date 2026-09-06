@@ -1,0 +1,121 @@
+{
+  "manifest_sha256": "4942ec4984fa5a5b261cd9b2c7cc141e37a17ae84d82cf0e41becd83d518690e",
+  "components_sha256": "e331ea32ff7f057aab9634c20b7d615ae2fae4afa0861ecdca7836fc586b4eec",
+  "gallery": "All 80 distinct training groups; no exclusions",
+  "query": "All 39 test groups, equal query weight",
+  "train_group_counts": {
+    "Ashurbanipal": 20,
+    "Ashurnasirpal II": 35,
+    "Sargon II": 25
+  },
+  "test_group_counts": {
+    "Ashurbanipal": 13,
+    "Ashurnasirpal II": 16,
+    "Sargon II": 10
+  },
+  "random_label_hit_probability": {
+    "1": 0.34294871794871795,
+    "3": 0.7084332010086636,
+    "5": 0.8663175406564428
+  },
+  "random_expected_precision_at_k": 0.3429487179487179,
+  "learned_retrieval_by_seed": [
+    {
+      "seed": 24,
+      "k": 1,
+      "label_hit_rate": 0.9230769230769231,
+      "precision_at_k": 0.9230769230769231
+    },
+    {
+      "seed": 24,
+      "k": 3,
+      "label_hit_rate": 0.9487179487179487,
+      "precision_at_k": 0.8717948717948718
+    },
+    {
+      "seed": 24,
+      "k": 5,
+      "label_hit_rate": 0.9487179487179487,
+      "precision_at_k": 0.8564102564102564
+    },
+    {
+      "seed": 42,
+      "k": 1,
+      "label_hit_rate": 0.8205128205128205,
+      "precision_at_k": 0.8205128205128205
+    },
+    {
+      "seed": 42,
+      "k": 3,
+      "label_hit_rate": 0.8717948717948718,
+      "precision_at_k": 0.8376068376068375
+    },
+    {
+      "seed": 42,
+      "k": 5,
+      "label_hit_rate": 0.8717948717948718,
+      "precision_at_k": 0.8358974358974359
+    },
+    {
+      "seed": 77,
+      "k": 1,
+      "label_hit_rate": 0.8717948717948718,
+      "precision_at_k": 0.8717948717948718
+    },
+    {
+      "seed": 77,
+      "k": 3,
+      "label_hit_rate": 0.8717948717948718,
+      "precision_at_k": 0.8547008547008546
+    },
+    {
+      "seed": 77,
+      "k": 5,
+      "label_hit_rate": 0.8717948717948718,
+      "precision_at_k": 0.8461538461538461
+    }
+  ],
+  "source_group_baseline": {
+    "n_test_groups": 39,
+    "mapping": {
+      "AN": "Ashurnasirpal II",
+      "AO": "Sargon II",
+      "BM": "Ashurnasirpal II",
+      "BOS": "Ashurnasirpal II",
+      "BRK": "Ashurnasirpal II",
+      "HM": "Sargon II",
+      "MET": "Ashurnasirpal II"
+    },
+    "fallback": "Ashurnasirpal II",
+    "correct": 22,
+    "accuracy": 0.5641025641025641,
+    "macro_f1": 0.44949494949494945
+  },
+  "paired_accuracy_comparison": {
+    "mean_accuracy_difference": 0.26495726495726496,
+    "percentile_95_ci": [
+      0.1367521367521367,
+      0.4102564102564102
+    ],
+    "bootstrap_seed": 20260906,
+    "bootstrap_replicates": 10000,
+    "unit": "dependency group",
+    "n_groups": 39,
+    "model_accuracy_mean": 0.8290598290598291
+  },
+  "numeric_rounding": "Round exact stored values once to nearest 0.001; do not round via 4 decimals",
+  "input_sha256": {
+    "outputs/grouped_seed24/eval/train_dependency_group_embeddings.pkl": "7e1a923e0486b0a4d7b5b005a66c917f63d05cddacf20d33d8d26da98c9fc7c4",
+    "outputs/grouped_seed24/eval/test_dependency_group_embeddings.pkl": "0c8643e6ad3efd428296efda4b98ca044a5d002dd8d1cbc35c4cb99c2c314cdb",
+    "outputs/grouped_seed24/eval/test_dependency_group_predictions.csv": "eab9ef49e9090bb25792e4b75890733dc4c61361004e7245a0c1ef1f3226a511",
+    "outputs/grouped_seed24/eval/test_dependency_group_embedding_metrics.json": "ea06cbf7193e5f8b1e147955af5ec712bcebf17bf745db81f2736a8252614fbc",
+    "outputs/grouped_seed42/eval/train_dependency_group_embeddings.pkl": "c30737b0e6485f6534fac623ab2e6af10bf092e02ca053003d2220d6d9817ae9",
+    "outputs/grouped_seed42/eval/test_dependency_group_embeddings.pkl": "8b149a838ab4eaba2b77d21a45fea5af6e11ac47378742e15ff61de878ed6a8f",
+    "outputs/grouped_seed42/eval/test_dependency_group_predictions.csv": "42d24066df94c826019bc4df0c539b5e0c95520bb56f0fec931f3bc52284176c",
+    "outputs/grouped_seed42/eval/test_dependency_group_embedding_metrics.json": "b973c64ee2f790119ebea6cf7810b130a0c283830eafc78a6d60f25f9bd5f278",
+    "outputs/grouped_seed77/eval/train_dependency_group_embeddings.pkl": "1333c34bc6591bd157c62f1df4d285c8d4bcbf2789836c6104e31afced05f7ea",
+    "outputs/grouped_seed77/eval/test_dependency_group_embeddings.pkl": "1186401d5ba6c66dcb4c4f30773e09e9ae590cada5f948735e87f2c54a9d5ef6",
+    "outputs/grouped_seed77/eval/test_dependency_group_predictions.csv": "f27480c9029be51eb66ee1eb492e935f44c1cc3f3ac8975f6b3973529a5beda5",
+    "outputs/grouped_seed77/eval/test_dependency_group_embedding_metrics.json": "94470b0aba7db7e792481ec8d51e918eae4800adfa3545c0aadbe78d93c252e2"
+  }
+}

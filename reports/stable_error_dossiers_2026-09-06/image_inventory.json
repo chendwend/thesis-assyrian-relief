@@ -1,0 +1,34 @@
+[
+  {
+    "file": "AO 19902-1.jpg",
+    "sha256": "d377ea453e3bea9140a11adc7ca10c42bffde12e1335b053f74e22b0e4cb43c9"
+  },
+  {
+    "file": "BM 124867-1.jpg",
+    "sha256": "0a05ed98c0c823bafcbfdb08e90e245db6ec8a17010be9f705e7d136e0b13356"
+  },
+  {
+    "file": "BM 124867-2.jpg",
+    "sha256": "91608edd2db9ea0406531e4fb4dd71330cc0be262086bcccbfd33beddd0f8dfd"
+  },
+  {
+    "file": "BM 124931-1.jpg",
+    "sha256": "ca0961c0e75d2e87ce689a68a2492fc08cbe00b68a04fa3ba4c9b070ec4e37ad"
+  },
+  {
+    "file": "BM 118829-1.jpg",
+    "sha256": "3dee47f08ad23df92231626ab97eaa5d430fe0fff198b01d3fa4f03ca1452759"
+  },
+  {
+    "file": "BM 118829-2.jpg",
+    "sha256": "b58995baa0f2b54d1c07b5e1f767ee529ee1cf9863eb7ac9f55c58cd59683f77"
+  },
+  {
+    "file": "AO 19894-1.jpg",
+    "sha256": "8df569e7d9380ac72b92f9705fd1e6156b94aaf997334aa030972d1b7c594587"
+  },
+  {
+    "file": "AO 19909-1.jpg",
+    "sha256": "1f324a233b4b9ca37ebcffbfed11742fe33d55024db6713ac08c856034c17a71"
+  }
+]
