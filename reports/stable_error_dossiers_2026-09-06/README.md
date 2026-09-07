@@ -38,3 +38,7 @@ No Balawat or White Obelisk inference was run. Shalmaneser III and Ashurnasirpal
 `../../scripts/render_submission_figures.py` regenerates final thesis figures from saved inputs. It increases neighbour-label size and records hashes in `figure_input_hashes.json`. The first stored view remains the plate representative; all dependent views remain in `all_views.jpg` and `image_inventory.json`. No neighbour, cosine score or source photo changed.
 
 The script arranges existing 171 UMAP coordinates vertically and renders the two existing occlusion maps with readable labels. It does not fit UMAP or run inference. Occlusion limits retain the 98th percentile of absolute map values, zero-centred normalisation and 0.4 overlay alpha. All 16 figure-input hashes were reverified, and final figures were visually checked.
+
+## Photograph credits and revised typography
+
+See [IMAGE_CREDITS.md](IMAGE_CREDITS.md) for the actual museum credits and unresolved individual licence checks for both plates. The thesis revision now renders scientific labels in Times New Roman at approximately 12 points at the final placement width, including the confusion matrix. All figures still use saved numerical inputs; no model fit or inference occurred. The bilingual page order and current PDF are recorded in the latest final handoff.

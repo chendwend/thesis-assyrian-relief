@@ -12,6 +12,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.colors import TwoSlopeNorm
+from matplotlib import font_manager
 import numpy as np
 import pandas as pd
 from PIL import Image, ImageDraw, ImageFont
@@ -27,8 +28,38 @@ def main() -> None:
     report = root / "reports/stable_error_dossiers_2026-09-06"
     hashes = {}
 
+    font_path = next(p for p in [Path("C:/Windows/Fonts/times.ttf"), Path("/mnt/c/Windows/Fonts/times.ttf")] if p.exists())
+    for font_file in ["times.ttf", "timesbd.ttf", "timesi.ttf", "timesbi.ttf"]:
+        font_manager.fontManager.addfont(str(font_path.parent / font_file))
+    plt.rcParams.update({"font.family": "Times New Roman", "font.size": 12,
+                         "axes.titlesize": 12, "axes.labelsize": 12,
+                         "legend.fontsize": 12, "xtick.labelsize": 12,
+                         "ytick.labelsize": 12})
+    # The manuscript text block is 16 cm; figures are placed at their native width.
+    width_inches = 16 / 2.54
+
     def record(path: Path) -> None:
         hashes[str(path.relative_to(root.parent))] = hashlib.sha256(path.read_bytes()).hexdigest()
+
+    prediction_path = root / "outputs/grouped_seed42/eval/test_dependency_group_predictions.csv"
+    record(prediction_path)
+    predictions = pd.read_csv(prediction_path)
+    matrix = np.zeros((3, 3), dtype=int)
+    np.add.at(matrix, (predictions.true_label.to_numpy(), predictions.pred_label.to_numpy()), 1)
+    assert matrix.sum() == 39 and matrix.trace() == 32
+    labels = ["Ashurbanipal", "Ashurnasirpal II", "Sargon II"]
+    fig, ax = plt.subplots(figsize=(width_inches, 5.3), constrained_layout=True)
+    shown = ax.imshow(matrix, cmap="Blues", vmin=0)
+    ax.set_xticks(range(3), labels)
+    ax.set_yticks(range(3), labels)
+    ax.set_xlabel("Predicted label")
+    ax.set_ylabel("Catalogue label")
+    for (row, col), value in np.ndenumerate(matrix):
+        ax.text(col, row, str(value), ha="center", va="center", fontsize=12,
+                color="white" if value > matrix.max()/2 else "black")
+    fig.colorbar(shown, ax=ax, fraction=.04, pad=.035)
+    fig.savefig(figures / "confusion_matrix_dependency_groups.png", dpi=300)
+    plt.close(fig)
 
     coords = root / "outputs/grouped_seed42/eval/umap_dependency_groups.csv"
     record(coords)
@@ -39,8 +70,7 @@ def main() -> None:
     authority = {"Ashurbanipal": "#3B6FB6", "Ashurnasirpal II": "#D17A22", "Sargon II": "#2F8F5B"}
     sources = {"BM": "#3B6FB6", "AO": "#C44E52", "MET": "#55A868", "Other": "#8172B2"}
     splits = {"train": "o", "val": "s", "test": "^"}
-    plt.rcParams.update({"font.size": 10, "axes.titlesize": 11, "axes.labelsize": 10, "legend.fontsize": 9.5})
-    fig, axes = plt.subplots(2, 1, figsize=(6.3, 7.1), sharex=True, sharey=True, constrained_layout=True)
+    fig, axes = plt.subplots(2, 1, figsize=(width_inches, 7.0), sharex=True, sharey=True, constrained_layout=True)
     for ax, col, colors, title in [(axes[0], "authority", authority, "A. Monarch attribution"), (axes[1], "source", sources, "B. Museum/source prefix")]:
         for split, marker in splits.items():
             for category, color in colors.items():
@@ -74,19 +104,19 @@ def main() -> None:
         source = Image.open(photo).convert("RGB").resize((224, 224))
         vmax = np.percentile(np.abs(heatmap), 98)
         norm = TwoSlopeNorm(vmin=-vmax if vmax > 1e-8 else -1, vcenter=0, vmax=vmax if vmax > 1e-8 else 1)
-        fig, axes = plt.subplots(1, 3, figsize=(6.3, 2.95), constrained_layout=True)
+        fig, axes = plt.subplots(1, 3, figsize=(width_inches, 3.1), constrained_layout=True)
         axes[0].imshow(source)
-        axes[0].set_title("Input (224 × 224)", fontsize=9.5)
+        axes[0].set_title("Input (224 × 224)", fontsize=12)
         hm = axes[1].imshow(heatmap, cmap="coolwarm", norm=norm)
-        axes[1].set_title("Occlusion effect", fontsize=9.5)
+        axes[1].set_title("Occlusion effect", fontsize=12)
         cb = fig.colorbar(hm, ax=axes[1], fraction=.05, pad=.025)
-        cb.ax.tick_params(labelsize=8)
+        cb.ax.tick_params(labelsize=12)
         axes[2].imshow(source)
         axes[2].imshow(heatmap, cmap="coolwarm", norm=norm, alpha=.4)
-        axes[2].set_title("Overlay", fontsize=9.5)
+        axes[2].set_title("Overlay", fontsize=12)
         for ax in axes:
             ax.axis("off")
-        fig.suptitle(f"{positive} − {negative}\nPrediction: {meta['pred_class']} ({meta['pred_prob']:.3f}); label: {meta['true_class']}", fontsize=9.5)
+        fig.suptitle(f"{positive} − {negative}\nPrediction: {meta['pred_class']} ({meta['pred_prob']:.3f}); label: {meta['true_class']}", fontsize=12)
         fig.savefig(figures / output, dpi=300)
         plt.close(fig)
 
@@ -94,9 +124,8 @@ def main() -> None:
     record(ranks)
     with ranks.open() as f:
         rows = list(csv.DictReader(f))
-    font_path = next(p for p in [Path("C:/Windows/Fonts/arial.ttf"), Path("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf")] if p.exists())
-    font = ImageFont.truetype(str(font_path), 32)
-    sheet = Image.new("RGB", (1800, 1880), "white")
+    font = ImageFont.truetype(str(font_path), 48)
+    sheet = Image.new("RGB", (1800, 2000), "white")
     draw = ImageDraw.Draw(sheet)
     for row, query in enumerate(["AO 19902", "BM 124867", "BM 124931", "BM 118829"]):
         cells = [(f"Query: {query}", query)]
@@ -109,14 +138,29 @@ def main() -> None:
             photo = sorted(image_root.glob(accession + "-*.jpg"))[0]
             record(photo)
             image = Image.open(photo).convert("RGB")
-            image.thumbnail((430, 385))
-            x, y = col*450, row*470
-            sheet.paste(image, (x+(430-image.width)//2, y+78+(385-image.height)//2))
-            draw.multiline_text((x+5,y+5), label, font=font, fill="black", spacing=1)
+            image.thumbnail((430, 330))
+            x, y = col*450, row*500
+            sheet.paste(image, (x+(430-image.width)//2, y+160+(330-image.height)//2))
+            lines = []
+            for line in label.splitlines():
+                words, current = line.split(), ""
+                for word in words:
+                    test = (current + " " + word).strip()
+                    if draw.textlength(test, font=font) > 430 and current:
+                        lines.append(current)
+                        current = word
+                    else:
+                        current = test
+                lines.append(current)
+            assert len(lines) <= 3, lines
+            label_text = "\n".join(lines)
+            box = draw.multiline_textbbox((0, 0), label_text, font=font, spacing=1)
+            assert box[2] <= 440 and box[3] <= 155, (label_text, box)
+            draw.multiline_text((x+5,y+5), label_text, font=font, fill="black", spacing=1)
     sheet.save(figures / "stable_error_neighbours.jpg", quality=93)
     sheet.save(report / "nearest_neighbours.jpg", quality=93)
     (report / "figure_input_hashes.json").write_text(json.dumps(hashes, indent=2)+"\n", encoding="utf-8")
-    print("Rendered four figures from unchanged saved coordinates, heatmaps, ranks and photographs.")
+    print("Rendered submission figures from unchanged saved coordinates, heatmaps, ranks and photographs.")
 
 
 if __name__ == "__main__":

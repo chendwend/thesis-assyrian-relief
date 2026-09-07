@@ -1,6 +1,16 @@
 # Final submission handoff — 6 September 2026
 
-## Current status — 7 September 2026
+## Latest user-requested revision — 7 September 2026
+
+The reviewed deliverable is now **60 pages**: `../thesis-overleaf/output/pdf/Konstantin_Margulyan_Thesis_2026-09-07_revised.pdf`. SHA-256: `3cb2bce479bad7878aefd0efde75576ceef4046006143f90257266e646ca39e7`. The prior 57-page PDF is preserved at its descriptive filename; `output/pdf/main.pdf` now matches this revision.
+
+The user explicitly requested English title → Hebrew title → English supervision → Hebrew supervision, with Hebrew abstract immediately after English abstract. Applied with updated contents and continuous preliminary numbering. English/Hebrew text now shares 12-point Times New Roman, including titles/headings/captions/tables/checksum/references; genuine smaller notes and mathematical notation remain. All pages and final changes were visually checked; build warnings are zero.
+
+Added Appendix A (reproducibility/code record) and Appendix B (ten photograph credits/sources). The repository's case plates have their own `IMAGE_CREDITS.md`. Individual BM image licence markings remain unverified; do not describe the corpus or every reproduced image as cleared. Wider training/redistribution permissions and remote Overleaf font/compiler availability remain separate checks. No retraining, numerical result change, external inference, communication or portal submission occurred.
+
+Current QA: `../thesis-overleaf/audit/followup_submission_qa_2026-09-07.md` and companion JSON. Fourteen numerical input hashes unchanged; seventeen figure-input hashes verified. Renderer assertions and Ruff passed. Earlier phase records below are historical; do not restart those audits. Manuscript checkpoint b2c5eb3722ab80f5309d1a2a17c83eebaca4f073 was pushed to Overleaf and its remote HEAD verified. The companion model changes and this handoff are recorded together in the next Git checkpoint. Compiled PDFs remain local ignored artifacts; no remote Overleaf compilation was checked.
+
+## Previous 57-page revision — 7 September 2026
 
 **Editing, numerical/source checks, case dossiers and final PDF QA are complete.** Reviewed deliverable: `../thesis-overleaf/output/pdf/Konstantin_Margulyan_Thesis_2026-09-07.pdf`, 57 pages, SHA-256 `83e6e94e5fbad9e8d6f36f644d0806c53a416095305b48c8ee2116273f752ad5`. `output/pdf/main.pdf` is identical; the September 1 PDF is preserved separately. These PDFs remain local ignored artifacts.
 
